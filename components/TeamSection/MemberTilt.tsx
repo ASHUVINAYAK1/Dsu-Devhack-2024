@@ -21,7 +21,7 @@ function Card({ member }: any) {
             width={100}
             height={100}
             objectFit="cover"
-            alt="member image"
+            alt="TBD"
           />
         </div>
 

@@ -114,6 +114,12 @@ const Navbar = (activeSection: any) => {
               <a href="#prizes">Prizes</a>
             </div>
             <div
+              className={`nav-titles nav-titles-ltr ${activeSection === "prizes" ? "before:w-full" : ""
+                } `}
+            >
+              <a href="#themes">Themes</a>
+            </div>
+            <div
               className={`nav-titles nav-titles-ltr ${activeSection === "schedule" ? "before:w-full" : ""
                 } `}
             >
@@ -124,6 +130,12 @@ const Navbar = (activeSection: any) => {
                 } `}
             >
               <a href="#sponsors">Sponsors</a>
+            </div>
+            <div
+              className={`nav-titles nav-titles-ltr ${activeSection === "team" ? "before:w-full" : ""
+                } `}
+            >
+              <a href="#pannel">Pannel</a>
             </div>
             {/* <div
               className={`nav-titles nav-titles-ltr ${activeSection === "team" ? "before:w-full" : ""
