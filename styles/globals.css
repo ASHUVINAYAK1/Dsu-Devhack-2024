@@ -4,6 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @font-face {
   font-family: 'Nimbus';
   src: url('/font/TAN-NIMBUS.ttf');
@@ -34,7 +35,7 @@
 
 }
 html{
-  /* scroll-behavior: smooth; */
+  scroll-behavior: smooth;
 }
 
 @media screen and (min-width: 1024px) {

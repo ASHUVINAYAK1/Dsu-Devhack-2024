@@ -112,7 +112,7 @@ const duHacksFaq = [
     question: <>I have a question related to the hackathon which is not listed above. What should I do?</>,
     answer: (
       <>
-        Feel free to reach out to us. Just drop a mail to <a href="mailto:support@example.com">support@example.com</a>. You can also contact the organizer at <strong>TBD</strong>, <strong>+91-12345-67890</strong>.
+        Feel free to reach out to us. Just drop a mail to <strong><a href="mailto:dsudevhack@dsu.edu.in">dsudevhack@dsu.edu.in</a></strong>. You can also contact the organizer at <strong>TBD</strong>, <strong>+91-12345-67890</strong>.
       </>
     ),
   },

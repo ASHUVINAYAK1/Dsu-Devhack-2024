@@ -15,6 +15,9 @@ const config: Config = {
         monte: ["Monteserrat", "sans-serif"],
         poppins: ["Poppins", "sans-serif"],
       },
+      scrollBehavior: {
+        smooth: 'smooth',
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
