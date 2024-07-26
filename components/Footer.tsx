@@ -62,20 +62,17 @@ const Footer = () => {
         <div className="flex justify-center">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-y-8 lg:gap-y-0 xl:gap-x-36 items-center justify-around text-xs xl:text-sm">
             <div className="lg:grid grid-cols-3 text-center hidden">
-            <a  href="mailto:gdsc@ddu.ac.in">
+            <a  href="mailto:dsudevhack@dsu.edu.in">
                 Contact Us
             </a>
              <a href="https://discord.gg/T2fzD8c2j2" target="_blank" rel="noreferrer">Join Discord</a>
             </div>
             <div className="flex justify-center">
-              <img
+              {/* <img
                 src="/assets/images/dsc.png"
                 alt="DSC"
                 className="w-44 lg:w-56"
-              />
-            </div>
-            <div className="mx-5 lg:mx-0 text-center">
-              Copyrights © 2023. All rights reserved by DUHacks 3.0
+              /> */}
             </div>
           </div>
         </div>
