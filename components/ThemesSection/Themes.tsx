@@ -6,12 +6,12 @@ import Image from "next/image";
 import Tilt from "react-parallax-tilt";
 const themes = [
   {
-    title: "Education",
+    title: "Sustainability",
     image:
-      "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Pencil.png",
+      "/assets/images/sustain.png",
   },
   {
-    title: "Health",
+    title: "Healthcare",
     image:
       "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Stethoscope.png",
   },
@@ -26,9 +26,24 @@ const themes = [
       "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Globe%20with%20Meridians.png",
   },
   {
-    title: "VLSI",
+    title: "IOT",
     image:
-      "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Electric%20Plug.png",
+      "/assets/images/iot.png",
+  },
+  {
+    title: "Smart cities",
+    image:
+    "/assets/images/scity.png",
+  },
+  {
+    title: "E-Commerse",
+    image:
+    "/assets/images/store.png",
+  },
+  {
+    title: "Food & agriculture",
+    image:
+    "/assets/images/foods.png",
   },
   {
     title: "Open Innovation",
