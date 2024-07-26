@@ -106,7 +106,13 @@ const Navbar = (activeSection: any) => {
             >
               <a href="#about">About</a>
             </div>
-
+            
+            <div
+              className={`nav-titles nav-titles-ltr ${activeSection === "prizes" ? "before:w-full" : ""
+                } `}
+            >
+              <a href="#prizes">Prizes</a>
+            </div>
             <div
               className={`nav-titles nav-titles-ltr ${activeSection === "schedule" ? "before:w-full" : ""
                 } `}
@@ -119,18 +125,12 @@ const Navbar = (activeSection: any) => {
             >
               <a href="#sponsors">Sponsors</a>
             </div>
-            <div
-              className={`nav-titles nav-titles-ltr ${activeSection === "prizes" ? "before:w-full" : ""
-                } `}
-            >
-              <a href="#prizes">Prizes</a>
-            </div>
-            <div
+            {/* <div
               className={`nav-titles nav-titles-ltr ${activeSection === "team" ? "before:w-full" : ""
                 } `}
             >
               <a href="#team">Team</a>
-            </div>
+            </div> */}
             <div
               className={`nav-titles nav-titles-ltr ${activeSection === "faq" ? "before:w-full" : ""
                 } `}
@@ -186,13 +186,7 @@ const Navbar = (activeSection: any) => {
             >
               Sponsors
             </a>
-            <a
-              href="#prizes"
-              className="nav-dropdown-titles hover:scale-20"
-              onClick={toggleDropdown}
-            >
-              Prizes
-            </a>
+
             <a
               href="#team"
               className="nav-dropdown-titles hover:scale-20"

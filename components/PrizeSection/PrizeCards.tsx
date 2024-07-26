@@ -127,9 +127,9 @@ const PrizeCards = () => {
   return (
     <>
       <div className="flex-col flex lg:justify-center">
-        <div className="prizeContainer1">
+      <div className="prizeContainer1">
           <div className="prizeContainer md:grid hidden grid-cols-1 sm:grid-cols-3 gap-3 lg:grid-cols-3 mb-10">
-            {prizeData.cardContents.slice(0, 3).map((card: any, index: any) => (
+            {prizeData.cardContents.slice(0, 6).map((card: any, index: any) => (
               <Card
                 texts={card.texts}
                 textsBack={card.textsBack}
@@ -144,7 +144,7 @@ const PrizeCards = () => {
           </div>
         </div>
         <div className="prizeContainer grid md:hidden grid-cols-1 sm:grid-cols-3 gap-3 lg:grid-cols-3 mb-10">
-          {prizeData.cardContents2.slice(0, 3).map((card: any, index: any) => (
+          {prizeData.cardContents.slice(0, 6).map((card: any, index: any) => (
             <Card
               texts={card.texts}
               textsBack={card.textsBack}
@@ -158,34 +158,8 @@ const PrizeCards = () => {
           ))}
         </div>
 
-        {prizeData.cardContents.length > 3 && (
-          <div className="prizeContainer hidden md:flex">
-            <Card
-              key={3}
-              texts={prizeData.cardContents[3].texts}
-              position={3}
-              textsBack={prizeData.cardContents[3].textsBack}
-              order={`order-4`}
-              image={prizeData.cardContents[3].image}
-              imgWidth={prizeData.cardContents[3].imgWidth}
-              paddingTop={prizeData.cardContents[3].paddingTop}
-            />
-          </div>
-        )}
 
-        {prizeData.cardContents.length > 3 && (
-          <div className="prizeContainer md:hidden flex">
-            <Card
-              key={3}
-              texts={prizeData.cardContents2[3].texts}
-              position={3}
-              textsBack={prizeData.cardContents2[3].textsBack}
-              order={`order-4`}
-              image={prizeData.cardContents2[3].image}
-              imgWidth={prizeData.cardContents2[3].imgWidth}
-            />
-          </div>
-        )}
+        
       </div>
     </>
   );

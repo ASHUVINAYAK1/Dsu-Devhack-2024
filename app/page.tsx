@@ -59,10 +59,10 @@ export default function Home() {
   useEffect(() => {
     const handleScroll = () => {
       const about = document.getElementById("about");
+      const prizes = document.getElementById("prizes");
       const themes = document.getElementById("themes");
       const schedule = document.getElementById("schedule");
       const sponsors = document.getElementById("sponsors");
-      const prizes = document.getElementById("prizes");
       const team = document.getElementById("team");
       const faq = document.getElementById("faq");
 
@@ -111,6 +111,10 @@ export default function Home() {
         <br />
         <About />
       </div>
+      <div id="prizes">
+        <br></br>
+        <PrizeSection />
+      </div>
 
       <div id="themes">
         <br />
@@ -128,10 +132,6 @@ export default function Home() {
         <SponsorsSection2/>
       </div>
 
-      <div id="prizes">
-        <br></br>
-        <PrizeSection />
-      </div>
 
       {/* <div id="team">
         <br />
