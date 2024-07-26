@@ -49,13 +49,13 @@ const About = () => {
             <p className="text-slate-200 ">Hours of Hacking</p>
           </div>
           <div className="basis-1/3 border-2 rounded-2xl  w-full p-5 glassy-effect">
-            <h1 className="text-4xl my-2 font-semibold orange-logo">
+            <h1 className="text-4xl my-2 font-semibold text-purple-500">
               <CountUp
                 start={100}
                 end={200}
                 duration={4}
                 enableScrollSpy={true}
-                className="font-bold orange-logo"
+                className="font-bold text-purple-500"
               />
               +
             </h1>
@@ -74,8 +74,21 @@ const About = () => {
             </h1>
             <p className="text-slate-200 ">Free registrations</p>
           </div>
+          <div className="basis-1/3 border-2 rounded-2xl  w-full p-5 glassy-effect">
+            <h1 className="text-4xl my-2 font-semibold  text-green-500">
+              3 -&nbsp;
+              <CountUp
+                start={1}
+                end={4}
+                duration={4}
+                enableScrollSpy={true}
+                className="font-bold text-green-500"
+              />
+            </h1>
+            <p className="text-slate-200 ">Team Size</p>
+          </div>
         </div>
-        <div className="flex flex-col sm:flex-row w-full items-center justify-center gap-5 px-5 mt-5 container1 container2">
+        <div className="flex flex-col-reverse sm:flex-row w-full items-center justify-center gap-5 px-5 mt-5 container1 container2">
           <div className="basis-1/2 border-2 rounded-2xl sm:h-96 w-full p-5 overflow-y-scroll lg:overflow-auto glassy-effect ">
             <p className="text-slate-200 text-lg sm:text-xl sm:mt-3">
               DSU DEVHACK 2024 is an exhilarating national-level hackathon designed to push the boundaries of innovation across various cutting-edge domains 🛠️
@@ -110,7 +123,7 @@ const About = () => {
               initial="hidden"
               animate={controls}
               transition={{ type: "easeIn", duration: 1.2, delay: 0 }}
-              className="my-5 h-52 w-full sm:h-80 rounded-2xl"
+              className="my-5 h-52 w-full sm:h-80 rounded-2xl "
               style={{
                 backgroundImage: "url('/team_members/dsu_about.jpg')",
                 backgroundSize: "cover",

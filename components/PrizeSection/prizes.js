@@ -77,29 +77,12 @@ const cardContents = [
       "Winners Certificate",
       "Mementos"
     ],
-    image: "/assets/images/project.png",
+    image: "/assets/images/livev1.png",
     imgWidth: 120,
     paddingTop: "pt-4",
     // link: "https://www.verbwire.com/",
   },
- //all participants
- {
-  texts: [
-    "All participate will get DSU devHacks certificates",
-    "To all participants will have Exposure ",
-  ],
-  textsBack: [
-     "Industry Exposure",
-      "Career Opportunities",
-      "Networking",
-      "Mentorship",
-      "Certificate",
-      "Mementos"
-  ],
-  image: "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Activities/Sparkles.png",
-  imgWidth: 100,
-  // link: "https://www.verbwire.com/",
-},
+
   {
     texts: [
       "Cash prize of <span class='font-semibold  text-blue-500'>Rs.10,000</span>",
@@ -112,12 +95,30 @@ const cardContents = [
       "3. Best Social Impact Project",
       "4. Best latest technology",
     ],
-    image: "/assets/images/livev1.png",
+    image: "/assets/images/project.png",
+
     imgWidth: 120,
     paddingTop: "pt-4",
     // link: "https://www.verbwire.com/",
   },
   
+  {
+    texts: [
+      "All participate will get DSU devHacks certificates",
+      "To all participants will have Exposure ",
+    ],
+    textsBack: [
+       "Industry Exposure",
+        "Career Opportunities",
+        "Networking",
+        "Mentorship",
+        "Certificate",
+        "Mementos"
+    ],
+    image: "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Activities/Sparkles.png",
+    imgWidth: 100,
+    // link: "https://www.verbwire.com/",
+  },
  
   // {
   //   texts: [

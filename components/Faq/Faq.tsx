@@ -5,123 +5,119 @@ import "../../styles/faq/background.css";
 
 const duHacksFaq = [
   {
-    question: <>Who can participate? 🌐</>,
+    question: <>What is DSU Dev Hacks 2024?</>,
     answer: (
       <>
-        DUHacks 3.0 is open to a diverse range of participants, including
-        students, professionals, and individuals with varying skill levels.
-        Whether you are a beginner or an experienced developer, despite the
-        field of academic discipline chosen, you are eligible to join us! 🚀
+        DSU Dev Hacks is a hackathon initiative of a private university in India to help various
+        departments and private organizations find solutions to their pressing problems through students.
       </>
     ),
   },
   {
-    question: <>What if this is my first hackathon? </>,
+    question: <>When was DSU Dev Hacks started?</>,
     answer: (
       <>
-        Congratulations on considering your first hackathon! DUHacks 3.0 is a
-        great opportunity for beginners. We would be having expert sessions,
-        guidance by mentors along the way to help you out in executing your
-        ideas into projects. See you in the hackathon! 🤖
+        DSU Dev Hacks started in the year 2024.
       </>
     ),
   },
   {
-    question: (
-      <>
-        Do I need to pay a registration fee to participate in the hackathon? 
-      </>
-    ),
+    question: <>At which level is this hackathon conducted?</>,
     answer: (
       <>
-        No. There is no registration fee for participating in the hackathon. This approach ensures that creativity and innovation can flourish without restrictions, allowing participants to immerse themselves in a collaborative and dynamic environment.🌐✨
+        The DSU Dev Hacks Hackathon is conducted at the national level.
       </>
     ),
   },
   {
-    question: (
-      <>
-        As the hackathon is in hybrid mode, who is allowed to participate in offline mode? 
-      </>
-    ),
+    question: <>How many members can participate in a team?</>,
     answer: (
       <>
-        Only selected students from DDU are permitted for offline participation. Participants from any other locations are not allowed.🚫
+        A team can have a minimum of 3 members and a maximum of 4 members.
       </>
     ),
   },
   {
-    question: (
-      <>
-        For the participants in offline mode, will travel reimbursement be provided? 
-      </>
-    ),
+    question: <>What are the eligibility criteria for participation?</>,
     answer: (
       <>
-        No, DUHacks 3.0 does not offer travel reimbursement for participants in offline mode. Participants are responsible for their travel expenses, and we recommend planning accordingly.
+        The eligibility criteria include being a student of a recognized educational institution in India.
       </>
     ),
   },
   {
-    question: (
-      <>
-        Will everyone from DDU be eligible for offline tickets, or is there a selection process? 
-      </>
-    ),
+    question: <>What is the qualification to participate?</>,
     answer: (
       <>
-        Not everyone from DDU will receive offline tickets for DUHacks3.O. The selection process involves a shortlisting of participants based on specific criteria, such as performance, engagement, and commitment. Eligible individuals will be notified in advance.😊
+        Participants must be currently enrolled in an undergraduate, postgraduate, or PhD program.
       </>
     ),
   },
   {
-    question: <>What should be the team size? </>,
+    question: <>Can participants attend online?</>,
     answer: (
       <>
-        The team size can range from a minimum of 1 participant to a maximum of
-        4 participants. 🤝
+        Yes, participants can attend online as the hackathon is conducted in both online and offline modes.
       </>
     ),
   },
   {
-    question: <>Are team members from other colleges allowed? </>,
+    question: <>What is the participation fee?</>,
     answer: (
       <>
-        Yes, DUHacks 3.0 welcomes participants from diverse backgrounds,
-        including those from different colleges. The hackathon encourages
-        collaboration and networking among individuals with varied experiences
-        and expertise. 🌍
+        The participation in DSU Dev Hacks 2024 is completely free! There is no registration fee, allowing everyone to join without any financial constraints      </>
+    ),
+  },
+  {
+    question: <>Can all team members belong to different universities?</>,
+    answer: (
+      <>
+        No, all team members must belong to the same university or college.
       </>
     ),
   },
   {
-    question: <>What will I get after attending DUHacks 3.0? 🏆</>,
+    question: <>Is this hackathon an online event or offline?</>,
     answer: (
       <>
-        DUHacks 3.0 offers a dynamic platform for learning and collaboration.
-        Engage in workshops, network with industry professionals, and develop
-        hands-on projects. Gain exposure to cutting-edge technologies, enhance
-        problem-solving skills, and compete for prizes. Elevate your resume,
-        build lasting connections, and join a vibrant community of innovators in
-        this national-level hackathon. 🚀
+        This hackathon is conducted in both modes, online and offline.
       </>
     ),
   },
   {
-    question: <> What if I do not have a team?🤔 </>,
+    question: <>What are the restrictions on team formation for the event?</>,
     answer: (
       <>
-        We have a great community on Discord. Reach out to other
-        innovators, collaborate, communicate, and make things possible! 🤝
+        All team members must belong to the same university or college, and a team can have a maximum of 4 members.
       </>
     ),
   },
   {
-    question: <>Have more questions? 🤔</>,
-    answer: <>Feel free to write to us at gdsc@ddu.ac.in or create a ticket🎫 on <a className="text-blue-400 underline" href="https://discord.gg/T2fzD8c2j2" target="_blank">discord</a>
-    </>,
+    question: <>What are the perks and benefits of participating in the hackathon?</>,
+    answer: (
+      <>
+        Participants gain exposure to real-world problems, networking opportunities, and potential internships or job offers. Winners also receive cash prizes and certificates.
+      </>
+    ),
+  },
+  {
+    question: <>What are the accommodation facilities for participants from outside the college?</>,
+    answer: (
+      <>
+        Accommodation facilities are provided for participants coming from outside the host college. Details will be shared with the selected teams.
+      </>
+    ),
+  },
+  {
+    question: <>I have a question related to the hackathon which is not listed above. What should I do?</>,
+    answer: (
+      <>
+        Feel free to reach out to us. Just drop a mail to <a href="mailto:support@example.com">support@example.com</a>. You can also contact the organizer at <strong>TBD</strong>, <strong>+91-12345-67890</strong>.
+      </>
+    ),
   },
 ];
+
 
 export default function FAQ() {
   return (
@@ -175,7 +171,7 @@ export function Disclosures({ full = false }) {
           className={`mx-auto text-lg ${full ? "" : "max-w-2xl"}`}
         >
           {/* rome-ignore lint/a11y/useKeyWithClickEvents: <explanation> */}
-<div
+          <div
             className="flex w-full items-start justify-between py-6 text-left text-gray-400"
             onClick={() => handleToggle(i)}
           >
@@ -184,10 +180,9 @@ export function Disclosures({ full = false }) {
             </span>
             <span className="ml-6 flex h-7 items-center">
               {/* rome-ignore lint/a11y/noSvgWithoutTitle: <explanation> */}
-<svg
-                className={`arrow-down h-6 w-6 transform duration-300 ${
-                  openIndex === i ? "rotate-180" : "rotate-0"
-                }`}
+              <svg
+                className={`arrow-down h-6 w-6 transform duration-300 ${openIndex === i ? "rotate-180" : "rotate-0"
+                  }`}
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -205,9 +200,8 @@ export function Disclosures({ full = false }) {
           </div>
           {openIndex === i && (
             <div
-              className={`pr-12 duration-300 ease-in-out ${
-                openIndex === i ? "" : "hidden"
-              }`}
+              className={`pr-12 duration-300 ease-in-out ${openIndex === i ? "" : "hidden"
+                }`}
             >
               <p className="pb-6 text-base text-white dark:text-gray-400">
                 {item.answer}
