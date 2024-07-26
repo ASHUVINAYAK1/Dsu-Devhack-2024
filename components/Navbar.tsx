@@ -15,7 +15,7 @@ const Navbar = (activeSection: any) => {
   const [isOpen, setIsOpen] = useState(false);
   const [isOpenMenu, setIsOpenMenu] = useState(false);
 
-  const handelClick = (e : any) =>{
+  const handelClick = (e: any) => {
     e.preventDefault();
     router.push('/swag');
   }
@@ -66,62 +66,74 @@ const Navbar = (activeSection: any) => {
         />
       )}
       <div className="nav flex py-8 glassy-effect">
-        <div className="sm:pl-7 mr-auto">
-          <a href="#top">
-            <img
-              src="/assets/images/duhacks.png"
-              alt="DU Hacks"
-              width={50}
-              height={50}
-            />
-          </a>
+        <div className="sm:pl-7 mr-auto flex content-between">
+          <div className="flex items-center">
+            <a href="#top" className="flex">
+              <img
+                src="/assets/images/hb-logo.png"
+                alt="DU Hacks"
+                width={60}
+                height={60}
+                className=" ml-1"
+              />
+              <img
+                src="/assets/images/dsu.png"
+                alt="DU Hacks"
+                width={60}
+                height={60}
+                className=" ml-1"
+              />
+              <img
+                src="/assets/images/acm.png"
+                alt="DU Hacks"
+                width={60}
+                height={60}
+                className=" ml-1"
+              />
+            </a>
+          </div>
+
         </div>
         <div className="flex space-x-2">
-        <div className="bg-gray-100  font-medium text-black p-2 mr-2 rounded-lg m-1">
+          <div className="bg-gray-100  font-medium text-black p-2 mr-2 rounded-lg m-1">
             <a href="/swag" onClick={handelClick}>Digital Swag</a>
           </div>
-          
+
           <div className="hidden md:flex flex-wrap gap-5 text-white">
             <div
-              className={`nav-titles nav-titles-ltr ${
-                activeSection === "about" ? "before:w-full bg-red-500" : ""
-              }`}
+              className={`nav-titles nav-titles-ltr ${activeSection === "about" ? "before:w-full bg-red-500" : ""
+                }`}
             >
               <a href="#about">About</a>
             </div>
 
             <div
-              className={`nav-titles nav-titles-ltr ${
-                activeSection === "schedule" ? "before:w-full" : ""
-              } `}
+              className={`nav-titles nav-titles-ltr ${activeSection === "schedule" ? "before:w-full" : ""
+                } `}
             >
               <a href="#schedule">Schedule</a>
             </div>
             <div
-              className={`nav-titles nav-titles-ltr ${
-                activeSection === "sponsors" ? "before:w-full" : ""
-              } `}
+              className={`nav-titles nav-titles-ltr ${activeSection === "sponsors" ? "before:w-full" : ""
+                } `}
             >
               <a href="#sponsors">Sponsors</a>
             </div>
             <div
-              className={`nav-titles nav-titles-ltr ${
-                activeSection === "prizes" ? "before:w-full" : ""
-              } `}
+              className={`nav-titles nav-titles-ltr ${activeSection === "prizes" ? "before:w-full" : ""
+                } `}
             >
               <a href="#prizes">Prizes</a>
             </div>
             <div
-              className={`nav-titles nav-titles-ltr ${
-                activeSection === "team" ? "before:w-full" : ""
-              } `}
+              className={`nav-titles nav-titles-ltr ${activeSection === "team" ? "before:w-full" : ""
+                } `}
             >
               <a href="#team">Team</a>
             </div>
             <div
-              className={`nav-titles nav-titles-ltr ${
-                activeSection === "faq" ? "before:w-full" : ""
-              } `}
+              className={`nav-titles nav-titles-ltr ${activeSection === "faq" ? "before:w-full" : ""
+                } `}
             >
               <a href="#faq">FAQs</a>
             </div>
