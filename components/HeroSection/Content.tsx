@@ -60,13 +60,13 @@ const Content: React.FC = () => {
             variants={childVariants}
             className="md:text-4xl text-3xl text-white tracking-wider font-logo font-extrabold m-1 mb-2"
           >
-            DUHacks 3.0
+            DevHack
           </motion.div>
           <motion.div
             variants={childVariants}
             className="md:text-3xl text-2xl text-white font-content font-bold m-1 mb-2"
           >
-            24-25TH FEB
+            27-28TH SEP
           </motion.div>
           {/* <br /> */}
         </motion.div>
