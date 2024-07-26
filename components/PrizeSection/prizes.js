@@ -3,16 +3,18 @@ const cardContents = [
   // second winner prize
   {
     texts: [
-      "Cash prize of <span class='font-semibold  text-blue-500'>Rs.5000</span>",
-      "Wolfram award for a year of Wolfram|One Personal Edition plus a one-year subscription to Wolfram|Alpha Pro. The value of each award is $375.00.",
+      "Cash prize of <span class='font-semibold  text-blue-500'>Rs.40,000</span>",
+      "As the first runner-up, you will receive an impressive award of 40,000 INR. This prize is a testament to your innovation, skill, and hard work.",
       
 
     ],
     textsBack: [
-      "Pro Subscription plan from Jdoodle",
-      "EdTech Resource Bundle + EdTech Expansion Pack from Leading Learners worth $200",
-      "Axure RP Subscription",
+      "Industry Exposure",
+      "Career Opportunities",
+      "Networking",
+      "Mentorship",
       "Winners Certificate",
+      "Mementos"
     ],
     image:
       "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Activities/2nd%20Place%20Medal.png",
@@ -23,60 +25,100 @@ const cardContents = [
   // first winner prize
   {
     texts: [
-      "Cash prize of <span class='font-semibold  text-blue-500'>Rs.8000</span>",
-      "Wolfram award for a year of Wolfram|One Personal Edition plus a one-year subscription to Wolfram|Alpha Pro. The value of each award is $375.00.",
-      
+      "Cash prize of <span class='font-semibold  text-blue-500'>Rs.70,000</span>",
+      "Join Hackathon and compete for the grand first prize of 70,000 INR! This prestigious award will go to the team that demonstrates exceptional innovation, technical expertise, and creativity"      
 
     ],
     textsBack: [
-      "Pro Subscription plan from Jdoodle",
-      "EdTech Resource Bundle + EdTech Expansion Pack from Leading Learners worth $200",
-      "A team plan from Beeceptor worth $240",
-      "Axure RP Subscription",
+      "Industry Exposure",
+      "Career Opportunities",
+      "Networking",
+      "Mentorship",
       "Winners Certificate",
+      "Mementos"
     ],
     image:
       "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Activities/1st%20Place%20Medal.png",
     imgWidth: 160,
   },
 
-
+  
   // 3rd winner prize
   {
     texts: [
-      "Cash prize of <span class='font-semibold  text-blue-500'>Rs.3000</span>",
-      "Wolfram award for a year of Wolfram|One Personal Edition plus a one-year subscription to Wolfram|Alpha Pro. The value of each award is $375.00.",
-      
+      "Cash prize of <span class='font-semibold  text-blue-500'>Rs.20,000</span>",
+      "As the second runner-up, you will receive an impressive prize of 20,000 INR and a certificate at the national level. Showcase your talent and compete in Hackathon"      
 
     ],
     textsBack: [
-      "Pro Subscription plan from Jdoodle",
-      "EdTech Resource Bundle + EdTech Expansion Pack from Leading Learners worth $200",
-      "Axure RP Subscription",
+      "Industry Exposure",
+      "Career Opportunities",
+      "Networking",
+      "Mentorship",
       "Winners Certificate",
+      "Mementos"
     ],
     image:
       "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Activities/3rd%20Place%20Medal.png",
     imgWidth: 160,
   },
 
-  //all participants
+  //Best online participants
   {
     texts: [
-      "All participate will get DUHacks 3.0 certificates",
-      "To all participants will have Wolfram | One for 30 days",
+      "Cash prize of <span class='font-semibold  text-blue-500'>Rs.20,000</span>",
+      "We are thrilled to offer a special prize for the <span class='font-semibold' >Best online team</span> at DSU DevHack ",
     ],
     textsBack: [
-      "To All participants one - month free Verbwire Starter Subscription",
-      "Beeceptor 1-month subscription worth $25 credits.",
+      "Industry Exposure",
+      "Career Opportunities",
+      "Networking",
+      "Mentorship",
+      "Winners Certificate",
+      "Mementos"
     ],
-    image: "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Activities/Sparkles.png",
+    image: "/assets/images/project.png",
     imgWidth: 120,
     paddingTop: "pt-4",
     // link: "https://www.verbwire.com/",
   },
-
-
+ //all participants
+ {
+  texts: [
+    "All participate will get DSU devHacks certificates",
+    "To all participants will have Exposure ",
+  ],
+  textsBack: [
+     "Industry Exposure",
+      "Career Opportunities",
+      "Networking",
+      "Mentorship",
+      "Certificate",
+      "Mementos"
+  ],
+  image: "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Activities/Sparkles.png",
+  imgWidth: 100,
+  // link: "https://www.verbwire.com/",
+},
+  {
+    texts: [
+      "Cash prize of <span class='font-semibold  text-blue-500'>Rs.10,000</span>",
+      "We are offering four separate track rewards of each for exceptional projects in specific categories",
+    ],
+    textsBack: [
+      "Category of Tracks awards",
+      "1. Best freshers team",
+      "2. Most Innovative Solution",
+      "3. Best Social Impact Project",
+      "4. Best latest technology",
+    ],
+    image: "/assets/images/livev1.png",
+    imgWidth: 120,
+    paddingTop: "pt-4",
+    // link: "https://www.verbwire.com/",
+  },
+  
+ 
   // {
   //   texts: [
   //     "For winner Wolfram | <a class='underline' href='https://www.wolframalpha.com/pro-for-students/'>Alpha Pro</a> + Wolfram | <a class='underline' href='https://www.wolfram.com/wolfram-one/'>One</a> that's together worth it to 375$.",
