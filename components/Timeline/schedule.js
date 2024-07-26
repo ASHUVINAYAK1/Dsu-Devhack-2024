@@ -52,14 +52,14 @@ const items = [
   },
   {
     key: 7,
-    title: "28th Feb 12:OO PM",
+    title: "28th sep 12:OO PM",
     cardTitle: "Final Submission Starts",
     cardDetailedText: "Submit your project on DevHack devfolio dashboard",
   },
 
   {
     key: 8,
-    title: "28th Feb 3:00 PM",
+    title: "28th Sep 3:00 PM",
     cardTitle: "Final Submission Ends",
     cardDetailedText: "We'll review your project and will let you know.",
   },
