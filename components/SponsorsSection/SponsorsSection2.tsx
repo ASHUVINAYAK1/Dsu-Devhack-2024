@@ -31,102 +31,102 @@ export default function SponsorsSection2() {
     //emerald: [{ src: "/sponsors_logos/Devfolio_Logo-White.svg", alt: "LOGO" }],
     //diamond: [],
     event:[
-       {
-         src : "/sponsors_logos/apex_new.png",
-         alt: "Apex Education & Consultancy Logo",
-         link: "https://aeoc.in/",
-         class: "scale-[1] md:scale-[1]",
+      //  {
+      //    src : "/sponsors_logos/apex_new.png",
+      //    alt: "Apex Education & Consultancy Logo",
+      //    link: "https://aeoc.in/",
+      //    class: "scale-[1] md:scale-[1]",
     
-       }
+      //  }
     ],
-    gold: [
-      {
-        src: "/sponsors_logos/Devfolio_Logo-White.svg",
-        alt: "DEVFOLIO LOGO",
-        link: "https://devfolio.co",
-        class: "scale-[0.8] md:scale-[1.1]",
-      },
-      {
-        src: "/sponsors_logos/Polygon_Logo-White.svg",
-        alt: "POLYGON LOGO",
-        link: "https://polygon.technology/",
-        class: "scale-[0.8] md:scale-[1.1]",
-      },
-      {
-        src: "/sponsors_logos/replit-light.png",
-        alt: "REPLIT LOGO",
-        link: "https://replit.com/",
-        class: "scale-[0.75]",
-      },
-      {
-        src: "/sponsors_logos/wolfram-lg.png",
-        alt: "WOLFARM LOGO",
-        link: "https://www.wolframalpha.com/",
-        class: "scale-[0.90]",
-      },
-      {
-        src: "/sponsors_logos/xyz-logo-white.svg",
-        alt: "XYZ LOGO",
-        link: "https://nic.xyz/",
-        class: "scale-[0.5] md:scale-[0.6]",
-      },
-      {
-        src: "/sponsors_logos/JD_logo_white.png",
-        alt: "JDOODLE LOGO",
-        link: "https://www.jdoodle.com/code-online-compiler-ide?utm_source=DUHacks&utm_medium=Event&utm_campaign=Hackathon+Sponsorship",
-        class: "scale-[0.9] md:scale-[0.8]",
-      },
-      {
-        src: "/sponsors_logos/verbwire.svg",
-        alt: "VERBWIRE LOGO",
-        link: "https://www.verbwire.com/",
-        class: "scale-[0.9] md:scale-[0.8]",
-      },
-    ],
-    silver: [
-      {
-        src: "/sponsors_logos/beeceptor-white.svg",
-        alt: "BEECEPTOR LOGO",
-        link: "https://beeceptor.com/",
-        class: "scale-[0.8]",
-      },
-      {
-        src: "/sponsors_logos/Leading_Learner_2.png",
-        alt: "LEADING LEARNER LOGO",
-        link: "https://www.leading-learners.com/",
-      },
-    ],
-    bronze: [
-      {
-        src: "/sponsors_logos/Rosenfeld-white.webp",
-        alt: "ROSENFSRCD LOGO",
-        link: "https://rosenfeldmedia.com/duhacks",
-      },
-      {
-        src: "/sponsors_logos/echo3D.jpg",
-        alt: "ECHO3D LOGO",
-        link: "https://www.echo3d.com/",
-        class: "scale-[0.8] sm:scale-1",
-      },
-      {
-        src: "/sponsors_logos/axure.svg",
-        alt: "AXURE LOGO",
-        link: "https://www.axure.com/",
-        class: "scale-90 md:scale-125",
-      },
-      {
-        src: "/sponsors_logos/loft-white.png",
-        alt: "LOFT.SH LOGO",
-        link: "https://www.loft.sh/",
-        class: "w-1/3 scale-90 md:scale-125",
-      },
-      {
-        src: "/sponsors_logos/slido.svg",
-        alt: "SLIDO LOGO",
-        link: "https://www.slido.com/",
-        class: "w-1/3 scale-90 md:scale-125",
-      },
-    ],
+    // gold: [
+    //   {
+    //     src: "/sponsors_logos/Devfolio_Logo-White.svg",
+    //     alt: "DEVFOLIO LOGO",
+    //     link: "https://devfolio.co",
+    //     class: "scale-[0.8] md:scale-[1.1]",
+    //   },
+    //   {
+    //     src: "/sponsors_logos/Polygon_Logo-White.svg",
+    //     alt: "POLYGON LOGO",
+    //     link: "https://polygon.technology/",
+    //     class: "scale-[0.8] md:scale-[1.1]",
+    //   },
+    //   {
+    //     src: "/sponsors_logos/replit-light.png",
+    //     alt: "REPLIT LOGO",
+    //     link: "https://replit.com/",
+    //     class: "scale-[0.75]",
+    //   },
+    //   {
+    //     src: "/sponsors_logos/wolfram-lg.png",
+    //     alt: "WOLFARM LOGO",
+    //     link: "https://www.wolframalpha.com/",
+    //     class: "scale-[0.90]",
+    //   },
+    //   {
+    //     src: "/sponsors_logos/xyz-logo-white.svg",
+    //     alt: "XYZ LOGO",
+    //     link: "https://nic.xyz/",
+    //     class: "scale-[0.5] md:scale-[0.6]",
+    //   },
+    //   {
+    //     src: "/sponsors_logos/JD_logo_white.png",
+    //     alt: "JDOODLE LOGO",
+    //     link: "https://www.jdoodle.com/code-online-compiler-ide?utm_source=DUHacks&utm_medium=Event&utm_campaign=Hackathon+Sponsorship",
+    //     class: "scale-[0.9] md:scale-[0.8]",
+    //   },
+    //   {
+    //     src: "/sponsors_logos/verbwire.svg",
+    //     alt: "VERBWIRE LOGO",
+    //     link: "https://www.verbwire.com/",
+    //     class: "scale-[0.9] md:scale-[0.8]",
+    //   },
+    // ],
+    // silver: [
+    //   {
+    //     src: "/sponsors_logos/beeceptor-white.svg",
+    //     alt: "BEECEPTOR LOGO",
+    //     link: "https://beeceptor.com/",
+    //     class: "scale-[0.8]",
+    //   },
+    //   {
+    //     src: "/sponsors_logos/Leading_Learner_2.png",
+    //     alt: "LEADING LEARNER LOGO",
+    //     link: "https://www.leading-learners.com/",
+    //   },
+    // ],
+    // bronze: [
+    //   {
+    //     src: "/sponsors_logos/Rosenfeld-white.webp",
+    //     alt: "ROSENFSRCD LOGO",
+    //     link: "https://rosenfeldmedia.com/duhacks",
+    //   },
+    //   {
+    //     src: "/sponsors_logos/echo3D.jpg",
+    //     alt: "ECHO3D LOGO",
+    //     link: "https://www.echo3d.com/",
+    //     class: "scale-[0.8] sm:scale-1",
+    //   },
+    //   {
+    //     src: "/sponsors_logos/axure.svg",
+    //     alt: "AXURE LOGO",
+    //     link: "https://www.axure.com/",
+    //     class: "scale-90 md:scale-125",
+    //   },
+    //   {
+    //     src: "/sponsors_logos/loft-white.png",
+    //     alt: "LOFT.SH LOGO",
+    //     link: "https://www.loft.sh/",
+    //     class: "w-1/3 scale-90 md:scale-125",
+    //   },
+    //   {
+    //     src: "/sponsors_logos/slido.svg",
+    //     alt: "SLIDO LOGO",
+    //     link: "https://www.slido.com/",
+    //     class: "w-1/3 scale-90 md:scale-125",
+    //   },
+    // ],
   };
 
   const categorySizes: { [key: string]: CategorySize } = {
