@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useEffect } from "react";
-import teamData from "./team";
 import judgeData from "./judge";
 import "../../styles/team.css";
 import "../../styles/team/background.css";
@@ -15,7 +14,7 @@ function TeamSection() {
   const [showTeam, setShowTeam] = useState("Judge");
   const [animate, setAnimate] = useState(false);
 
-  const handleClick = (team) => {
+  const handleClick = (team:string) => {
     setAnimate(true);
     setShowTeam(team);
   };
