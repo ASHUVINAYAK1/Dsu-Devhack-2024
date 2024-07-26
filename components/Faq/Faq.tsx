@@ -132,7 +132,7 @@ export default function FAQ() {
             </div>
 
             <p className="mt-2 font text-white dark:text-gray-300 ">
-              Join with DevHacks and experience the breeze of hackathon with us.
+              Join with DevHack and experience the breeze of hackathon with us.
             </p>
             <div className="faqContainer1 relative">
               {/* <div className="flex justify-center"> */}
