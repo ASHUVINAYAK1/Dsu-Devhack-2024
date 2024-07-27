@@ -157,32 +157,37 @@ export default function SponsorsSection2() {
         glareEnable
         tiltAngleYInitial={0}
         glareMaxOpacity={0.1}
-        className="fix-safari-tilt relative overflow-hidden mb-32 rounded-2xl glassy-effect mt-16 mx-16 "
+        className="fix-safari-tilt relative overflow-hidden mb-32 rounded-2xl glassy-effect sm:mt-10 mt-16 mx-16 tilt-why-sponsor"
       >
-        <div className="relative flex items-center justify-center md:h-64 h-48 flex-col gap-3 rounded-2xl">
-          <div className="flex w-full items-center justify-evenly">
+        <div className="relative flex items-center justify-center flex-col gap-3 rounded-2xl">
+          <div className="flex flex-col w-full items-center justify-evenly p-10 title-why-sponser-container">
             <motion.div
               variants={childVariants}
-              className="md:text-1xl text-[1rem] text-purple-500 font-content font-bold m-1 mb-2"
+              className="md:text-3xl text-3xl text-purple-500 font-content font-bold m-1 mb-2"
             >
               Why Sponsor Us?
             </motion.div>
             <motion.p
               variants={childVariants}
-              className="md:text-1xl text-[1rem] text-slate-50 font-content font-bold m-1 mb-2"
+              className="md:text-1xl text-[1rem] text-slate-50 font-content font-semibold m-1 mb-2"
             >
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
               quis aliquam deleniti sequi dicta id odit. Assumenda alias commodi
               fugit tenetur perspiciatis error, enim beatae doloremque rem! Ad,
-              nostrum fugit?
+              nostrum fugit? Lorem ipsum dolor sit amet consectetur, adipisicing
+              elit. Laboriosam nisi architecto dolor totam delectus sed
+              voluptatibus magni, saepe fugiat omnis obcaecati, facere
+              praesentium tempore perspiciatis perferendis? Beatae, quo? Amet,
+              fuga. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Culpa quis aliquam deleniti sequi dicta id odit. Assumenda alias
+              commodi fugit tenetur perspiciatis error, enim beatae doloremque
+              rem! Ad, nostrum fugit? Lorem ipsum dolor sit amet consectetur,
+              adipisicing elit. Laboriosam nisi architecto dolor totam delectus
+              sed voluptatibus magni, saepe fugiat omnis obcaecati, facere
+              praesentium tempore perspiciatis perferendis? Beatae, quo? Amet,
+              fuga.
             </motion.p>
           </div>
-
-          {/* <div>
-                <h4 className="md:text-xl  text-md text-center font-semibold text-white dark:text-white">
-                  {title}
-                </h4>
-              </div> */}
         </div>
       </Tilt>
 

@@ -16,6 +16,15 @@
     /* border: 1px solid rgba(6, 182, 212, 0.3); */ 
 }
 
+@media (max-width: 600px) {
+    .tilt-why-sponsor {
+      margin: 50px 20px;
+    }
+    .title-why-sponser-container{
+        padding: 15px 20px;
+    }
+  }
+  
 .hover-effect-gold:hover {
     background: rgba(202, 138, 4, 0.37);
     border-radius: 16px;

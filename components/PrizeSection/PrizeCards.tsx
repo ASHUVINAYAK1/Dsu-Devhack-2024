@@ -56,7 +56,7 @@ const Card = ({
               glareMaxOpacity={0.1}
               className="card card-front prize-card"
             >
-              <div className={`circle bg-opacity-10 ${paddingTop}`}>
+              <div className={`circle circle-${order} bg-opacity-10 ${paddingTop}`}>
                 {/* <a href={link} target="_blank"> */}
                   <Image
                     src={image}
@@ -69,7 +69,7 @@ const Card = ({
                   />
                 {/* </a> */}
               </div>
-              <div className="content flex-grow flex flex-col justify-center">
+              <div className="content flex-grow flex flex-col justify-evenly">
                 <div className=" h-[220px]px-2">
                   {texts.map((text: any, index: number) => (
                     <li
