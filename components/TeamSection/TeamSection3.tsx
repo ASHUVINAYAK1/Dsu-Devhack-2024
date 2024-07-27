@@ -95,13 +95,8 @@ function TeamSection3() {
           >
             {showTeam === "organizer" ? (
               <>
-                <div>
-                  <Card member={teamData.organizers[0]} />
-                </div>
-
                 <div className="flex flex-row flex-wrap gap-4 items-center justify-center">
                   {teamData.organizers.map((member, index) =>
-                    index === 0 ? null : (
                       <motion.div
                         key={member.key}
                         variants={variants}
@@ -109,7 +104,7 @@ function TeamSection3() {
                         <Card member={member} />
                       </motion.div>
                     )
-                  )}
+                  }
                 </div>
               </>
             ) : showTeam === "design" ? (
