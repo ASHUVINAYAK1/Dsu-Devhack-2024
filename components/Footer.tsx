@@ -59,10 +59,10 @@ const Footer = () => {
             <FaInstagram/>
           </a>
         </div>
-        <div className="flex justify-center ">
-        <div className="grid grid-cols-1 lg:grid-cols-4 gap-y-8 lg:gap-y-0 xl:gap-x-36 items-center justify-between text-xs xl:text-xl">
-          <div className="lg:grid grid-cols-3 text-center text-lg">
-            <a href="mailto:dsudevhack@dsu.edu.in">
+        <div className="lg:hidden flex justify-center mb-7 font-bold"/>
+      
+        <div className="flex justify-center text-sm space-x-4 mb-0">
+        <a href="mailto:dsudevhack@dsu.edu.in">
               Email
             </a>
             <a className="pl-4" href="https://discord.com/invite/Hz5UxnUNBV" target="_blank" rel="noreferrer">
@@ -74,9 +74,8 @@ const Footer = () => {
             <a className="pl-4" href="tel:8154852286">
               Phone
             </a>
-          </div>
         </div>
-      </div>
+      
 
       </div>
     </footer>
