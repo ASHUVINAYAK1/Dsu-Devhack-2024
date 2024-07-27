@@ -130,7 +130,7 @@ export default function FAQ() {
               {/* <div className="flex justify-center"> */}
 
               <img
-                src="/assets/images/faq_boy2.png"
+                src="/assets/images/faqboy.png"
                 alt="faq boy"
                 width={400}
                 height={400}

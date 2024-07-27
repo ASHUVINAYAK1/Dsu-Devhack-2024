@@ -3,7 +3,7 @@ const cardContents = [
   // second winner prize
   {
     texts: [
-      "Cash prize of <span class='font-semibold  text-blue-500'>Rs.40,000</span>",
+      "Cash prize of <span class='font-semibold  text-green-500'>Rs.40,000</span>",
       "As the first runner-up, you will receive an impressive award of 40,000 INR. This prize is a testament to your innovation, skill, and hard work.",
       
 
@@ -25,7 +25,7 @@ const cardContents = [
   // first winner prize
   {
     texts: [
-      "Cash prize of <span class='font-semibold  text-blue-500'>Rs.70,000</span>",
+      "Cash prize of <span class='font-semibold  text-green-500'>Rs.70,000</span>",
       "Join Hackathon and compete for the grand first prize of 70,000 INR! This prestigious award will go to the team that demonstrates exceptional innovation, technical expertise, and creativity"      
 
     ],
@@ -46,7 +46,7 @@ const cardContents = [
   // 3rd winner prize
   {
     texts: [
-      "Cash prize of <span class='font-semibold  text-blue-500'>Rs.20,000</span>",
+      "Cash prize of <span class='font-semibold  text-green-500'>Rs.20,000</span>",
       "As the second runner-up, you will receive an impressive prize of 20,000 INR and a certificate at the national level. Showcase your talent and compete in Hackathon"      
 
     ],
@@ -66,8 +66,8 @@ const cardContents = [
   //Best online participants
   {
     texts: [
-      "Cash prize of <span class='font-semibold  text-blue-500'>Rs.20,000</span>",
-      "We are thrilled to offer special prize for the <span class='font-semibold text-purple-500' >Best online team</span> at DSU DevHack ",
+      "Cash prize of <span class='font-semibold  text-green-500'>Rs.20,000</span>",
+      "We are thrilled to offer special prize for the <span class='font-semibold text-white-500' >Best online team</span> at DSU DevHack ",
     ],
     textsBack: [
       "Industry Exposure",
@@ -85,17 +85,17 @@ const cardContents = [
 
   {
     texts: [
-      "Cash prize of <span class='font-semibold  text-blue-500'>Rs.10,000</span>",
-      "We are offering four separate track rewards of each for exceptional projects in specific categories",
+      "Cash prize of <span class='font-semibold  text-green-500'>Rs.10,000</span>",
+      "We are offering track rewards of each for exceptional projects in specific categories",
     ],
     textsBack: [
-      "Category of Tracks awards",
+      "<span class='font-semibold  text-purple-500'>Tentative category</span>",
       "1. Best freshers team",
       "2. Most Innovative Solution",
       "3. Best Social Impact Project",
       "4. Best latest technology",
     ],
-    image: "/assets/images/project.png",
+    image: "/assets/images/track-rewad.png",
 
     imgWidth: 120,
     paddingTop: "pt-4",
