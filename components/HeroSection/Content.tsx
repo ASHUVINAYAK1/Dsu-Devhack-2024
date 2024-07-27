@@ -62,14 +62,12 @@ const Content: React.FC = () => {
             animate="visible"
             className="text-white w-[490px] font-poppins m-auto md:mt-4 mt-2 mb-5 md:text-[1.1rem] text-[1.1rem] sm:text-lg"
           >
-            Dayananda Sagar University
+            <span className="text-purple-500 w-[490px] font-poppins font-bold m-auto md:mt-4 mt-2 mb-5 md:text-[1.2rem] text-[1.2rem] sm:text-lg">Dayananda Sagar University</span>
             <br />
             Department of Computer Science & Eng
-            <span className="hidden md:inline font-poppins">
-              ineering
-            </span>
+            <span className="hidden md:inline font-poppins">ineering</span>
             <br />
-            Presents
+            @Harohalli, Bengaluru
           </motion.div>
 
           <motion.div
@@ -82,7 +80,7 @@ const Content: React.FC = () => {
             variants={childVariants}
             className="md:text-1xl text-[1rem] text-purple-500 font-content font-bold m-1 mb-2"
           >
-            27-28TH SEP 2024
+            27th - 28th Sept 2024
           </motion.div>
           {/* <br /> */}
         </motion.div>
@@ -91,14 +89,14 @@ const Content: React.FC = () => {
           animate="visible"
           className=" text-white max-w-[360px] font-poppins m-auto md:mt-1 md:text-[1.1rem]"
         >
-          Compete to Win Big: ₹2 Lakh Case Prize.<br /> 3 Lakh+ in Prizes Await!
+          Compete to Win Big: ₹2 Lakh Case Prize.
+          <br /> 3 Lack+ Pool Prize Awaits!
         </motion.p>
       </div>
       <motion.div className="text-md text-white">
         <CountdownTimer />
         <button
-          className={`m-1 ${" mt-6 rounded-xl bg-gradient-to-l from-purple-500 to-pink-500 text-white"
-            } w-full py-2 rounded-md font-semibold transition-colors duration-300`}
+          className={`m-1 ${" mt-6 rounded-xl bg-gradient-to-l from-purple-500 to-pink-500 text-white"} w-full py-2 rounded-md font-semibold transition-colors duration-300`}
         >
           Register Now!!
         </button>
