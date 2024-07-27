@@ -146,6 +146,32 @@ export default TeamSection;
 //     web: teamData.web_team,
 //   };
 
+//   const variants = {
+//     initial: {
+//       opacity: 0,
+//       scale: 0.8,
+//       rotate: 10,
+//     },
+//     animate: {
+//       opacity: 1,
+//       scale: 1,
+//       rotate: 0,
+//       transition: {
+//         duration: 0.6,
+//         ease: "easeInOut",
+//       },
+//     },
+//     exit: {
+//       opacity: 0,
+//       scale: 0.8,
+//       rotate: -10,
+//       transition: {
+//         duration: 0.4,
+//         ease: "easeInOut",
+//       },
+//     },
+//   };
+
 //   return (
 //     <>
 //       <div className="mt-36 sm:mt-40 w-screen">
@@ -192,28 +218,19 @@ export default TeamSection;
 //                 {button.label}
 //               </button>
 //             ))}
-//             <div className={`animation ${showTeam} bg-gradient-to-l  from-purple-500  to-pink-500`}/>
+//             <div className={`animation ${showTeam} bg-gradient-to-l  from-purple-500  to-pink-500`} />
 //           </div>
-
-//           {/* <div className="text-center">
-//             <button onClick={() => handleClick("coordinator")} className="m-2">
-//               coordinator
-//             </button>
-//           </div> */}
 //         </div>
 //         <AnimatePresence mode="wait">
 //           <motion.div
 //             key={showTeam}
 //             className="flex flex-wrap justify-center items-center pt-20 gap-10 sm:px-20 lg:px-96"
-//             initial={{
-//               opacity: 0,
-//               x: 300,
-//             }}
-//             animate={{ opacity: 1, x: 0 }}
-//             exit={{ opacity: 0, x: -300 }}
-//             transition={{ ease: "easeIn", duration: 0.4 }}
+//             initial="initial"
+//             animate="animate"
+//             exit="exit"
+//             variants={variants}
 //           >
-//              {showTeam === "organizer" ? (
+//             {showTeam === "organizer" ? (
 //               <>
 //                 <div>
 //                   <Card member={teamData.organizers[0]} />
@@ -221,12 +238,10 @@ export default TeamSection;
 
 //                 <div className="flex flex-row flex-wrap gap-4 items-center justify-center">
 //                   {teamData.organizers.map((member, index) =>
-//                     index == 0 ? null : (
+//                     index === 0 ? null : (
 //                       <motion.div
-//                         key={`${member.key}`}
-//                         initial={{ opacity: 0, y: 0 }}
-//                         animate={{ opacity: 1, y: 0 }}
-//                         exit={{ opacity: 0, y: 0 }}
+//                         key={member.key}
+//                         variants={variants}
 //                       >
 //                         <Card member={member} />
 //                       </motion.div>
@@ -238,10 +253,8 @@ export default TeamSection;
 //               <>
 //                 {teamData.design_team.map((member, index) => (
 //                   <motion.div
-//                     key={`${member.key}`}
-//                     initial={{ opacity: 0, y: 0 }}
-//                     animate={{ opacity: 1, y: 0 }}
-//                     exit={{ opacity: 0, y: 0 }}
+//                     key={member.key}
+//                     variants={variants}
 //                   >
 //                     <Card member={member} />
 //                   </motion.div>
@@ -251,10 +264,8 @@ export default TeamSection;
 //               <>
 //                 {teamData.management_team.map((member, index) => (
 //                   <motion.div
-//                     key={`${member.key}`}
-//                     initial={{ opacity: 0, y: 0 }}
-//                     animate={{ opacity: 1, y: 0 }}
-//                     exit={{ opacity: 0, y: 0 }}
+//                     key={member.key}
+//                     variants={variants}
 //                   >
 //                     <Card member={member} />
 //                   </motion.div>
@@ -264,10 +275,8 @@ export default TeamSection;
 //               <>
 //                 {teamData.outreach_team.map((member, index) => (
 //                   <motion.div
-//                     key={`${member.key}`}
-//                     initial={{ opacity: 0, y: 0 }}
-//                     animate={{ opacity: 1, y: 0 }}
-//                     exit={{ opacity: 0, y: 0 }}
+//                     key={member.key}
+//                     variants={variants}
 //                   >
 //                     <Card member={member} />
 //                   </motion.div>
@@ -277,10 +286,8 @@ export default TeamSection;
 //               <>
 //                 {teamData.sponsorship_team.map((member, index) => (
 //                   <motion.div
-//                     key={`${member.key}`}
-//                     initial={{ opacity: 0, y: 0 }}
-//                     animate={{ opacity: 1, y: 0 }}
-//                     exit={{ opacity: 0, y: 0 }}
+//                     key={member.key}
+//                     variants={variants}
 //                   >
 //                     <Card member={member} />
 //                   </motion.div>
@@ -290,18 +297,15 @@ export default TeamSection;
 //               <>
 //                 {teamData.web_team.map((member, index) => (
 //                   <motion.div
-//                     key={`${member.key}`}
-//                     initial={{ opacity: 0, y: 0 }}
-//                     animate={{ opacity: 1, y: 0 }}
-//                     exit={{ opacity: 0, y: 0 }}
+//                     key={member.key}
+//                     variants={variants}
 //                   >
 //                     <Card member={member} />
 //                   </motion.div>
 //                 ))}
-//                 </>
+//               </>
 //             ) : null}
-
-//             </motion.div>
+//           </motion.div>
 //         </AnimatePresence>
 //       </div>
 //     </>

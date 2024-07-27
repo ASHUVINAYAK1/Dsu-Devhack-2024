@@ -1,5 +1,5 @@
 // "use client";
-import { RiGithubLine, RiTwitterXLine } from "react-icons/ri";
+import { RiGithubLine, RiLinkedinLine } from "react-icons/ri";
 import Tilt from "react-parallax-tilt";
 import Image from "next/image";
 function Card({ member }: any) {
@@ -35,18 +35,18 @@ function Card({ member }: any) {
             <span dangerouslySetInnerHTML={{ __html: member.id }} />
           </p>
           <div className="text-sm flex gap-2 mt-3">
-            {member.twitter && (
+            {member.linkedin && (
               <a
-                href={`https://twitter.com/${member.twitter}`}
+                href={member.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <RiTwitterXLine />
+                <RiLinkedinLine />
               </a>
             )}
             {member.github && (
               <a
-                href={`https://github.com/${member.github}`}
+                href={member.github}
                 target="_blank"
                 rel="noopener noreferrer"
               >

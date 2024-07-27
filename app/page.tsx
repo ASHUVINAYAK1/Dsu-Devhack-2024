@@ -12,6 +12,7 @@ import FlareCursor from "@/components/FlareCursor";
 import Themes from "@/components/ThemesSection/Themes";
 import PreLoader from "@/components/PreLoader";
 import TeamSection from "@/components/TeamSection/TeamSection";
+import TeamSection3 from "@/components/TeamSection/TeamSection3";
 import SponsorsSection from "@/components/SponsorsSection/SponsorsSection";
 import Timeline2 from "@/components/Timeline/Timeline2";
 import TweetFeed from "@/components/Tweets/TweetFeed";
@@ -136,6 +137,10 @@ export default function Home() {
       <div id="pannel">
         <br />
         <TeamSection />
+      </div>
+      <div id="pannel">
+        <br />
+        <TeamSection3 />
       </div>
 
       {/* <TweetFeed /> */}
