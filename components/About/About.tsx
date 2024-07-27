@@ -89,27 +89,18 @@ const About = () => {
           </div>
         </div>
         <div className="flex flex-col-reverse sm:flex-row w-full items-center justify-center gap-5 px-5 mt-5 container1 container2">
-          <div className="basis-1/2 border-2 rounded-2xl sm:h-96 w-full p-5 overflow-y-scroll lg:overflow-auto glassy-effect ">
-            <p className="text-slate-200 text-lg sm:text-xl sm:mt-3">
-              DSU DEVHACK 2024 is an exhilarating national-level hackathon designed to push the boundaries of innovation across various cutting-edge domains 🛠️
+          <div className="basis-1/2 border-2 rounded-2xl sm:h-96 w-full p-5 overflow-hidden glassy-effect ">
+            <p className="text-slate-200 text-lg sm:text-[1rem] sm:mt-3">
+              <span className="font-bold text-purple-500">DSU DEVHACK 2024</span> is a national-level hackathon pushing the boundaries of innovation in AI, ML, IoT, Blockchain, Cybersecurity, and Cloud Computing. 🛠️
               <br />
               <br />
-
-              This event aims to gather brilliant minds from all over the country to collaborate and create revolutionary solutions in areas including Artificial Intelligence (AI), Machine Learning (ML), Internet of Things (IoT), Blockchain, Cybersecurity, and Cloud Computing.  <br />
-              <br />
-
-              This event provides a platform for passionate developers, designers, and enthusiasts to come together and
-              transform their ideas into reality.
-              It's not just an opportunity to showcase technical skills; it's a chance to network, learn, and have a
-              memorable time with like-minded individuals.🤝
+              This event gathers brilliant minds nationwide to create revolutionary solutions. It provides a platform for developers, designers, and enthusiasts to transform ideas, showcase skills, and network. 🤝
               <br />
               <br />
               <p className="font-bold">
                 Your keyboard is your sword, your idea is your challenge, code is your vision, and DSU DevHacks is your stage! 🚨
               </p>
               <br />
-              <br />
-
               See you all in the hackathon!🔍💻
             </p>
           </div>

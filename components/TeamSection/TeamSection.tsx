@@ -11,7 +11,7 @@ import { useState } from "react";
 import Card from "./MemberTilt";
 
 function TeamSection() {
-  const [showTeam, setShowTeam] = useState("Judge");
+  const [showTeam, setShowTeam] = useState("Jury");
   const [animate, setAnimate] = useState(false);
 
   const handleClick = (team:string) => {
@@ -20,12 +20,12 @@ function TeamSection() {
   };
 
   const teamButtons = [
-    { team: "Judge", label: "Judge" },
+    { team: "Jury", label: "Jury" },
     { team: "Mentor", label: "Mentor" },
   ];
 
   const teamMapping = {
-    Judge: judgeData.Judge,
+    Jury: judgeData.Judge,
     Mentor: judgeData.Mentor,
   };
 
@@ -63,7 +63,7 @@ function TeamSection() {
             exit={{ opacity: 0, x: -300 }}
             transition={{ ease: "easeIn", duration: 0.4 }}
           >
-            {showTeam === "Judge" ? (
+            {showTeam === "Jury" ? (
               <>
                 <div>
                   <Card member={judgeData.Judge[0]} />
