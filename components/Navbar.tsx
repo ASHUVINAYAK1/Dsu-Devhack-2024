@@ -61,22 +61,22 @@ const Navbar = (activeSection: any) => {
           exit={{ opacity: 0, y: 2000 }}
           transition={{ duration: 0.5 }}
           className={
-            "nav flex py-8 glassy-effect border mt-24 rounded-t-2xl h-screen w-screen fixed md:hidden"
+            "nav flex py-12 glassy-effect border mt-24 rounded-t-2xl h-screen w-screen fixed md:hidden"
           }
         />
       )}
-      <div className="nav flex py-8 glassy-effect">
+      <div className="nav flex py-12 glassy-effect">
         <div className="sm:pl-7 mr-auto flex content-between">
           <div className="flex items-center">
             <a href="#top" className="flex">
               <img
                 src="/assets/images/hb-logo.png"
                 alt="DU Hacks"
-                width={60}
-                height={60}
+                width={80}
+                height={80}
                 className=" ml-1"
               />
-              <img
+              {/* <img
                 src="/assets/images/dsu.png"
                 alt="DU Hacks"
                 width={60}
@@ -89,7 +89,7 @@ const Navbar = (activeSection: any) => {
                 width={60}
                 height={60}
                 className=" ml-1"
-              />
+              /> */}
             </a>
           </div>
 
