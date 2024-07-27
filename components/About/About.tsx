@@ -135,13 +135,17 @@ const About = () => {
           </div>
         </div>
         <div className="flex flex-col-reverse sm:flex-row w-full items-center justify-center gap-5 px-5 mt-5 container1 container2">
-          <div className="basis-1/2 border-2 rounded-2xl sm:h-96 w-full p-5 overflow-hidden glassy-effect ">
+          <div className="basis-1/2 border-2 rounded-2xl sm:h-[26rem] w-full p-5 overflow-hidden glassy-effect flex items-center justify-center ">
             <p className="text-slate-200 text-lg sm:text-[1rem] sm:mt-3">
               <span className="font-extrabold text-[1.4rem] text-purple-500">
                 DSU DEVHACK 2024
               </span>{" "}
               is a national-level hackathon pushing the boundaries of innovation
-              in AI, ML, IoT, Blockchain, Cybersecurity, and Cloud Computing at <span className="font-extrabold text-[1.2rem] text-purple-500">Harohalli, Karnataka.</span> 🛠️
+              in AI, ML, IoT, Blockchain, Cybersecurity, and Cloud Computing at{" "}
+              <span className="font-extrabold text-[1.2rem] text-purple-500">
+                Harohalli, Karnataka.
+              </span>{" "}
+              🛠️
               <br />
               <br />
               This event gathers brilliant minds nationwide to create
@@ -157,7 +161,7 @@ const About = () => {
               See you all in the hackathon!🔍💻
             </p>
           </div>
-          <div className="basis-1/2 border-2 h-96 rounded-2xl w-full p-4 sm:h-96 glassy-effect">
+          <div className="basis-1/2 border-2 h-[26rem] rounded-2xl w-full p-4 sm:h-[26rem] glassy-effect flex items-center justify-center">
             <motion.div
               ref={ref}
               variants={{
