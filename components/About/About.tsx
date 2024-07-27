@@ -26,7 +26,7 @@ const About = () => {
             <h1 className="text-4xl my-2 font-semibold blue-logo">
               <CountUp
                 start={0}
-                end={8}
+                end={9}
                 duration={4}
                 className="font-bold blue-logo"
                 enableScrollSpy={true}
@@ -48,9 +48,9 @@ const About = () => {
             </h1>
             <p className="text-slate-200 ">Hours of Hacking</p>
           </div>
-          <div className="basis-1/3 border-2 rounded-2xl  w-full p-5 glassy-effect">
-            <h1 className="text-2xl my-2 font-semibold text-purple-500">
-              Participate
+          <div className="basis-1/3 border-2 rounded-2xl  w-full p-5  glassy-effect">
+            <h1 className="text-[1.6rem] my-2 font-semibold text-purple-500">
+              Online/Offline
               {/* <CountUp
                 start={0}
                 end={0}
@@ -60,7 +60,7 @@ const About = () => {
               /> */}
               
             </h1>
-            <p className="text-slate-200 "> Online / offline </p>
+            <p className="text-slate-200 ">Participate</p>
           </div>
           <div className="basis-1/3 border-2 rounded-2xl  w-full p-5 glassy-effect">
             <h1 className="text-4xl my-2 font-semibold orange-logo">
