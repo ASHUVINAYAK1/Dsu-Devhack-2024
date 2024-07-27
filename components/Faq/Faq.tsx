@@ -55,7 +55,7 @@ const duHacksFaq = [
     question: <>Is this online hackathon or offline are Same?</>,
     answer: (
       <>
-        No, This hackathon is conducted in both modes, online and offline.
+       No, online, it is separate and offline is also separate. Both will have diffrent winners and prizes.
       </>
     ),
   },

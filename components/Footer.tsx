@@ -71,7 +71,7 @@ const Footer = () => {
         <div className="flex justify-center text-sm space-x-4 mb-0">
           <a href="mailto:dsudevhack@dsu.edu.in">Email</a>
           <a className="pl-4" href="tel:8154852286">
-            Call
+          Mobile
           </a>
         </div>
       </div>
