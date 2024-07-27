@@ -7,7 +7,7 @@ import "../../styles/hero.css";
 
 export default function HeroSection() {
   return (
-    <div className="mb-10 md:mb-36 gradient-background w-screen sm:scale-150 sm:mt-52 -mt-10">
+    <div className="mb-10 md:mb-36 gradient-background w-screen sm:scale-150 sm:mt-48 -mt-10">
       <div className="justify-center space-x-20 items-center flex flex-col-reverse md:flex-row">
         <div className="">
           <Content />

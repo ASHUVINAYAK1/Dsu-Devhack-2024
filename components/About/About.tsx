@@ -91,7 +91,7 @@ const About = () => {
         <div className="flex flex-col-reverse sm:flex-row w-full items-center justify-center gap-5 px-5 mt-5 container1 container2">
           <div className="basis-1/2 border-2 rounded-2xl sm:h-96 w-full p-5 overflow-hidden glassy-effect ">
             <p className="text-slate-200 text-lg sm:text-[1rem] sm:mt-3">
-              <span className="font-bold text-purple-500">DSU DEVHACK 2024</span> is a national-level hackathon pushing the boundaries of innovation in AI, ML, IoT, Blockchain, Cybersecurity, and Cloud Computing. 🛠️
+              <span className="font-extrabold text-[1.4rem] text-purple-500">DSU DEVHACK 2024</span> is a national-level hackathon pushing the boundaries of innovation in AI, ML, IoT, Blockchain, Cybersecurity, and Cloud Computing. 🛠️
               <br />
               <br />
               This event gathers brilliant minds nationwide to create revolutionary solutions. It provides a platform for developers, designers, and enthusiasts to transform ideas, showcase skills, and network. 🤝
