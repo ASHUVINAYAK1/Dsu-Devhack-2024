@@ -29,7 +29,7 @@ const Footer = () => {
         <div className="lg:hidden flex justify-center mb-7 font-bold"/>
       
         <div className="flex justify-center text-sm lg:text-3xl space-x-4 mb-9">
-          <a href="https://discord.gg/T2fzD8c2j2">
+          <a href="https://discord.com/invite/Hz5UxnUNBV">
             <span className="sr-only">Discord</span>
            <FaDiscord/>
           </a>
@@ -41,14 +41,14 @@ const Footer = () => {
           </a>
           <div className=" border-r-2 transform rotate-12" />
 
-          <a href="https://www.linkedin.com/company/duhacks/">
+          <a href="https://www.linkedin.com/in/dsu-devhack/">
             <span className="sr-only ">LinkedIn</span>
             <FaLinkedinIn/>
 
           </a>
           <div className=" border-r-2 transform rotate-12" />
 
-          <a href="https://www.youtube.com/@duhacks9111">
+          <a href="https://www.youtube.com/@DSUDevHack">
             <span className="sr-only">YouTube</span>
             <FaYoutube/>
           </a>
@@ -65,7 +65,7 @@ const Footer = () => {
             <a  href="mailto:dsudevhack@dsu.edu.in">
                 Contact Us
             </a>
-             <a className="pl-4" href="https://discord.gg/T2fzD8c2j2" target="_blank" rel="noreferrer">Join Discord</a>
+             <a className="pl-4" href="https://discord.com/invite/Hz5UxnUNBV" target="_blank" rel="noreferrer">Join Discord</a>
             </div>
           </div>
         </div>
