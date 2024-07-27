@@ -143,7 +143,7 @@ const About = () => {
               is a national-level hackathon pushing the boundaries of innovation
               in AI, ML, IoT, Blockchain, Cybersecurity, and Cloud Computing at{" "}
               <span className="font-extrabold text-[1.2rem] text-purple-500">
-                Harohalli, Karnataka.
+                DSU Harohalli, Karnataka.
               </span>{" "}
               🛠️
               <br />
