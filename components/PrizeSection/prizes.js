@@ -2,7 +2,7 @@ const cardContents = [
 // first winner prize
 {
   texts: [
-    "Cash prize of <span class='font-semibold  text-green-500'>&#8377 70,000</span>", 
+    "Cash prize of <span class='font-semibold text-6xl text-green-500'><br />&#8377 70,000</span>", 
 
   ],
   textsBack: [
@@ -20,7 +20,7 @@ const cardContents = [
   // second winner prize
   {
     texts: [
-      "Cash prize of <span class='font-semibold  text-green-500'>&#8377 40,000</span>",
+      "Cash prize of <span class='font-semibold text-6xl text-green-500'><br />&#8377 40,000</span>",
       
 
     ],
@@ -41,7 +41,7 @@ const cardContents = [
   // 3rd winner prize
   {
     texts: [
-      "Cash prize of <span class='font-semibold  text-green-500'>&#8377 20,000</span>",  
+      "Cash prize of <span class='font-semibold text-6xl text-green-500'><br />&#8377 20,000</span>",  
 
     ],
     textsBack: [
@@ -60,7 +60,7 @@ const cardContents = [
   //Best online participants
   {
     texts: [
-      "Cash prize of <span class='font-semibold  text-green-500'>&#8377 20,000</span>",
+      "Cash prize of <span class='font-semibold text-6xl text-green-500'><br />&#8377 20,000</span>",
     ],
     textsBack: [
       "Industry Exposure",
@@ -78,7 +78,7 @@ const cardContents = [
 
   {
     texts: [
-      "Track prize of <span class='font-semibold text-2xl text-green-500'>&#8377 40,000</span>",
+      "Track prize of <span class='font-semibold text-6xl text-green-500'><br />&#8377 40,000</span>",
     ],
     textsBack: [
       "<span class='font-semibold  text-purple-500'>Tentative categories</span>",
