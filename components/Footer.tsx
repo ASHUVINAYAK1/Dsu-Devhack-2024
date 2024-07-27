@@ -29,7 +29,7 @@ const Footer = () => {
         <div className="lg:hidden flex justify-center mb-7 font-bold"/>
       
         <div className="flex justify-center text-sm lg:text-3xl space-x-4 mb-9">
-          <a href="https://discord.com/invite/Hz5UxnUNBV">
+          <a href="https://discord.com/invite/Hz5UxnUNBV" target="_black">
             <span className="sr-only">Discord</span>
            <FaDiscord/>
           </a>
@@ -41,14 +41,14 @@ const Footer = () => {
           </a> */}
           <div className=" border-r-2 transform rotate-12" />
 
-          <a href="https://www.linkedin.com/in/dsu-devhack/">
+          <a href="https://www.linkedin.com/in/dsu-devhack/" target="_black">
             <span className="sr-only ">LinkedIn</span>
             <FaLinkedinIn/>
 
           </a>
           <div className=" border-r-2 transform rotate-12" />
 
-          <a href="https://www.youtube.com/@DSUDevHack">
+          <a href="https://www.youtube.com/@DSUDevHack" target="_black">
             <span className="sr-only">YouTube</span>
             <FaYoutube/>
           </a>
