@@ -60,15 +60,24 @@ const Footer = () => {
           </a>
         </div>
         <div className="flex justify-center ">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-y-8 lg:gap-y-0 xl:gap-x-36 items-center justify-between text-xs xl:text-xl">
-            <div className="lg:grid grid-cols-3 text-center text-lg">
-            <a  href="mailto:dsudevhack@dsu.edu.in">
-                Contact Us
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-y-8 lg:gap-y-0 xl:gap-x-36 items-center justify-between text-xs xl:text-xl">
+          <div className="lg:grid grid-cols-3 text-center text-lg">
+            <a href="mailto:dsudevhack@dsu.edu.in">
+              Email
             </a>
-             <a className="pl-4" href="https://discord.com/invite/Hz5UxnUNBV" target="_blank" rel="noreferrer">Join Discord</a>
-            </div>
+            <a className="pl-4" href="https://discord.com/invite/Hz5UxnUNBV" target="_blank" rel="noreferrer">
+              Discord
+            </a>
+            <a className="pl-4" href="https://maps.app.goo.gl/UBETR1E3qbbqNDtY8" target="_blank" rel="noreferrer">
+              Venue
+            </a>
+            <a className="pl-4" href="tel:8154852286">
+              Phone
+            </a>
           </div>
         </div>
+      </div>
+
       </div>
     </footer>
   );
