@@ -182,7 +182,7 @@ const About = () => {
           </div>
         </div>
         <h1 className="text-center text-white text-3xl mt-40 sm:text-4xl md:text-4xl xl:text-5xl font-logo">
-          What is DSU DevHacks ?
+          Why Participate ?
         </h1>
         <div className="flex flex-col-reverse sm:flex-row w-full items-center justify-center gap-5 px-5 mt-24 container1 container2">
           <div className="basis-1/2 border-2 h-[26rem] rounded-2xl w-full p-4 sm:h-[26rem] glassy-effect flex items-center justify-center">
@@ -197,7 +197,7 @@ const About = () => {
               transition={{ type: "easeIn", duration: 1.2, delay: 0 }}
               className="my-5 h-52 w-full sm:h-80 rounded-2xl "
               style={{
-                backgroundImage: "url('/team_members/dsu_about.jpg')",
+                backgroundImage: "url('/team_members/dsu_about2.jpg')",
                 backgroundSize: "cover",
                 backgroundPosition: "center",
                 backgroundRepeat: "no-repeat",
