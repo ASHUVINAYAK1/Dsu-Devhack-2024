@@ -31,7 +31,7 @@ const teamData = {
       name: "Utkarsh Priye jha",
       linkedin: "http://www.linkedin.com/in/utkarsh-priye-jha",
       github: "https://github.com/Code-X-utkarsh",
-      image: "/team_members/Utkarsh_Priye.jpg",
+      image: "/team_members/Utkarsh_jha.jpg",
     },
     {
       key: 5,
