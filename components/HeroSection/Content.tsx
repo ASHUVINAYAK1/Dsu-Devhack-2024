@@ -60,7 +60,7 @@ const Content: React.FC = () => {
           <motion.div
             variants={childVariants}
             animate="visible"
-            className="text-white w-[490px] font-poppins m-auto md:mt-4 mt-2 mb-5 md:text-xl text-[1.1rem] sm:text-lg"
+            className="text-white w-[490px] font-poppins m-auto md:mt-4 mt-2 mb-5 md:text-[1.1rem] text-[1.1rem] sm:text-lg"
           >
             Dayanand Sagar University
             <br />
@@ -80,7 +80,7 @@ const Content: React.FC = () => {
           </motion.div>
           <motion.div
             variants={childVariants}
-            className="md:text-1xl text-2xl text-purple-500 font-content font-bold m-1 mb-2"
+            className="md:text-1xl text-[1.2rem] text-purple-500 font-content font-bold m-1 mb-2"
           >
             27-28TH SEP
           </motion.div>
@@ -89,7 +89,7 @@ const Content: React.FC = () => {
         <motion.p
           variants={childVariants}
           animate="visible"
-          className=" text-white max-w-[360px] font-poppins m-auto md:mt-4 mt-2 md:text-xl"
+          className=" text-white max-w-[360px] font-poppins m-auto md:mt-1 md:text-[1.1rem]"
         >
           Compete to Win Big: ₹3 Lakh+ in Prizes Await!
         </motion.p>
@@ -97,7 +97,7 @@ const Content: React.FC = () => {
       <motion.div className="text-md text-white">
         <CountdownTimer />
         <button
-          className={`m-1 ${" mt-10 rounded-xl bg-gradient-to-l from-purple-500 to-pink-500 text-white"
+          className={`m-1 ${" mt-6 rounded-xl bg-gradient-to-l from-purple-500 to-pink-500 text-white"
             } w-full py-2 rounded-md font-semibold transition-colors duration-300`}
         >
           Register Now!!

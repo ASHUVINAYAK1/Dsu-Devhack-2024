@@ -23,7 +23,7 @@ const About = () => {
   return (
     <>
       <div className="w-screen flex-col sm:px-14 md:px-40 lg:px-40 mt-16 xl:px-80 ">
-        <div>
+        <div className="px-2">
           <Tilt
             tiltMaxAngleX={2.5}
             tiltMaxAngleY={5}
@@ -32,28 +32,28 @@ const About = () => {
             glareMaxOpacity={0.1}
             className="fix-safari-tilt relative overflow-hidden mb-32 rounded-2xl glassy-effect p-px "
           >
-            <div className="relative flex md:h-64 h-48 flex-col gap-3 rounded-2xl p-7 ">
-              <div className="flex items-center justify-evenly">
+            <div className="relative flex items-center justify-center md:h-64 h-48 flex-col gap-3 rounded-2xl">
+              <div className="flex w-full items-center justify-evenly">
                 <Image
                   src={dsuImage}
                   width={100}
                   height={100}
                   alt="DSU DevHacks"
-                  className="md:w-[10rem] md:h-[10rem] w-[15rem] h-[rem] "
+                  className="md:w-[10rem] md:h-[10rem] w-[7rem] h-[rem] "
                 />
                 <Image
                   src={naacImage}
-                  width={150}
+                  width={180}
                   height={100}
                   alt="DSU DevHacks"
-                  className="md:w-[10rem] md:h-[10rem] w-[15rem] h-[rem] "
+                  className="md:w-[10rem] md:h-[10rem] w-[9rem] h-[rem] sm:w-[90px]"
                 />
                 <Image
                   src={acmImage}
                   width={100}
                   height={100}
                   alt="DSU DevHacks"
-                  className="md:w-[10rem] md:h-[10rem] w-[15rem] h-[rem] "
+                  className="md:w-[10rem] md:h-[10rem] w-[7rem] h-[rem] "
                 />
               </div>
 
