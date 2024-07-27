@@ -31,7 +31,7 @@ const teamData = {
       name: "Utkarsh Priye jha",
       linkedin: "http://www.linkedin.com/in/utkarsh-priye-jha",
       github: "https://github.com/Code-X-utkarsh",
-      image: "/team_members/Utkarsh_jha.jpg",
+      image: "/team_members/Utkarsh.jpg",
     },
     {
       key: 5,
@@ -46,18 +46,18 @@ const teamData = {
     {
       key: 4,
       id: "Web Lead",
-      name: "Amar Kumar",
-      linkedin: "https://www.linkedin.com/in/dev-amar-kumar/",
-      github: "https://github.com/amaranand360",
-      image: "/team_members/Amar.jpg",
-    },
-    {
-      key: 5,
-      id: "Web",
       name: "Ganesh Shinde",
       linkedin: "https://www.linkedin.com/in/dev-ganesh-shinde/",
       github: "https://github.com/Ganeshshinde-2003",
       image: "/team_members/ganesh.jpg",
+    },
+    {
+      key: 5,
+      id: "Web",
+      name: "Amar Kumar",
+      linkedin: "https://www.linkedin.com/in/dev-amar-kumar/",
+      github: "https://github.com/amaranand360",
+      image: "/team_members/amar_kumar.jpg",
     },
     {
       key: 6,
@@ -100,7 +100,7 @@ const teamData = {
       name: "Utkarsh Priye jha",
       linkedin: "http://www.linkedin.com/in/utkarsh-priye-jha",
       github: "https://github.com/Code-X-utkarsh",
-      image: "/team_members/Utkarsh_Priye.jpg",
+      image: "/team_members/Utkarsh.jpg",
     },
     {
       key: 11,
