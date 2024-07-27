@@ -82,7 +82,7 @@ const cardContents = [
 
   {
     texts: [
-      "Cash prize of <span class='font-semibold text-green-500'>Rs.10,000</span>",
+      "Track prize of <span class='font-semibold text-green-500'>Rs.40,000</span>",
       "We are offering track rewards of each for exceptional projects in specific categories",
     ],
     textsBack: [

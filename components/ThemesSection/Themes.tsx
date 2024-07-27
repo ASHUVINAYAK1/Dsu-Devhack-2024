@@ -20,7 +20,7 @@ const themes = [
       "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png",
   },
   {
-    title: "Web3",
+    title: "Web3 + Blockchain",
     image: "/assets/images/web.png",
   },
   {
