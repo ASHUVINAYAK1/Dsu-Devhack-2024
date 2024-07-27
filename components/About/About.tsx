@@ -22,7 +22,7 @@ const About = () => {
   }, [isInView, controls]);
   return (
     <>
-      <div className="w-screen flex-col sm:px-14 md:px-40 lg:px-40 mt-28 xl:px-80 ">
+      <div className="w-screen flex-col sm:px-14 md:px-40 lg:px-40 mt-16 xl:px-80 ">
         <div>
           <Tilt
             tiltMaxAngleX={2.5}
