@@ -80,9 +80,9 @@ const Content: React.FC = () => {
           </motion.div>
           <motion.div
             variants={childVariants}
-            className="md:text-1xl text-[1.2rem] text-purple-500 font-content font-bold m-1 mb-2"
+            className="md:text-1xl text-[1rem] text-purple-500 font-content font-bold m-1 mb-2"
           >
-            27-28TH SEP
+            27-28TH SEP 2024
           </motion.div>
           {/* <br /> */}
         </motion.div>
@@ -91,7 +91,7 @@ const Content: React.FC = () => {
           animate="visible"
           className=" text-white max-w-[360px] font-poppins m-auto md:mt-1 md:text-[1.1rem]"
         >
-          Compete to Win Big: ₹3 Lakh+ in Prizes Await!
+          Compete to Win Big: ₹2 Lakh Case Prize.<br /> 3 Lakh+ in Prizes Await!
         </motion.p>
       </div>
       <motion.div className="text-md text-white">
