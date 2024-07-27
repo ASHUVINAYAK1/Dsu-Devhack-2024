@@ -1,8 +1,17 @@
-.glassy-effect{
-    background: rgba(39, 39, 42, 0.43);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    border: 2px solid rgba(39, 39, 42, 0.5);
-    backdrop-filter: blur(9.1px);
-    -webkit-backdrop-filter: blur(9.1px);
+.glassy-effect {
+  background: rgba(39, 39, 42, 0.43);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 2px solid rgba(39, 39, 42, 0.5);
+  backdrop-filter: blur(9.1px);
+  -webkit-backdrop-filter: blur(9.1px);
 }
 
+@media (max-width: 500px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-container a {
+    padding: 0;
+  }
+}

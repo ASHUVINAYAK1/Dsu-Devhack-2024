@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { SocialIcon } from "react-social-icons";
+import "../styles/about/about.css"
 
 import {
   FaDiscord,
@@ -68,7 +69,7 @@ const Footer = () => {
         </div>
         <div className="lg:hidden flex justify-center mb-7 font-bold" />
 
-        <div className="flex justify-center text-sm space-x-4 mb-0">
+        <div className="flex justify-center footer-container text-sm space-x-4 mb-0">
           <a href="mailto:dsudevhack@dsu.edu.in">dsudevhack@dsu.edu.in</a>
           <a className="pl-4" href="tel:8154852286">
           Patel Muhammad: +91 81548 52286
