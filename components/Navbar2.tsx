@@ -58,9 +58,9 @@ const Navbar2 = (activeSection: any) => {
       )}
       <div className="nav flex py-8 glassy-effect">
         <div className="sm:pl-7 mr-auto">
-          <a href="https://duhacks.tech/#top">
+          <a href="https://dsudevhack.tech/#top">
             <img
-              src="/assets/images/duhacks.png"
+              src="/assets/images/hb-logo.png"
               alt="DU Hacks"
               width={50}
               height={50}

@@ -12,10 +12,11 @@ type Sponsor = {
 };
 
 type SponsorsGroup = {
-  event?: Sponsor[];
+  title?: Sponsor[];
+  diamond?: Sponsor[];
+  platinum?: Sponsor[];
   gold?: Sponsor[];
   silver?: Sponsor[];
-  bronze?: Sponsor[];
 };
 
 type CategorySize = {
@@ -28,18 +29,10 @@ export default function SponsorsSection2() {
     window.open(link, "_blank");
   };
   const sponsors: SponsorsGroup = {
-    //emerald: [{ src: "/sponsors_logos/Devfolio_Logo-White.svg", alt: "LOGO" }],
-    //diamond: [],
-    event:[
-      //  {
-      //    src : "/sponsors_logos/apex_new.png",
-      //    alt: "Apex Education & Consultancy Logo",
-      //    link: "https://aeoc.in/",
-      //    class: "scale-[1] md:scale-[1]",
-    
-      //  }
-    ],
-    // gold: [
+    title: [],
+    diamond: [],
+    platinum: [],
+     gold: [
     //   {
     //     src: "/sponsors_logos/Devfolio_Logo-White.svg",
     //     alt: "DEVFOLIO LOGO",
@@ -73,7 +66,7 @@ export default function SponsorsSection2() {
     //   {
     //     src: "/sponsors_logos/JD_logo_white.png",
     //     alt: "JDOODLE LOGO",
-    //     link: "https://www.jdoodle.com/code-online-compiler-ide?utm_source=DUHacks&utm_medium=Event&utm_campaign=Hackathon+Sponsorship",
+    //     link: "https://www.jdoodle.com/code-online-compiler-ide?utm_source=DUHacks&utm_medium=title&utm_campaign=Hackathon+Sponsorship",
     //     class: "scale-[0.9] md:scale-[0.8]",
     //   },
     //   {
@@ -82,8 +75,8 @@ export default function SponsorsSection2() {
     //     link: "https://www.verbwire.com/",
     //     class: "scale-[0.9] md:scale-[0.8]",
     //   },
-    // ],
-    // silver: [
+     ],
+      silver: [
     //   {
     //     src: "/sponsors_logos/beeceptor-white.svg",
     //     alt: "BEECEPTOR LOGO",
@@ -95,8 +88,8 @@ export default function SponsorsSection2() {
     //     alt: "LEADING LEARNER LOGO",
     //     link: "https://www.leading-learners.com/",
     //   },
-    // ],
-    // bronze: [
+    ],
+    // title: [
     //   {
     //     src: "/sponsors_logos/Rosenfeld-white.webp",
     //     alt: "ROSENFSRCD LOGO",
@@ -130,18 +123,15 @@ export default function SponsorsSection2() {
   };
 
   const categorySizes: { [key: string]: CategorySize } = {
-    event: { imgSize: "h-[100px] w-[340px]  md:px-8 px-4 py-1 md:h-[200px] md:w-[800px] " },
+    title: { imgSize: "h-[100px] w-[340px]  md:px-8 px-4 py-1 md:h-[200px] md:w-[800px] " },
 
-    emerald: { imgSize: "w-48 h-16 sm:h-full sm:w-full" },
+    platinum: { imgSize: "w-48 h-16 sm:h-full sm:w-full" },
     diamond: { imgSize: "w-48 h-16 sm:h-full sm:w-full" },
     gold: {
       imgSize: "h-[120px] w-[250px] px-2 py-1 md:h-[160px] md:w-[500px]",
     },
     silver: {
       imgSize: "h-[80px] w-[250px] px-2 py-1 md:h-[140px] md:w-[420px]",
-    },
-    bronze: {
-      imgSize: "h-[60px] w-[200px] px-2 py-1 md:h-[120px] md:w-[300px]",
     },
   };
 
@@ -156,7 +146,7 @@ export default function SponsorsSection2() {
           <h2
             className={`text-center m-auto md:my-20 my-10 text-white text-lg md:text-xl xl:text-2xl md:w-1/6 w-1/2 font-semibold px-1 py-2 title-${category.toLowerCase()} rounded-md`}
           >
-            {category.charAt(0).toUpperCase() + category.slice(1)} {category === "event" ? "Sponsor" : "Sponsors"}
+            {category.charAt(0).toUpperCase() + category.slice(1)} {category === "title" ? "Sponsor" : "Sponsors"}
           </h2>
           <div className="flex flex-wrap justify-center md:px-20">
             {sponsorList.map((sponsor, index) => (
