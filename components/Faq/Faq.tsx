@@ -164,7 +164,8 @@ export function Disclosures({ full = false }) {
         >
           {/* rome-ignore lint/a11y/useKeyWithClickEvents: <explanation> */}
           <div
-            className="flex w-full items-start justify-between py-6 text-left text-gray-400"
+            className={`flex w-full items-start rounded-t-lg justify-between py-6 text-left px-2 mt-2 text-gray-400 glassy-effect${openIndex === i ? "" : "hidden"
+          }`}
             onClick={() => handleToggle(i)}
           >
             <span className="font-medium text-white dark:text-white">
@@ -192,7 +193,7 @@ export function Disclosures({ full = false }) {
           </div>
           {openIndex === i && (
             <div
-              className={`pr-12 duration-300 ease-in-out ${openIndex === i ? "" : "hidden"
+              className={`pr-12 duration-300 ease-in-out rounded-b-lg mb-4 px-2 glassy-effect${openIndex === i ? "" : "hidden"
                 }`}
             >
               <p className="pb-6 text-base text-white dark:text-gray-400">
