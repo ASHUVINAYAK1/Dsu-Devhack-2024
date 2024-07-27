@@ -7,8 +7,7 @@ import Tilt from "react-parallax-tilt";
 const themes = [
   {
     title: "Sustainability",
-    image:
-      "/assets/images/sustain.png",
+    image: "/assets/images/sustain2.png",
   },
   {
     title: "Healthcare",
@@ -22,28 +21,23 @@ const themes = [
   },
   {
     title: "Web3",
-    image:
-      "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Globe%20with%20Meridians.png",
+    image: "/assets/images/web.png",
   },
   {
     title: "IOT",
-    image:
-      "/assets/images/iot.png",
+    image: "/assets/images/iot.png",
   },
   {
     title: "Smart cities",
-    image:
-    "/assets/images/scity.png",
+    image: "/assets/images/scity.png",
   },
   {
     title: "E-Commerse",
-    image:
-    "/assets/images/store.png",
+    image: "/assets/images/ecommerce.png",
   },
   {
     title: "Food & agriculture",
-    image:
-    "/assets/images/foods.png",
+    image: "/assets/images/harvest.png",
   },
   {
     title: "Open Innovation",
@@ -90,21 +84,29 @@ export default function Themes() {
       <div className="flex justify-center mt-28 ">
         <div className="grid grid-cols-2  md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 md:gap-x-8 md:gap-y-8 gap-3    themeContainer1">
           {[...themes].map(({ title, image }) => (
-            <div className="max-w-md mx-auto  md:w-64 md:h-full sm:w-44 w-40 h-full  overflow-hidden ">
-              <Card
+            <div className="max-w-md mx-auto  md:w-64 md:h-full sm:w-44 w-40 h-full overflow-hidden ">
+               <Card
+                key={title}
+                title={title}
+                icon={
+                  <img
+                    src={image}
+                    alt={title}
+                    className="md:w-[10rem] md:h-[10rem] w-[15rem] h-[rem] "
+                  />
+                }
+              />
+              {/* <Card
                 key={title}
                 title={title}
                 icon={
                   <Image
                     src={image}
                     alt={title}
-                    width={80}
-            height={80}
-            objectFit="cover"
                     className="md:w-[10rem] md:h-[10rem] w-[15rem] h-[rem] "
                   />
                 }
-              />
+              /> */}
             </div>
           ))}
         </div>
