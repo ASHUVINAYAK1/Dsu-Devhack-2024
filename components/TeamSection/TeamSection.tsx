@@ -66,7 +66,7 @@ function TeamSection() {
             {showTeam === "Jury" ? (
               <>
                 <div>
-                  <Card member={judgeData.Judge[0]} />
+                  {/* <Card member={judgeData.Judge[0]} /> */}
                 </div>
 
                 <div className="flex flex-row flex-wrap gap-4 items-center justify-center">
@@ -78,7 +78,7 @@ function TeamSection() {
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: 0 }}
                       >
-                        <Card member={member} />
+                        {/* <Card member={member} /> */}
                       </motion.div>
                     )
                   )}
@@ -93,7 +93,7 @@ function TeamSection() {
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: 0 }}
                   >
-                    <Card member={member} />
+                    {/* <Card member={member} /> */}
                   </motion.div>
                 ))}
               </>

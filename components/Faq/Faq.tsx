@@ -33,7 +33,7 @@ const duHacksFaq = [
     question: <>How many members can participate in a team?</>,
     answer: (
       <>
-        A team can have a minimum of 3 members and a maximum of 4 members.
+        A team can have a only of 3 members.
       </>
     ),
   },

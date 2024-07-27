@@ -49,17 +49,18 @@ const About = () => {
             <p className="text-slate-200 ">Hours of Hacking</p>
           </div>
           <div className="basis-1/3 border-2 rounded-2xl  w-full p-5 glassy-effect">
-            <h1 className="text-4xl my-2 font-semibold text-purple-500">
-              <CountUp
-                start={100}
-                end={200}
-                duration={4}
+            <h1 className="text-2xl my-2 font-semibold text-purple-500">
+              Participate
+              {/* <CountUp
+                start={0}
+                end={0}
+                duration={0}
                 enableScrollSpy={true}
                 className="font-bold text-purple-500"
-              />
-              +
+              /> */}
+              
             </h1>
-            <p className="text-slate-200 ">Hybrid mode</p>
+            <p className="text-slate-200 "> Online / offline </p>
           </div>
           <div className="basis-1/3 border-2 rounded-2xl  w-full p-5 glassy-effect">
             <h1 className="text-4xl my-2 font-semibold orange-logo">
@@ -76,10 +77,9 @@ const About = () => {
           </div>
           <div className="basis-1/3 border-2 rounded-2xl  w-full p-5 glassy-effect">
             <h1 className="text-4xl my-2 font-semibold  text-green-500">
-              3 -&nbsp;
               <CountUp
-                start={1}
-                end={4}
+                start={0}
+                end={3}
                 duration={4}
                 enableScrollSpy={true}
                 className="font-bold text-green-500"
@@ -100,7 +100,7 @@ const About = () => {
               <p className="font-bold">
                 Your keyboard is your sword, your idea is your challenge, code is your vision, and DSU DevHacks is your stage! 🚨
               </p>
-              <br />
+              
               See you all in the hackathon!🔍💻
             </p>
           </div>
