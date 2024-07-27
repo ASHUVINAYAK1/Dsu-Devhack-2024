@@ -6,6 +6,18 @@
   /* Adjust height as needed */
 }
 
+.dsu-heading {
+  font-size: 1.2rem;
+  max-width: 500px;
+}
+
+@media screen and (max-width: 500px) {
+  .dsu-heading {
+    font-size: 1rem;
+    max-width: 350px;
+  }
+}
+
 .heroContainer1::before {
   content: "";
   position: absolute;
@@ -23,7 +35,7 @@
   );
   filter: blur(180px);
   z-index: -1;
-  /* animation: leviation 1.5s ease-in-out infinite alternate; */ 
+  /* animation: leviation 1.5s ease-in-out infinite alternate; */
 }
 .heroContainer1::after {
   content: "";
@@ -42,7 +54,7 @@
   );
   filter: blur(220px);
   z-index: -1;
-  /* animation: leviation 1.5s ease-in-out infinite alternate; */ 
+  /* animation: leviation 1.5s ease-in-out infinite alternate; */
 }
 
 @keyframes leviation {
