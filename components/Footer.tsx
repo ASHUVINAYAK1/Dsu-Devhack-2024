@@ -29,35 +29,35 @@ const Footer = () => {
         <div className="lg:hidden flex justify-center mb-7 font-bold"/>
       
         <div className="flex justify-center text-sm lg:text-3xl space-x-4 mb-9">
-          <a href="https://discord.com/invite/Hz5UxnUNBV">
+          <a href="https://discord.com/invite/Hz5UxnUNBV" target="_black">
             <span className="sr-only">Discord</span>
            <FaDiscord/>
           </a>
-          <div className=" border-r-2 transform rotate-12 " />
-          <a href="https://twitter.com/DuHacks">
+          {/* <div className=" border-r-2 transform rotate-12 " /> */}
+          {/* <a href="https://twitter.com/DuHacks">
             <span className="sr-only">Twitter</span>
             <FaXTwitter/>
 
-          </a>
+          </a> */}
           <div className=" border-r-2 transform rotate-12" />
 
-          <a href="https://www.linkedin.com/in/dsu-devhack/">
+          <a href="https://www.linkedin.com/in/dsu-devhack/" target="_black">
             <span className="sr-only ">LinkedIn</span>
             <FaLinkedinIn/>
 
           </a>
           <div className=" border-r-2 transform rotate-12" />
 
-          <a href="https://www.youtube.com/@DSUDevHack">
+          <a href="https://www.youtube.com/@DSUDevHack" target="_black">
             <span className="sr-only">YouTube</span>
             <FaYoutube/>
           </a>
-          <div className=" border-r-2 transform rotate-12" />
+          {/* <div className=" border-r-2 transform rotate-12" /> */}
 
-          <a href="https://instagram.com/duhacks2024">
+          {/* <a href="https://instagram.com/duhacks2024">
             <span className="sr-only">Instagram</span>
             <FaInstagram/>
-          </a>
+          </a> */}
         </div>
         <div className="flex justify-center ">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-y-8 lg:gap-y-0 xl:gap-x-36 items-center justify-between text-xs xl:text-xl">
