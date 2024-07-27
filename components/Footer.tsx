@@ -33,7 +33,7 @@ const Footer = () => {
             <span className="sr-only">Discord</span>
            <FaDiscord/>
           </a>
-          <div className=" border-r-2 transform rotate-12 " />
+          {/* <div className=" border-r-2 transform rotate-12 " /> */}
           {/* <a href="https://twitter.com/DuHacks">
             <span className="sr-only">Twitter</span>
             <FaXTwitter/>
@@ -52,7 +52,7 @@ const Footer = () => {
             <span className="sr-only">YouTube</span>
             <FaYoutube/>
           </a>
-          <div className=" border-r-2 transform rotate-12" />
+          {/* <div className=" border-r-2 transform rotate-12" /> */}
 
           {/* <a href="https://instagram.com/duhacks2024">
             <span className="sr-only">Instagram</span>
