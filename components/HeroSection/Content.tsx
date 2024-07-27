@@ -66,7 +66,7 @@ const Content: React.FC = () => {
             <br />
             Department of Computer Science & Eng
             <span className="hidden md:inline font-poppins">
-            ineering
+              ineering
             </span>
             <br />
             Presents
@@ -96,6 +96,12 @@ const Content: React.FC = () => {
       </div>
       <motion.div className="text-md text-white">
         <CountdownTimer />
+        <button
+          className={`m-1 ${" mt-10 rounded-xl bg-gradient-to-l from-purple-500 to-pink-500 text-white"
+            } w-full py-2 rounded-md font-semibold transition-colors duration-300`}
+        >
+          Register Now!!
+        </button>
       </motion.div>
       <div className="">
         <div
