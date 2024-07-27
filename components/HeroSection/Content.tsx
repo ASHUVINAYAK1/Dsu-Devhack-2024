@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
 import CountdownTimer from "./CountdownTimer";
+import "../../styles/hero.css";
 
 const Content: React.FC = () => {
   useEffect(() => {
@@ -49,7 +50,7 @@ const Content: React.FC = () => {
   return (
     <motion.div
       ref={ref}
-      className="content md:mt-24 mt-4 max-w-[400px] m-auto text-center flex flex-col justify-center items-center space-y-4 md:p-4 p-5"
+      className="content max-w-[400px] m-auto text-center flex flex-col justify-center items-center space-y-4 md:p-4 p-5"
       initial="hidden"
       animate="visible"
       variants={h1Variants}
@@ -58,13 +59,28 @@ const Content: React.FC = () => {
         <motion.div className="" variants={childVariants} animate="visible">
           <motion.div
             variants={childVariants}
-            className="md:text-4xl text-3xl text-white tracking-wider font-logo font-extrabold m-1 mb-2"
+            animate="visible"
+            className="text-white w-[490px] font-poppins m-auto md:mt-4 mt-2 mb-5 md:text-xl text-[1.1rem] sm:text-lg"
+          >
+            Dayanand Sagar University
+            <br />
+            Department of Computer Science & Eng
+            <span className="hidden md:inline font-poppins">
+            ineering
+            </span>
+            <br />
+            Presents
+          </motion.div>
+
+          <motion.div
+            variants={childVariants}
+            className="md:text-3xl text-3xl text-white tracking-wider font-logo font-extrabold m-1 mb-2"
           >
             DevHack
           </motion.div>
           <motion.div
             variants={childVariants}
-            className="md:text-3xl text-2xl text-white font-content font-bold m-1 mb-2"
+            className="md:text-1xl text-2xl text-purple-500 font-content font-bold m-1 mb-2"
           >
             27-28TH SEP
           </motion.div>
