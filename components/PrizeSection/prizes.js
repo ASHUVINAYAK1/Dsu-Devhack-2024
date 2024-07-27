@@ -67,7 +67,7 @@ const cardContents = [
   {
     texts: [
       "Cash prize of <span class='font-semibold  text-blue-500'>Rs.20,000</span>",
-      "We are thrilled to offer a special prize for the <span class='font-semibold' >Best online team</span> at DSU DevHack ",
+      "We are thrilled to offer special prize for the <span class='font-semibold text-purple-500' >Best online team</span> at DSU DevHack ",
     ],
     textsBack: [
       "Industry Exposure",
@@ -77,8 +77,8 @@ const cardContents = [
       "Winners Certificate",
       "Mementos"
     ],
-    image: "/assets/images/livev1.png",
-    imgWidth: 120,
+    image: "/assets/images/best2.png",
+    imgWidth: 180,
     paddingTop: "pt-4",
     // link: "https://www.verbwire.com/",
   },
