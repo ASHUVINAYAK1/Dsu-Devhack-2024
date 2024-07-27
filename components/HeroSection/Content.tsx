@@ -75,7 +75,7 @@ const Content: React.FC = () => {
           animate="visible"
           className=" text-white max-w-[360px] font-poppins m-auto md:mt-4 mt-2 md:text-xl"
         >
-          Code.Create.Conquer.
+          Compete to Win Big: ₹3 Lakh+ in Prizes Await!
         </motion.p>
       </div>
       <motion.div className="text-md text-white">
