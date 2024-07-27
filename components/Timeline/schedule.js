@@ -11,7 +11,7 @@ const items = [
     title: "20th Sep 10:00 AM - 4:30 PM",
     cardTitle: "Workshop Day 1 Starts",
     cardDetailedText:
-      "Starting off with guidance sessions...",
+      "Starting off with guidance sessions.",
   },
   {
     key: 1,

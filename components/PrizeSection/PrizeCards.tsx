@@ -42,6 +42,7 @@ const Card = ({
   return (
     <div
       className={`median flex flex-col items-center justify-between ${order}`}
+      onClick={handleFlip}
     >
       <CardFlip isFlipped={isFlipped} flipDirection="horizontal">
         {/* Front of the card */}
@@ -56,7 +57,7 @@ const Card = ({
               className="card card-front prize-card"
             >
               <div className={`circle bg-opacity-10 ${paddingTop}`}>
-                <a href={link} target="_blank">
+                {/* <a href={link} target="_blank"> */}
                   <Image
                     src={image}
                     alt="Prize"
@@ -66,9 +67,9 @@ const Card = ({
                     className={`pt-${paddingTop}`}
                     // className={`w-28 md:w-[${imgWidth? imgWidth : "300"}px] pt-${paddingTop}`}
                   />
-                </a>
+                {/* </a> */}
               </div>
-              <div className="content  flex-grow flex flex-col justify-center">
+              <div className="content flex-grow flex flex-col justify-center">
                 <div className=" h-[220px]px-2">
                   {texts.map((text: any, index: number) => (
                     <li
@@ -81,7 +82,7 @@ const Card = ({
                 </div>
                 <button
                   onClick={handleFlip}
-                  className="mt-4 w-1/2 m-auto px-5 py-2 text-sm"
+                  className="my-4 w-1/2 m-auto px-5 py-2 text-sm"
                 >
                   More
                 </button>
@@ -99,7 +100,7 @@ const Card = ({
               glareEnable
               tiltAngleYInitial={0}
               glareMaxOpacity={0.1}
-              className="card  card-back prize-card"
+              className="card card-back prize-card"
             >
               <div className="flex-grow flex flex-col justify-center items-start h-full px-5 py-10 text-center mx-2">
                 {textsBack.map((text: any, index: number) => (

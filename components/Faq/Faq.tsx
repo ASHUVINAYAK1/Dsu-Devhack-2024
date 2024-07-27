@@ -49,7 +49,7 @@ const duHacksFaq = [
     question: <>What is the qualification to participate?</>,
     answer: (
       <>
-        Participants must be currently enrolled in an undergraduate, postgraduate, or PhD program.
+        Participants must be currently enrolled in an undergraduate.
       </>
     ),
   },
@@ -66,14 +66,6 @@ const duHacksFaq = [
     answer: (
       <>
         The participation in DSU Dev Hacks 2024 is completely free! There is no registration fee, allowing everyone to join without any financial constraints      </>
-    ),
-  },
-  {
-    question: <>Can all team members belong to different universities?</>,
-    answer: (
-      <>
-        No, all team members must belong to the same university or college.
-      </>
     ),
   },
   {
@@ -123,7 +115,7 @@ export default function FAQ() {
   return (
     <div className="mt-36 sm:mt-24" id="faq">
       <Container>
-        <div className="mt-32 flex flex-col gap-12 lg:flex-row p-10 ">
+        <div className="mt-32 flex flex-col gap-12 lg:flex-row p-2 ">
           <div className="text-center lg:w-5/12 lg:pl-12 lg:text-left  flex flex-col">
             <div className="md:my-16 my-8 text-white text-xl sm:text-2xl md:text-4xl">
               <h2 className="text-2xl font-bold text-white dark:text-white md:text-3xl lg:text-4xl font-logo">
@@ -138,10 +130,10 @@ export default function FAQ() {
               {/* <div className="flex justify-center"> */}
 
               <img
-                src="/assets/images/faq-q-removebg.png"
+                src="/assets/images/faq_boy2.png"
                 alt="faq boy"
-                width={250}
-                height={250}
+                width={400}
+                height={400}
                 className=" object-contain "
               />
               {/* </div> */}
@@ -164,7 +156,7 @@ export function Disclosures({ full = false }) {
   };
 
   return (
-    <div className="divide-y divide-zinc-200 border-y border-zinc-200 dark:divide-zinc-800 dark:border-zinc-800">
+    <div className="divide-y divide-zinc-200 border-y border-zinc-200 dark:divide-zinc-800 dark:border-zinc-800 cursor-pointer">
       {duHacksFaq.map((item, i) => (
         <div
           key={String(i)}
