@@ -47,12 +47,206 @@
 }
 
 .circle-order-1 {
-  background:linear-gradient(to right, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C) !important;
+  box-shadow: 2px 2px 0.5em rgba(122, 98, 0, 0.55),
+    inset 1px 1px 0 rgba(255, 255, 255, 0.9),
+    inset -1px -1px 0 rgba(0, 0, 0, 0.34) !important;
+  background: -moz-linear-gradient(
+    -72deg,
+    #ffde45,
+    #ffffff 16%,
+    #ffde45 21%,
+    #ffffff 24%,
+    #452100 27%,
+    #ffde45 36%,
+    #ffffff 45%,
+    #ffffff 60%,
+    #ffde45 72%,
+    #ffffff 80%,
+    #ffde45 84%,
+    #452100
+  ) !important;
+  background: -webkit-linear-gradient(
+    -72deg,
+    #ffde45,
+    #ffffff 16%,
+    #ffde45 21%,
+    #ffffff 24%,
+    #452100 27%,
+    #ffde45 36%,
+    #ffffff 45%,
+    #ffffff 60%,
+    #ffde45 72%,
+    #ffffff 80%,
+    #ffde45 84%,
+    #452100
+  ) !important;
+  background: -o-linear-gradient(
+    -72deg,
+    #ffde45,
+    #ffffff 16%,
+    #ffde45 21%,
+    #ffffff 24%,
+    #452100 27%,
+    #ffde45 36%,
+    #ffffff 45%,
+    #ffffff 60%,
+    #ffde45 72%,
+    #ffffff 80%,
+    #ffde45 84%,
+    #452100
+  ) !important;
+  background: linear-gradient(
+    -72deg,
+    #ffde45,
+    #ffffff 16%,
+    #ffde45 21%,
+    #ffffff 24%,
+    #452100 27%,
+    #ffde45 36%,
+    #ffffff 45%,
+    #ffffff 60%,
+    #ffde45 72%,
+    #ffffff 80%,
+    #ffde45 84%,
+    #452100
+  ) !important;
 }
 .circle-order-2 {
-  background: #C0C0C0 !important;
+  box-shadow: 2px 2px 0.5em rgba(122, 122, 122, 0.55),
+    inset 1px 1px 0 rgba(255, 255, 255, 0.9),
+    inset -1px -1px 0 rgba(0, 0, 0, 0.34) !important;
+  background: -moz-linear-gradient(
+    -72deg,
+    #dedede,
+    #ffffff 16%,
+    #dedede 21%,
+    #ffffff 24%,
+    #454545 27%,
+    #dedede 36%,
+    #ffffff 45%,
+    #ffffff 60%,
+    #dedede 72%,
+    #ffffff 80%,
+    #dedede 84%,
+    #a1a1a1
+  ) !important;
+  background: -webkit-linear-gradient(
+    -72deg,
+    #dedede,
+    #ffffff 16%,
+    #dedede 21%,
+    #ffffff 24%,
+    #454545 27%,
+    #dedede 36%,
+    #ffffff 45%,
+    #ffffff 60%,
+    #dedede 72%,
+    #ffffff 80%,
+    #dedede 84%,
+    #a1a1a1
+  ) !important;
+  background: -o-linear-gradient(
+    -72deg,
+    #dedede,
+    #ffffff 16%,
+    #dedede 21%,
+    #ffffff 24%,
+    #454545 27%,
+    #dedede 36%,
+    #ffffff 45%,
+    #ffffff 60%,
+    #dedede 72%,
+    #ffffff 80%,
+    #dedede 84%,
+    #a1a1a1
+  ) !important;
+  background: linear-gradient(
+    -72deg,
+    #dedede,
+    #ffffff 16%,
+    #dedede 21%,
+    #ffffff 24%,
+    #454545 27%,
+    #dedede 36%,
+    #ffffff 45%,
+    #ffffff 60%,
+    #dedede 72%,
+    #ffffff 80%,
+    #dedede 84%,
+    #a1a1a1
+  ) !important;
 }
-
+.circle-order-3{
+  box-shadow:
+    2px 2px 0.5em rgba(122, 55, 34, 0.55),
+    inset 1px 1px 0 rgba(255, 255, 255, 0.9),
+    inset -1px -1px 0 rgba(0, 0, 0, 0.5) !important
+  ;
+  background:
+  -moz-linear-gradient(
+    -72deg,
+    #ca7345,
+    #ffdeca 16%,
+    #ca7345 21%,
+    #ffdeca 24%,
+    #a14521 27%,
+    #ca7345 36%,
+    #ffdeca 45%,
+    #ffdeca 60%,
+    #ca7345 72%,
+    #ffdeca 80%,
+    #ca7345 84%,
+    #732100
+  ) !important;
+  background:
+  -webkit-linear-gradient(
+    -72deg,
+    #ca7345,
+    #ffdeca 16%,
+    #ca7345 21%,
+    #ffdeca 24%,
+    #a14521 27%,
+    #ca7345 36%,
+    #ffdeca 45%,
+    #ffdeca 60%,
+    #ca7345 72%,
+    #ffdeca 80%,
+    #ca7345 84%,
+    #732100
+  ) !important;
+  background:
+  -o-linear-gradient(
+    -72deg,
+    #ca7345,
+    #ffdeca 16%,
+    #ca7345 21%,
+    #ffdeca 24%,
+    #a14521 27%,
+    #ca7345 36%,
+    #ffdeca 45%,
+    #ffdeca 60%,
+    #ca7345 72%,
+    #ffdeca 80%,
+    #ca7345 84%,
+    #732100
+  ) !important;
+  background:
+  linear-gradient(
+    -72deg,
+    #ca7345,
+    #ffdeca 16%,
+    #ca7345 21%,
+    #ffdeca 24%,
+    #a14521 27%,
+    #ca7345 36%,
+    #ffdeca 45%,
+    #ffdeca 60%,
+    #ca7345 72%,
+    #ffdeca 80%,
+    #ca7345 84%,
+    #732100
+  ) !important;
+}
 
 @media screen and (max-width: 1024px) {
   .prizeContainer .median .card .circle {

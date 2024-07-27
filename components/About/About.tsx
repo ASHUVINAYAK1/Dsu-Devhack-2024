@@ -181,6 +181,56 @@ const About = () => {
             />
           </div>
         </div>
+        <h1 className="text-center text-white text-3xl mt-40 sm:text-4xl md:text-4xl xl:text-5xl font-logo">
+          What is DSU DevHacks ?
+        </h1>
+        <div className="flex flex-col-reverse sm:flex-row w-full items-center justify-center gap-5 px-5 mt-24 container1 container2">
+          <div className="basis-1/2 border-2 h-[26rem] rounded-2xl w-full p-4 sm:h-[26rem] glassy-effect flex items-center justify-center">
+            <motion.div
+              ref={ref}
+              variants={{
+                hidden: { opacity: 0, scale: 1 },
+                visible: { opacity: 1, scale: 1 },
+              }}
+              initial="hidden"
+              animate={controls}
+              transition={{ type: "easeIn", duration: 1.2, delay: 0 }}
+              className="my-5 h-52 w-full sm:h-80 rounded-2xl "
+              style={{
+                backgroundImage: "url('/team_members/dsu_about.jpg')",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                backgroundRepeat: "no-repeat",
+              }}
+            />
+          </div>
+          <div className="basis-1/2 border-2 rounded-2xl sm:h-[26rem] w-full p-5 overflow-hidden glassy-effect flex items-center justify-center ">
+            <p className="text-slate-200 text-lg sm:text-[1rem] sm:mt-3">
+              <span className="font-extrabold text-[1.4rem] text-purple-500">
+                DSU DEVHACK 2024
+              </span>{" "}
+              is a national-level hackathon pushing the boundaries of innovation
+              in AI, ML, IoT, Blockchain, Cybersecurity, and Cloud Computing at{" "}
+              <span className="font-extrabold text-[1.2rem] text-purple-500">
+                DSU Harohalli, Banglore, Karnataka.
+              </span>{" "}
+              🛠️
+              <br />
+              <br />
+              This event gathers brilliant minds nationwide to create
+              revolutionary solutions. It provides a platform for developers,
+              designers, and enthusiasts to transform ideas, showcase skills,
+              and network. 🤝
+              <br />
+              <br />
+              <p className="font-bold">
+                Your keyboard is your sword, your idea is your challenge, code
+                is your vision, and DSU DevHacks is your stage! 🚨
+              </p>
+              See you all in the hackathon!🔍💻
+            </p>
+          </div>
+        </div>
       </div>
     </>
   );
