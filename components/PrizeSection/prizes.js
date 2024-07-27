@@ -1,5 +1,23 @@
 const cardContents = [
+// first winner prize
+{
+  texts: [
+    "Cash prize of <span class='font-semibold  text-green-500'>Rs.70,000</span>",
+    "Join Hackathon and compete for the grand first prize of 70,000 INR! This prestigious award will go to the team that demonstrates exceptional innovation, technical expertise, and creativity"      
 
+  ],
+  textsBack: [
+    "Industry Exposure",
+    "Career Opportunities",
+    "Networking",
+    "Mentorship",
+    "Winners Certificate",
+    "Mementos"
+  ],
+  image:
+    "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Activities/1st%20Place%20Medal.png",
+  imgWidth: 160,
+},
   // second winner prize
   {
     texts: [
@@ -18,27 +36,6 @@ const cardContents = [
     ],
     image:
       "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Activities/2nd%20Place%20Medal.png",
-    imgWidth: 160,
-  },
-
-
-  // first winner prize
-  {
-    texts: [
-      "Cash prize of <span class='font-semibold  text-green-500'>Rs.70,000</span>",
-      "Join Hackathon and compete for the grand first prize of 70,000 INR! This prestigious award will go to the team that demonstrates exceptional innovation, technical expertise, and creativity"      
-
-    ],
-    textsBack: [
-      "Industry Exposure",
-      "Career Opportunities",
-      "Networking",
-      "Mentorship",
-      "Winners Certificate",
-      "Mementos"
-    ],
-    image:
-      "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Activities/1st%20Place%20Medal.png",
     imgWidth: 160,
   },
 
@@ -85,11 +82,11 @@ const cardContents = [
 
   {
     texts: [
-      "Cash prize of <span class='font-semibold  text-green-500'>Rs.10,000</span>",
+      "Cash prize of <span class='font-semibold text-green-500'>Rs.10,000</span>",
       "We are offering track rewards of each for exceptional projects in specific categories",
     ],
     textsBack: [
-      "<span class='font-semibold  text-purple-500'>Tentative category</span>",
+      "<span class='font-semibold  text-purple-500'>Tentative categories</span>",
       "1. Best freshers team",
       "2. Most Innovative Solution",
       "3. Best Social Impact Project",
@@ -104,8 +101,8 @@ const cardContents = [
   
   {
     texts: [
-      "All participate will get DSU devHacks certificates",
-      "To all participants will have Exposure ",
+      "All participants will get DSU devHacks certificates",
+      "To all participants will have Networking opportunity with Industry Experts",
     ],
     textsBack: [
        "Industry Exposure",
