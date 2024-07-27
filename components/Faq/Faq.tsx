@@ -14,14 +14,6 @@ const duHacksFaq = [
     ),
   },
   {
-    question: <>When was DSU Dev Hacks started?</>,
-    answer: (
-      <>
-        DSU Dev Hacks started in the year 2024.
-      </>
-    ),
-  },
-  {
     question: <>At which level is this hackathon conducted?</>,
     answer: (
       <>
@@ -38,19 +30,10 @@ const duHacksFaq = [
     ),
   },
   {
-    question: <>What are the eligibility criteria for participation?</>,
-    answer: (
-      <>
-        The eligibility criteria include being a student of a recognized educational institution in India.
-      </>
-    ),
-  },
-  {
     question: <>What is the qualification to participate?</>,
     answer: (
       <>
-        Participants must be currently enrolled in an undergraduate.
-      </>
+        Participants must be currently enrolled in an undergraduate Engineering program      </>
     ),
   },
   {
@@ -69,10 +52,10 @@ const duHacksFaq = [
     ),
   },
   {
-    question: <>Is this hackathon an online event or offline?</>,
+    question: <>Is this online hackathon or offline are Same?</>,
     answer: (
       <>
-        This hackathon is conducted in both modes, online and offline.
+       No, online, it is separate and offline is also separate. Both will have diffrent winners and prizes.
       </>
     ),
   },
@@ -80,7 +63,7 @@ const duHacksFaq = [
     question: <>What are the restrictions on team formation for the event?</>,
     answer: (
       <>
-        All team members must belong to the same university or college, and a team can have a maximum of 4 members.
+        All team members must belong to the same university or college, and a team can have exactly 3 members.
       </>
     ),
   },
@@ -93,18 +76,10 @@ const duHacksFaq = [
     ),
   },
   {
-    question: <>What are the accommodation facilities for participants from outside the college?</>,
-    answer: (
-      <>
-        Accommodation facilities are provided for participants coming from outside the host college. Details will be shared with the selected teams.
-      </>
-    ),
-  },
-  {
     question: <>I have a question related to the hackathon which is not listed above. What should I do?</>,
     answer: (
       <>
-        Feel free to reach out to us. Just drop a mail to <strong><a href="mailto:dsudevhack@dsu.edu.in">dsudevhack@dsu.edu.in</a></strong>. You can also contact the organizer at <strong>TBD</strong>, <strong>+91-12345-67890</strong>.
+        Feel free to reach out to us. Just drop a mail to <strong><a href="mailto:dsudevhack@dsu.edu.in">dsudevhack@dsu.edu.in</a></strong>. You can also contact the organizer at <strong>+91-8154852286</strong>.
       </>
     ),
   },
@@ -165,7 +140,7 @@ export function Disclosures({ full = false }) {
           {/* rome-ignore lint/a11y/useKeyWithClickEvents: <explanation> */}
           <div
             className={`flex w-full items-start rounded-t-lg justify-between py-6 text-left px-2 mt-2 text-gray-400 glassy-effect${openIndex === i ? "" : "hidden"
-          }`}
+              }`}
             onClick={() => handleToggle(i)}
           >
             <span className="font-medium text-white dark:text-white">

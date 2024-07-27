@@ -62,7 +62,7 @@ const Content: React.FC = () => {
             animate="visible"
             className="text-white w-[490px] font-poppins m-auto md:mt-4 mt-2 mb-5 md:text-[1.1rem] text-[1.1rem] sm:text-lg"
           >
-            Dayanand Sagar University
+            Dayananda Sagar University
             <br />
             Department of Computer Science & Eng
             <span className="hidden md:inline font-poppins">
