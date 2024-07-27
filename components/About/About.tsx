@@ -106,7 +106,7 @@ const About = () => {
                 className="font-bold text-purple-500"
               /> */}
             </h1>
-            <p className="text-slate-200 ">Participate</p>
+            <p className="text-slate-200 ">Hybrid Mode</p>
           </div>
           <div className="basis-1/3 border-2 rounded-2xl  w-full p-5 glassy-effect">
             <h1 className="text-4xl my-2 font-semibold orange-logo">
@@ -119,7 +119,7 @@ const About = () => {
                 className="font-bold orange-logo"
               />
             </h1>
-            <p className="text-slate-200 ">Free registrations</p>
+            <p className="text-slate-200 ">Free Registrations</p>
           </div>
           <div className="basis-1/3 border-2 rounded-2xl  w-full p-5 glassy-effect">
             <h1 className="text-4xl my-2 font-semibold  text-green-500">

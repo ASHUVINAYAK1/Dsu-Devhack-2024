@@ -2,8 +2,7 @@ const cardContents = [
 // first winner prize
 {
   texts: [
-    "Cash prize of <span class='font-semibold  text-green-500'>Rs.70,000</span>",
-    "Join Hackathon and compete for the grand first prize of 70,000 INR! This prestigious award will go to the team that demonstrates exceptional innovation, technical expertise, and creativity"      
+    "Cash prize of <span class='font-semibold  text-green-500'>&#8377 70,000</span>", 
 
   ],
   textsBack: [
@@ -21,8 +20,7 @@ const cardContents = [
   // second winner prize
   {
     texts: [
-      "Cash prize of <span class='font-semibold  text-green-500'>Rs.40,000</span>",
-      "As the first runner-up, you will receive an impressive award of 40,000 INR. This prize is a testament to your innovation, skill, and hard work.",
+      "Cash prize of <span class='font-semibold  text-green-500'>&#8377 40,000</span>",
       
 
     ],
@@ -43,8 +41,7 @@ const cardContents = [
   // 3rd winner prize
   {
     texts: [
-      "Cash prize of <span class='font-semibold  text-green-500'>Rs.20,000</span>",
-      "As the second runner-up, you will receive an impressive prize of 20,000 INR and a certificate at the national level. Showcase your talent and compete in Hackathon"      
+      "Cash prize of <span class='font-semibold  text-green-500'>&#8377 20,000</span>",  
 
     ],
     textsBack: [
@@ -63,8 +60,7 @@ const cardContents = [
   //Best online participants
   {
     texts: [
-      "Cash prize of <span class='font-semibold  text-green-500'>Rs.20,000</span>",
-      "We are thrilled to offer special prize for the <span class='font-semibold text-white-500' >Best online team</span> at DSU DevHack ",
+      "Cash prize of <span class='font-semibold  text-green-500'>&#8377 20,000</span>",
     ],
     textsBack: [
       "Industry Exposure",
@@ -82,8 +78,7 @@ const cardContents = [
 
   {
     texts: [
-      "Track prize of <span class='font-semibold text-green-500'>Rs.40,000</span>",
-      "We are offering track rewards of each for exceptional projects in specific categories",
+      "Track prize of <span class='font-semibold text-2xl text-green-500'>&#8377 40,000</span>",
     ],
     textsBack: [
       "<span class='font-semibold  text-purple-500'>Tentative categories</span>",
@@ -102,7 +97,6 @@ const cardContents = [
   {
     texts: [
       "All participants will get DSU devHacks certificates",
-      "To all participants will have Networking opportunity with Industry Experts",
     ],
     textsBack: [
        "Industry Exposure",

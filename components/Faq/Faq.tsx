@@ -48,14 +48,14 @@ const duHacksFaq = [
     question: <>What is the participation fee?</>,
     answer: (
       <>
-        The participation in DSU Dev Hacks 2024 is completely free! There is no registration fee, allowing everyone to join without any financial constraints      </>
+        The participation in DSU Dev Hacks 2024 is completely free!</>
     ),
   },
   {
-    question: <>Is this online hackathon or offline are Same?</>,
+    question: <>Is this online hackathon or offline hackathon?</>,
     answer: (
       <>
-       No, online, it is separate and offline is also separate. Both will have diffrent winners and prizes.
+       It is a hybrid hackathon and prefered offline.
       </>
     ),
   },
