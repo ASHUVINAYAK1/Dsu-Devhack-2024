@@ -11,7 +11,7 @@ import { useState } from "react";
 import Card from "./MemberTilt";
 
 function TeamSection3() {
-  const [showTeam, setShowTeam] = useState("organizer");
+  const [showTeam, setShowTeam] = useState("student");
   const [animate, setAnimate] = useState(false);
 
   const handleClick = (team: string) => {
@@ -20,6 +20,7 @@ function TeamSection3() {
   };
 
   const teamButtons = [
+    { team: "student", label: "StuCo" },
     { team: "organizer", label: "Core" },
     { team: "web", label: "Web" },
     { team: "sponsorship", label: "Sponsorship" },
@@ -30,6 +31,7 @@ function TeamSection3() {
   ];
 
   const teamMapping = {
+    student: teamData.organizers,
     organizer: teamData.organizers,
     design: teamData.design_team,
     promotion: teamData.promotion_team,
@@ -95,9 +97,9 @@ function TeamSection3() {
             exit="exit"
             variants={variants}
           >
-            {showTeam === "organizer" ? (
+            {showTeam === "student" ? (
               <>
-                {/* <div className="flex flex-row flex-wrap gap-4 items-center justify-center">
+                <div className="flex flex-row flex-wrap gap-4 items-center justify-center">
                   {teamData.organizers.map((member, index) =>
                       <motion.div
                         key={member.key}
@@ -107,7 +109,7 @@ function TeamSection3() {
                       </motion.div>
                     )
                   }
-                </div> */}
+                </div>
               </>
             ) : showTeam === "design" ? (
               <>
