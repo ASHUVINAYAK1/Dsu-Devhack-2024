@@ -75,7 +75,7 @@ const Footer = () => {
           Patel Muhammad: +91 81548 52286
           </a>
           <a className="pl-4" href="tel:9939635206">
-          Utkarsh Priye jha: +91 99396 35206
+          Utkarsh Priye: +91 99396 35206
           </a>
         </div>
       </div>

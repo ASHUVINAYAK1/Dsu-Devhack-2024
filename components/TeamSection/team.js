@@ -28,7 +28,7 @@ const teamData = {
     {
       key: 4,
       id: "Organizer",
-      name: "Utkarsh Priye jha",
+      name: "Utkarsh Priye",
       linkedin: "http://www.linkedin.com/in/utkarsh-priye-jha",
       github: "https://github.com/Code-X-utkarsh",
       image: "/team_members/Utkarsh.jpg",
@@ -97,7 +97,7 @@ const teamData = {
     {
       key: 10,
       id: "Sponsorship",
-      name: "Utkarsh Priye jha",
+      name: "Utkarsh Priye",
       linkedin: "http://www.linkedin.com/in/utkarsh-priye-jha",
       github: "https://github.com/Code-X-utkarsh",
       image: "/team_members/Utkarsh.jpg",
