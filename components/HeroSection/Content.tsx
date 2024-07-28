@@ -90,7 +90,7 @@ const Content: React.FC = () => {
           className=" text-white max-w-[360px] font-poppins m-auto md:mt-1 md:text-[1.1rem]"
         >
           Compete to Win Big: ₹2 Lakh Case Prize.
-          <br /> 3 Lack+ Pool Prize Awaits!
+          <br /> 3 Lakh+ Pool Prize Awaits!
         </motion.p>
       </div>
       <motion.div className="text-md text-white">
