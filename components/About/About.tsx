@@ -77,7 +77,7 @@ const About = () => {
             <h1 className="text-4xl my-2 font-semibold blue-logo">
               <CountUp
                 start={0}
-                end={9}
+                end={6}
                 duration={4}
                 className="font-bold blue-logo"
                 enableScrollSpy={true}
