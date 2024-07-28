@@ -24,20 +24,9 @@ const themes = [
     image: "/assets/images/web.png",
   },
   {
-    title: "IOT",
-    image: "/assets/images/iot.png",
-  },
-  {
-    title: "Smart cities",
-    image: "/assets/images/scity.png",
-  },
-  {
-    title: "E-Commerse",
-    image: "/assets/images/ecommerce.png",
-  },
-  {
-    title: "Food & agriculture",
-    image: "/assets/images/harvest.png",
+    title: "IOT & Smart Cities",
+    image:
+      "/assets/images/scity.png",
   },
   {
     title: "Open Innovation",

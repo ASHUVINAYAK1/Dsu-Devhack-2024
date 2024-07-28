@@ -67,7 +67,7 @@ const Content: React.FC = () => {
             Department of Computer Science & Eng
             <span className="hidden md:inline font-poppins">ineering</span>
             <br />
-            @Harohalli, Bengaluru
+            <span className="text-xs">Harohalli, Bengaluru</span>
           </motion.div>
 
           <motion.div

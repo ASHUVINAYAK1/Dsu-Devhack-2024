@@ -31,7 +31,7 @@ const items = [
   },
   {
     key: 4,
-    title: "27th Sep 10:00 AM",
+    title: "27th Sep 07:30 AM",
     cardTitle: "Hacking Period Starts: Day 1",
     cardDetailedText: "Join with over 150+ innovative minds and start building.",
   },
@@ -55,7 +55,7 @@ const items = [
   },
   {
     key: 8,
-    title: "28th Sep 4:00 PM",
+    title: "28th Sep 7:30 PM",
     cardTitle: "Closing Ceremony",
     cardDetailedText: "Join us for the closing ceremony of Hackathon as we announce the winners and celebrate the achievements of all participants.",
   },
