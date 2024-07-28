@@ -10,8 +10,12 @@ import Image from "next/image";
 import dsuImage from "../../public/assets/images/dsu.png";
 import acmImage from "../../public/assets/images/acm.png";
 import naacImage from "../../public/assets/images/naac.png";
+import { useMediaQuery } from 'react-responsive';
+
 
 const About = () => {
+  const isMobile = useMediaQuery({ maxWidth: 767 });
+
   const ref = React.useRef(null);
   const isInView = useInView(ref, { once: false });
   const controls = useAnimation();
@@ -204,21 +208,15 @@ const About = () => {
               }}
             />
           </div>
-          <div className="basis-1/2 border-2 rounded-2xl sm:h-[26rem] w-full p-5 overflow-hidden glassy-effect flex items-center justify-center ">
+          <div className="basis-1/2 border-2 rounded-2xl sm:h-[26rem] w-full p-5 overflow-hidden glassy-effect flex items-center justify-center">
             <p className="text-slate-200 text-lg sm:text-[1rem] sm:mt-3">
-              • <span className="font-bold text-purple-500">Showcase Your Skills:</span> Demonstrate your coding prowess and
-              innovative thinking on a national stage. <br />
-              • <span className="font-bold text-purple-500">Win Big:</span> Compete for a prize pool of ₹3 Lakh+, including a grand
-              prize of ₹70,000! <br />
-              • <span className="font-bold text-purple-500">Network with Professionals:</span> Connect with tech leaders and fellow
-              developers from across the country. <br />
-              • <span className="font-bold text-purple-500">Refreshing Breaks:</span> Fun activities like gaming, trivia contests and more! <br />
-              •<span className="font-bold text-purple-500"> Mini-Events and Activities:</span> Industry Expert Workshops: Sessions on AI, ML, IoT,
-              Blockchain, Cybersecurity, and Cloud Computing. <br />
-              •<span className="font-bold text-purple-500"> Tech Talks: </span>
-               Engaging presentations on the latest technology trends. <br /> •<span className="font-bold text-purple-500"> Hands-on
-              Coding Sessions: </span>Practical experience with cutting-edge
-              tools and frameworks
+              • <span className={`font-bold ${isMobile ? 'text-white' : 'text-purple-500'}`}>Mini-Events and Workshop</span> {isMobile ? '' : ': Industry Expert Workshops on 23rd - 24rth Sept 2024 Sessions on latest tech stack'} <br />
+              • <span className={`font-bold ${isMobile ? 'text-white' : 'text-purple-500'}`}>Showcase Your Skills</span> {isMobile ? '' : ': Demonstrate your coding prowess and innovative thinking on a national stage.'} <br />
+              • <span className={`font-bold ${isMobile ? 'text-white' : 'text-purple-500'}`}>Win Big</span> {isMobile ? '' : ': Compete for a prize pool of ₹3 Lakh+, including a grand prize of ₹70,000!'} <br />
+              • <span className={`font-bold ${isMobile ? 'text-white' : 'text-purple-500'}`}>Network with Professionals</span> {isMobile ? '' : ': Connect with tech leaders and fellow developers from across the country.'} <br />
+              • <span className={`font-bold ${isMobile ? 'text-white' : 'text-purple-500'}`}>Refreshing Breaks</span> {isMobile ? '' : ': Fun activities like gaming, trivia contests and more!'} <br />
+              • <span className={`font-bold ${isMobile ? 'text-white' : 'text-purple-500'}`}>Tech Talks</span> {isMobile ? '' : ': Engaging presentations on the latest technology trends.'} <br />
+            
             </p>
           </div>
         </div>
