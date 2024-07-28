@@ -41,7 +41,7 @@ const Card = ({
 
   return (
     <div
-      className={`median flex flex-col items-center justify-between ${order}`}
+      className={`median cursor-pointer flex flex-col items-center justify-between ${order}`}
       onClick={handleFlip}
     >
       <CardFlip isFlipped={isFlipped} flipDirection="horizontal">
@@ -74,7 +74,7 @@ const Card = ({
                   {texts.map((text: any, index: number) => (
                     <li
                       key={index}
-                      className="text-white text-[12px] md:text-lg mb-1 text-left mx-2"
+                      className="text-white text-center list-none text-[12px] md:text-lg mb-1 mx-2"
                     >
                       <span dangerouslySetInnerHTML={{ __html: text }} />
                     </li>
