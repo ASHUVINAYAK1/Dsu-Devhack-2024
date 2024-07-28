@@ -24,9 +24,9 @@ const themes = [
     image: "/assets/images/web.png",
   },
   {
-    title: "IOT & Smart Cities",
-    image:
-      "/assets/images/scity.png",
+    title: "IOT & Smart cities",
+    image: "/assets/images/iot.png",
+
   },
   {
     title: "Open Innovation",

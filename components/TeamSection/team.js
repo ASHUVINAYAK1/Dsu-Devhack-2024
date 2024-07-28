@@ -2,7 +2,7 @@ const teamData = {
   organizers: [
     {
       key: 1,
-      id: "Organizer",
+      id: "Student coordinator",
       name: "Patel Muhammad",
       linkedin: "https://www.linkedin.com/in/patel-muhammad/",
       github: "https://github.com/patel-muhammad/",
@@ -11,31 +11,15 @@ const teamData = {
     },
     {
       key: 2,
-      id: "Organizer",
-      name: "Amar kumar",
-      linkedin: "https://www.linkedin.com/in/dev-amar-kumar/",
-      github: "https://github.com/amaranand360",
-      image: "/team_members/amar_kumar.jpg",
-    },
-    {
-      key: 3,
-      id: "Organizer",
-      name: "Ganesh Shinde",
-      linkedin: "https://www.linkedin.com/in/dev-ganesh-shinde/",
-      github: "https://github.com/Ganeshshinde-2003",
-      image: "/team_members/ganesh.jpg",
-    },
-    {
-      key: 4,
-      id: "Organizer",
+      id: "Student coordinator",
       name: "Utkarsh Priye",
       linkedin: "http://www.linkedin.com/in/utkarsh-priye-jha",
       github: "https://github.com/Code-X-utkarsh",
       image: "/team_members/Utkarsh.jpg",
     },
     {
-      key: 5,
-      id: "Organizer",
+      key: 3,
+      id: "Student coordinator",
       name: "Ritvik Vasundh",
       linkedin: "https://www.linkedin.com/in/ritvikvasundh",
       github: "Avi-https://github.com/retvq",
