@@ -169,7 +169,7 @@ export default function SponsorsSection2() {
             </motion.div>
             <motion.p
               variants={childVariants}
-              className="md:text-1xl text-[0.9rem] text-slate-50 font-content font-semibold m-1 mb-2"
+              className="md:text-1xl text-[1rem] text-slate-50 font-content font-semibold m-1 mb-2"
             >
               •{" "}
               <span className="font-bold text-purple-500">

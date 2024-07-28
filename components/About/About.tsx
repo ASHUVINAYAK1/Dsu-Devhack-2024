@@ -136,7 +136,7 @@ const About = () => {
         </div>
         <div className="flex flex-col-reverse sm:flex-row w-full items-center justify-center gap-5 px-5 mt-5 container1 container2">
           <div className="basis-1/2 border-2 rounded-2xl sm:h-[26rem] w-full p-5 overflow-hidden glassy-effect flex items-center justify-center ">
-            <p className="text-slate-200 text-lg sm:text-[0.9rem] sm:mt-3">
+            <p className="text-slate-200 text-lg sm:text-[1rem] sm:mt-3">
               <span className="font-extrabold text-[1.2rem] text-purple-500">
                 DSU DEVHACK 2024
               </span>{" "}
@@ -205,7 +205,7 @@ const About = () => {
             />
           </div>
           <div className="basis-1/2 border-2 rounded-2xl sm:h-[26rem] w-full p-5 overflow-hidden glassy-effect flex items-center justify-center ">
-            <p className="text-slate-200 text-lg sm:text-[0.9rem] sm:mt-3">
+            <p className="text-slate-200 text-lg sm:text-[1rem] sm:mt-3">
               • <span className="font-bold text-purple-500">Showcase Your Skills:</span> Demonstrate your coding prowess and
               innovative thinking on a national stage. <br />
               • <span className="font-bold text-purple-500">Win Big:</span> Compete for a prize pool of ₹3 Lakh+, including a grand
