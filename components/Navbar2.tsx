@@ -73,7 +73,7 @@ const Navbar2 = (activeSection: any) => {
               className={`nav-titles nav-titles-ltr ${
 activeSection === "about" ? "before:w-full bg-red-500" : "" }`}
             >
-              <a href="https://duhacks.tech/#about">About</a>
+              <a href="https://dsudevhack.tech/#about">About</a>
             </div>
 
             <div
@@ -81,35 +81,35 @@ activeSection === "about" ? "before:w-full bg-red-500" : "" }`}
                 activeSection === "schedule" ? "before:w-full" : ""
               } `}
             >
-              <a href="https://duhacks.tech/#schedule">Schedule</a>
+              <a href="https://dsudevhack.tech/#schedule">Schedule</a>
             </div>
             <div
               className={`nav-titles nav-titles-ltr ${
                 activeSection === "sponsors" ? "before:w-full" : ""
               } `}
             >
-              <a href="https://duhacks.tech/#sponsors">Sponsors</a>
+              <a href="https://dsudevhack.tech/#sponsors">Sponsors</a>
             </div>
             <div
               className={`nav-titles nav-titles-ltr ${
                 activeSection === "prizes" ? "before:w-full" : ""
               } `}
             >
-              <a href="https://duhacks.tech/#prizes">Prizes</a>
+              <a href="https://dsudevhack.tech/#prizes">Prizes</a>
             </div>
             <div
               className={`nav-titles nav-titles-ltr ${
                 activeSection === "team" ? "before:w-full" : ""
               } `}
             >
-              <a href="https://duhacks.tech/#team">Team</a>
+              <a href="https://dsudevhack.tech/#team">Team</a>
             </div>
             <div
               className={`nav-titles nav-titles-ltr ${
                 activeSection === "faq" ? "before:w-full" : ""
               } `}
             >
-              <a href="https://duhacks.tech/#faq">FAQs</a>
+              <a href="https://dsudevhack.tech/#faq">FAQs</a>
             </div>
           </div>
 

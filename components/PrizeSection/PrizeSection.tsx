@@ -33,12 +33,6 @@ const PrizeSection: React.FC<PrizeSectionProps> = () => {
       <h1 className="my-20 text-center text-white text-3xl sm:text-4xl md:text-4xl xl:text-5xl font-logo">
         Prizes
       </h1>
-      {/* <div className="flex justify-center p-8 items-end space-x-10">
-        <Pillar height={220} bgColor="bg-green-500" text="2nd" />
-        <Pillar height={280} bgColor="bg-blue-500" text="1st" />
-        <Pillar height={180} bgColor="bg-yellow-500" text="3rd" />
-      </div> */}
-
       <PrizeCards />
     </div>
   );

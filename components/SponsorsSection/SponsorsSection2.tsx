@@ -7,6 +7,7 @@ import { useMediaQuery } from "react-responsive";
 // import Image from "next/image";
 
 type Sponsor = {
+  id: number;
   src: string;
   alt: string;
   link?: string;
@@ -41,6 +42,7 @@ export default function SponsorsSection2() {
   const sponsors: SponsorsGroup = {
     platform: [
       {
+        id: 1,
         src: "/sponsors_logos/Devfolio_Logo-White.svg",
         alt: "DEVFOLIO LOGO",
         link: "https://devfolio.co",
@@ -51,87 +53,22 @@ export default function SponsorsSection2() {
     diamond: [],
     platinum: [],
     gold: [
-        {
-          src: "/sponsors_logos/Polygon_Logo-White.svg",
-          alt: "POLYGON LOGO",
-          link: "https://polygon.technology/",
-          class: "scale-[0.8] md:scale-[1.1]",
-        },
-        {
-          src: "/sponsors_logos/ethindia-light.svg",
-          alt: "REPLIT LOGO",
-          link: "https://ethindia.co/",
-          class: "scale-[0.75]",
-        },
-      //   {
-      //     src: "/sponsors_logos/wolfram-lg.png",
-      //     alt: "WOLFARM LOGO",
-      //     link: "https://www.wolframalpha.com/",
-      //     class: "scale-[0.90]",
-      //   },
-      //   {
-      //     src: "/sponsors_logos/xyz-logo-white.svg",
-      //     alt: "XYZ LOGO",
-      //     link: "https://nic.xyz/",
-      //     class: "scale-[0.5] md:scale-[0.6]",
-      //   },
-      //   {
-      //     src: "/sponsors_logos/JD_logo_white.png",
-      //     alt: "JDOODLE LOGO",
-      //     link: "https://www.jdoodle.com/code-online-compiler-ide?utm_source=DUHacks&utm_medium=title&utm_campaign=Hackathon+Sponsorship",
-      //     class: "scale-[0.9] md:scale-[0.8]",
-      //   },
-      //   {
-      //     src: "/sponsors_logos/verbwire.svg",
-      //     alt: "VERBWIRE LOGO",
-      //     link: "https://www.verbwire.com/",
-      //     class: "scale-[0.9] md:scale-[0.8]",
-      //   },
+      {
+        id: 2,
+        src: "/sponsors_logos/Polygon_Logo-White.svg",
+        alt: "POLYGON LOGO",
+        link: "https://polygon.technology/",
+        class: "scale-[0.8] md:scale-[1.1]",
+      },
+      {
+        id: 3,
+        src: "/sponsors_logos/ethindia-light.svg",
+        alt: "REPLIT LOGO",
+        link: "https://ethindia.co/",
+        class: "scale-[0.75]",
+      },
     ],
-    silver: [
-      //   {
-      //     src: "/sponsors_logos/beeceptor-white.svg",
-      //     alt: "BEECEPTOR LOGO",
-      //     link: "https://beeceptor.com/",
-      //     class: "scale-[0.8]",
-      //   },
-      //   {
-      //     src: "/sponsors_logos/Leading_Learner_2.png",
-      //     alt: "LEADING LEARNER LOGO",
-      //     link: "https://www.leading-learners.com/",
-      //   },
-    ],
-    // title: [
-    //   {
-    //     src: "/sponsors_logos/Rosenfeld-white.webp",
-    //     alt: "ROSENFSRCD LOGO",
-    //     link: "https://rosenfeldmedia.com/duhacks",
-    //   },
-    //   {
-    //     src: "/sponsors_logos/echo3D.jpg",
-    //     alt: "ECHO3D LOGO",
-    //     link: "https://www.echo3d.com/",
-    //     class: "scale-[0.8] sm:scale-1",
-    //   },
-    //   {
-    //     src: "/sponsors_logos/axure.svg",
-    //     alt: "AXURE LOGO",
-    //     link: "https://www.axure.com/",
-    //     class: "scale-90 md:scale-125",
-    //   },
-    //   {
-    //     src: "/sponsors_logos/loft-white.png",
-    //     alt: "LOFT.SH LOGO",
-    //     link: "https://www.loft.sh/",
-    //     class: "w-1/3 scale-90 md:scale-125",
-    //   },
-    //   {
-    //     src: "/sponsors_logos/slido.svg",
-    //     alt: "SLIDO LOGO",
-    //     link: "https://www.slido.com/",
-    //     class: "w-1/3 scale-90 md:scale-125",
-    //   },
-    // ],
+    silver: [],
   };
 
   const categorySizes: { [key: string]: CategorySize } = {

@@ -1,8 +1,21 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
-        domains: [ 'res.cloudinary.com','t4.ftcdn.net','raw.githubusercontent.com'],
-    }
-}
+        remotePatterns: [
+            {
+                protocol: 'https',
+                hostname: 'res.cloudinary.com',
+            },
+            {
+                protocol: 'https',
+                hostname: 't4.ftcdn.net',
+            },
+            {
+                protocol: 'https',
+                hostname: 'raw.githubusercontent.com',
+            },
+        ],
+    },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
