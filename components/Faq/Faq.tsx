@@ -2,7 +2,8 @@
 import { useState } from "react";
 import { Container } from "./Container";
 import "../../styles/faq/background.css";
-
+import Image from 'next/image';
+import Boy from "../../public/assets/images/faqboy.png"
 const duHacksFaq = [
   {
     id: 1,
@@ -116,13 +117,13 @@ export default function FAQ() {
             <div className="faqContainer1 relative">
               {/* <div className="flex justify-center"> */}
 
-              <img
-                src="/assets/images/faqboy.png"
+              <Image
+                src={Boy}
                 alt="faq boy"
                 width={400}
                 height={400}
                 className="object-contain"
-                 loading="lazy"
+                loading="lazy"
                   />
               {/* </div> */}
             </div>

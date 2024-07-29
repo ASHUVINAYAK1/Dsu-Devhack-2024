@@ -66,10 +66,7 @@ const Card = ({
                     loading="lazy"
                     className={`pt-${paddingTop}`}
                     style={{ objectFit: 'cover' }}
-
-                    // className={`w-28 md:w-[${imgWidth? imgWidth : "300"}px] pt-${paddingTop}`}
                   />
-                {/* </a> */}
               </div>
               <div className="content flex-grow flex flex-col justify-evenly">
                 <div className=" h-[220px]px-2">
@@ -93,7 +90,6 @@ const Card = ({
           </div>
         )}
 
-        {/* Back of the card */}
         {isFlipped && (
           <div className="">
             <Tilt
@@ -134,7 +130,7 @@ const PrizeCards = () => {
           <div className="prizeContainer md:grid hidden grid-cols-1 sm:grid-cols-3 gap-3 lg:grid-cols-3 mb-10">
             {prizeData.cardContents.slice(0, 6).map((card: any, index: any) => (
               <Card
-                key={card.id || index} // Use a unique identifier if available; otherwise, use the index
+                key={card.id || index}
                 texts={card.texts}
                 textsBack={card.textsBack}
                 position={index % 2 === 0 ? "2" : "1"}
@@ -150,7 +146,7 @@ const PrizeCards = () => {
         <div className="prizeContainer grid md:hidden grid-cols-1 sm:grid-cols-3 gap-3 lg:grid-cols-3 mb-10">
           {prizeData.cardContents.slice(0, 6).map((card: any, index: any) => (
             <Card
-              key={card.id || index} // Use a unique identifier if available; otherwise, use the index
+              key={card.id || index} 
               texts={card.texts}
               textsBack={card.textsBack}
               position={index % 2 === 0 ? "2" : "1"}

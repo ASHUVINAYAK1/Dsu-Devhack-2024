@@ -28,7 +28,7 @@ export default function Reveal({ children }: props) {
       }}
       initial="hidden"
       animate={controls}
-      transition={{ duration: 0.7 , delay: 0 , type: "easeIn" }}
+      transition={{ duration: 0.3 , delay: 0 , type: "easeIn" }}
     >
       {children}
     </motion.div>

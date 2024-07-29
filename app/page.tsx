@@ -1,148 +1,139 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import Image from "next/image";
+import dynamic from 'next/dynamic';
 import Navbar from "../components/Navbar";
 import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection/HeroSection";
-import PrizeSection from "@/components/PrizeSection/PrizeSection";
-import Faq from "@/components/Faq/Faq";
-import Themes from "@/components/ThemesSection/Themes";
-import TeamSection from "@/components/TeamSection/TeamSection";
-import TeamSection3 from "@/components/TeamSection/TeamSection3";
-import SponsorsSection from "@/components/SponsorsSection/SponsorsSection";
-import Timeline2 from "@/components/Timeline/Timeline2";
-import About from "@/components/About/About";
-import LoadingScreen from "@/components/LoadingScreen";
-import SponsorsSection2 from "@/components/SponsorsSection/SponsorsSection2";
+
+// Dynamically import sections to optimize initial load
+const PrizeSection = dynamic(() => import('@/components/PrizeSection/PrizeSection'), {
+  loading: () => <p>Loading...</p>,
+});
+const Faq = dynamic(() => import('@/components/Faq/Faq'), {
+  loading: () => <p>Loading...</p>,
+});
+const Themes = dynamic(() => import('@/components/ThemesSection/Themes'), {
+  loading: () => <p>Loading...</p>,
+});
+const TeamSection = dynamic(() => import('@/components/TeamSection/TeamSection'), {
+  loading: () => <p>Loading...</p>,
+});
+const TeamSection3 = dynamic(() => import('@/components/TeamSection/TeamSection3'), {
+  loading: () => <p>Loading...</p>,
+});
+const Timeline2 = dynamic(() => import('@/components/Timeline/Timeline2'), {
+  loading: () => <p>Loading...</p>,
+});
+const About = dynamic(() => import('@/components/About/About'), {
+  loading: () => <p>Loading...</p>,
+});
+const SponsorsSection2 = dynamic(() => import('@/components/SponsorsSection/SponsorsSection2'), {
+  loading: () => <p>Loading...</p>,
+});
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState("home");
 
-  const handleScrollSection = (
-    about: number,
-    themes: number,
-    schedule: number,
-    sponsors: number,
-    prizes: number,
-    team: number,
-    faq: number
-  ) => {
-    const scrollPosition = window.scrollY;
+  // const handleScrollSection = (
+  //   about, themes, schedule, sponsors, prizes, team, faq
+  // ) => {
+  //   const scrollPosition = window.scrollY;
 
-    if (scrollPosition >= 0 && scrollPosition < about) {
-      setActiveSection("home");
-    } else if (scrollPosition >= about && scrollPosition < themes) {
-      setActiveSection("about");
-    } else if (scrollPosition >= themes && scrollPosition < schedule) { 
-      setActiveSection("themes");
-    } else if (scrollPosition >= schedule && scrollPosition < sponsors) {
-      setActiveSection("schedule");
-    } else if (scrollPosition >= sponsors && scrollPosition < prizes) {
-      setActiveSection("sponsors");
-    } else if (scrollPosition >= prizes && scrollPosition < team) {
-      setActiveSection("prizes");
-    } else if (scrollPosition >= team && scrollPosition < faq) {
-      setActiveSection("team");
-    } else if (scrollPosition >= faq) {
-      setActiveSection("faq");
-    } else {
-      setActiveSection("");
-    }
+  //   if (scrollPosition >= 0 && scrollPosition < about) {
+  //     setActiveSection("home");
+  //   } else if (scrollPosition >= about && scrollPosition < themes) {
+  //     setActiveSection("about");
+  //   } else if (scrollPosition >= themes && scrollPosition < schedule) { 
+  //     setActiveSection("themes");
+  //   } else if (scrollPosition >= schedule && scrollPosition < sponsors) {
+  //     setActiveSection("schedule");
+  //   } else if (scrollPosition >= sponsors && scrollPosition < prizes) {
+  //     setActiveSection("sponsors");
+  //   } else if (scrollPosition >= prizes && scrollPosition < team) {
+  //     setActiveSection("prizes");
+  //   } else if (scrollPosition >= team && scrollPosition < faq) {
+  //     setActiveSection("team");
+  //   } else if (scrollPosition >= faq) {
+  //     setActiveSection("faq");
+  //   } else {
+  //     setActiveSection("");
+  //   }
+  // };
 
-    // console.log(scrollPosition, about, themes, schedule, sponsors, prizes, team, faq);
-  };
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const about = document.getElementById("about");
+  //     const prizes = document.getElementById("prizes");
+  //     const themes = document.getElementById("themes");
+  //     const schedule = document.getElementById("schedule");
+  //     const sponsors = document.getElementById("sponsors");
+  //     const team = document.getElementById("team");
+  //     const faq = document.getElementById("faq");
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const about = document.getElementById("about");
-      const prizes = document.getElementById("prizes");
-      const themes = document.getElementById("themes");
-      const schedule = document.getElementById("schedule");
-      const sponsors = document.getElementById("sponsors");
-      const team = document.getElementById("team");
-      const faq = document.getElementById("faq");
+  //     if (about && themes && schedule && sponsors && prizes && team && faq) {
+  //       const aboutOffset = about.offsetTop;
+  //       const themesOffset = themes.offsetTop;
+  //       const scheduleOffset = schedule.offsetTop;
+  //       const sponsersOffset = sponsors.offsetTop;
+  //       const prizesOffset = prizes.offsetTop;
+  //       const teamOffset = team.offsetTop;
+  //       const faqOffset = faq.offsetTop;
 
-      if (about && themes && schedule && sponsors && prizes && team && faq) {
-        const aboutOffset = about.offsetTop;
-        const themesOffset = themes.offsetTop;
-        const scheduleOffset = schedule.offsetTop;
-        const sponsersOffset = sponsors.offsetTop;
-        const prizesOffset = prizes.offsetTop;
-        const teamOffset = team.offsetTop;
-        const faqOffset = faq.offsetTop;
+  //       handleScrollSection(
+  //         aboutOffset,
+  //         themesOffset,
+  //         scheduleOffset,
+  //         sponsersOffset,
+  //         prizesOffset,
+  //         teamOffset,
+  //         faqOffset
+  //       );
+  //     }
+  //   };
 
-        // console.log(aboutOffset, themesOffset, scheduleOffset, sponsersOffset, prizesOffset, teamOffset, faqOffset);
-        handleScrollSection(
-          aboutOffset,
-          themesOffset,
-          scheduleOffset,
-          sponsersOffset,
-          prizesOffset,
-          teamOffset,
-          faqOffset
-        );
-      }
-    };
+  //   window.addEventListener("scroll", handleScroll);
 
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [activeSection]);
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, [activeSection]);
 
   return (
     <main className="overflow-x-hidden bg-grey-900">
-      <LoadingScreen/>
       <Navbar activeSection={activeSection}/>
-      {/* <div className="bg-black bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-60 "> */}
-      {/* <PreLoader /> */}
-      {/* <FlareCursor /> */}
-
-      {/* <BackGround /> */}
-
       <HeroSection />
-
       <div id="about">
         <br />
         <About />
       </div>
       <div id="prizes">
-        <br></br>
+        <br />
         <PrizeSection />
       </div>
-
       <div id="themes">
         <br />
         <Themes />
       </div>
-
       <div id="schedule">
         <br />
         <Timeline2 />
       </div>
-
       <div id="sponsors">
         <br />
-        {/* <SponsorsSection /> */}
         <SponsorsSection2/>
       </div>
-
-
-      <div id="pannel">
+      <div id="team">
         <br />
         <TeamSection />
       </div>
-      <div id="pannel">
+      <div id="team2">
         <br />
         <TeamSection3 />
       </div>
-
       <div id="faq">
         <br />
         <Faq />
       </div>
-
       <Footer />
     </main>
   );

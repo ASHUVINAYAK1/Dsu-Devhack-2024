@@ -49,16 +49,18 @@ export default function Themes() {
 
       <div className="flex justify-center mt-28 ">
         <div className="grid grid-cols-2  md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 md:gap-x-8 md:gap-y-8 gap-3    themeContainer1">
-          {[...themes].map(({id, title, image }) => (
+          {[...themes].map(({ id, title, image }) => (
             <div className="max-w-md mx-auto  md:w-64 md:h-full sm:w-44 w-40 h-full overflow-hidden ">
-               <Card
+              <Card
                 key={id}
                 title={title}
                 icon={
-                  <img
+                  <Image
                     src={image}
                     alt={title}
-                    className="md:w-[10rem] md:h-[10rem] w-[15rem] h-[rem] "
+                    width={300} // Default width
+                    height={300} // Default height
+                    className="w-[15rem] h-[15rem] md:w-[10rem] md:h-[10rem] object-cover"
                     loading="lazy"
                   />
                 }
