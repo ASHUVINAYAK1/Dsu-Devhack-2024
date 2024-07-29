@@ -70,7 +70,7 @@ const Card = ({
               </div>
               <div className="content flex-grow flex flex-col justify-evenly">
                 <div className=" h-[220px]px-2">
-                  {texts.map((text: any, index: number) => (
+                  {texts?.map((text: any, index: number) => (
                     <li
                       key={index}
                       className="text-white text-center list-none text-[12px] md:text-lg mb-1 mx-2"
