@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import "@/styles/about/about.css";
 import CountUp from "react-countup";
 import "../../styles/about/background.css";
@@ -10,20 +10,36 @@ import Image from "next/image";
 import dsuImage from "../../public/assets/images/dsu.png";
 import acmImage from "../../public/assets/images/acm.png";
 import naacImage from "../../public/assets/images/naac.png";
-import { useMediaQuery } from 'react-responsive';
-
 
 const About = () => {
-  const isMobile = useMediaQuery({ maxWidth: 767 });
+  const [isMobile, setIsMobile] = useState(false);
+  const ref1 = useRef(null);
+  const ref2 = useRef(null);
+  const isInView1 = useInView(ref1, { once: false });
+  const isInView2 = useInView(ref2, { once: false });
+  const controls1 = useAnimation();
+  const controls2 = useAnimation();
 
-  const ref = React.useRef(null);
-  const isInView = useInView(ref, { once: false });
-  const controls = useAnimation();
   useEffect(() => {
-    if (isInView) {
-      controls.start("visible");
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 767);
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
+    if (isInView1) {
+      controls1.start("visible");
     }
-  }, [isInView, controls]);
+    if (isInView2) {
+      controls2.start("visible");
+    }
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, [isInView1, isInView2, controls1, controls2]);
+
   return (
     <>
       <div className="w-screen flex-col sm:px-14 md:px-40 lg:px-40 mt-16 xl:px-80 ">
@@ -42,6 +58,8 @@ const About = () => {
                   src={dsuImage}
                   width={100}
                   height={100}
+                  loading="lazy"
+                  placeholder="blur" 
                   alt="DSU DevHacks"
                   className="md:w-[10rem] md:h-[10rem] w-[7rem] h-[rem] "
                 />
@@ -49,6 +67,8 @@ const About = () => {
                   src={naacImage}
                   width={180}
                   height={100}
+                  loading="lazy"
+                  placeholder="blur" 
                   alt="DSU DevHacks"
                   className="md:w-[10rem] md:h-[10rem] w-[9rem] h-[rem] sm:w-[90px]"
                 />
@@ -57,15 +77,11 @@ const About = () => {
                   width={100}
                   height={100}
                   alt="DSU DevHacks"
+                  loading="lazy"
+                  placeholder="blur" 
                   className="md:w-[10rem] md:h-[10rem] w-[7rem] h-[rem] "
                 />
               </div>
-
-              {/* <div>
-                <h4 className="md:text-xl  text-md text-center font-semibold text-white dark:text-white">
-                  {title}
-                </h4>
-              </div> */}
             </div>
           </Tilt>
         </div>
@@ -102,13 +118,6 @@ const About = () => {
           <div className="basis-1/3 border-2 rounded-2xl  w-full p-5  glassy-effect">
             <h1 className="text-[1.6rem] my-2 font-semibold text-purple-500">
               Online/Offline
-              {/* <CountUp
-                start={0}
-                end={0}
-                duration={0}
-                enableScrollSpy={true}
-                className="font-bold text-purple-500"
-              /> */}
             </h1>
             <p className="text-slate-200 ">Hybrid Mode</p>
           </div>
@@ -158,22 +167,22 @@ const About = () => {
               and network. 🤝
               <br />
               <br />
-              <p className="font-bold">
+              <span className="font-bold">
                 Your keyboard is your sword, your idea is your challenge, code
                 is your vision, and DSU DevHacks is your stage! 🚨
-              </p>
+              </span>
               See you all in the hackathon!🔍💻
             </p>
           </div>
           <div className="basis-1/2 border-2 h-[26rem] rounded-2xl w-full p-4 sm:h-[26rem] glassy-effect flex items-center justify-center">
             <motion.div
-              ref={ref}
+              ref={ref1}
               variants={{
                 hidden: { opacity: 0, scale: 1 },
                 visible: { opacity: 1, scale: 1 },
               }}
               initial="hidden"
-              animate={controls}
+              animate={controls1}
               transition={{ type: "easeIn", duration: 1.2, delay: 0 }}
               className="my-5 h-52 w-full sm:h-80 rounded-2xl "
               style={{
@@ -191,13 +200,13 @@ const About = () => {
         <div className="flex flex-col-reverse sm:flex-row w-full items-center justify-center gap-5 px-5 mt-24 container1 container2">
           <div className="basis-1/2 border-2 h-[26rem] rounded-2xl w-full p-4 sm:h-[26rem] glassy-effect flex items-center justify-center">
             <motion.div
-              ref={ref}
+              ref={ref2}
               variants={{
                 hidden: { opacity: 0, scale: 1 },
                 visible: { opacity: 1, scale: 1 },
               }}
               initial="hidden"
-              animate={controls}
+              animate={controls2}
               transition={{ type: "easeIn", duration: 1.2, delay: 0 }}
               className="my-5 h-52 w-full sm:h-80 rounded-2xl "
               style={{
@@ -216,7 +225,6 @@ const About = () => {
               • <span className={`font-bold ${isMobile ? 'text-white' : 'text-purple-500'}`}>Network with Professionals</span> {isMobile ? '' : ': Connect with tech leaders and fellow developers from across the country.'} <br />
               • <span className={`font-bold ${isMobile ? 'text-white' : 'text-purple-500'}`}>Refreshing Breaks</span> {isMobile ? '' : ': Fun activities like gaming, trivia contests and more!'} <br />
               • <span className={`font-bold ${isMobile ? 'text-white' : 'text-purple-500'}`}>Tech Talks</span> {isMobile ? '' : ': Engaging presentations on the latest technology trends.'} <br />
-            
             </p>
           </div>
         </div>

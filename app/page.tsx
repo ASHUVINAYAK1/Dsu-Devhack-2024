@@ -98,7 +98,7 @@ export default function Home() {
 
   return (
     <main className="overflow-x-hidden bg-grey-900">
-      {/* <LoadingScreen/> */}
+      <LoadingScreen/>
       <Navbar activeSection={activeSection}/>
       {/* <div className="bg-black bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-60 "> */}
       {/* <PreLoader /> */}

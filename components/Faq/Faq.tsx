@@ -109,8 +109,9 @@ export default function FAQ() {
                 alt="faq boy"
                 width={400}
                 height={400}
-                className=" object-contain "
-              />
+                className="object-contain"
+                 loading="lazy"
+                  />
               {/* </div> */}
             </div>
           </div>

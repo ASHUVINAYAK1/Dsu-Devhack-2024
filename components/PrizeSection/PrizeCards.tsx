@@ -64,6 +64,7 @@ const Card = ({
                     width={imgWidth ? imgWidth : 200}
                     height={200}
                     objectFit="cover"
+                    loading="lazy"
                     className={`pt-${paddingTop}`}
                     // className={`w-28 md:w-[${imgWidth? imgWidth : "300"}px] pt-${paddingTop}`}
                   />
