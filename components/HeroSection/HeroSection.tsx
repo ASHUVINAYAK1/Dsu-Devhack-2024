@@ -4,6 +4,8 @@ import Content from "./Content";
 import Reveal from "./Reaveal";
 // import "../../styles/background.css";
 import "../../styles/hero.css";
+import Image from 'next/image';
+import Boy from "../../public/assets/images/img.png"
 
 export default function HeroSection() {
   return (
@@ -12,17 +14,17 @@ export default function HeroSection() {
         <div className="">
           <Content />
         </div>
-        <Reveal>
           <div className="heroContainer1 text-center">
-            <img
-              src="/assets/images/img.png"
+            <Image
+              src={Boy}
               alt="Hero"
               width={400}
               height={400}
+              layout="responsive"
+              loading="eager"
               className="object-contain -ml-10"
             />
           </div>
-        </Reveal>
       </div>
     </div>
   );

@@ -1,16 +1,16 @@
 // LoadingScreen.js
 import React, { useState, useEffect } from 'react';
 import "../styles/preloader.css";
-
+import Image from 'next/image';
+import Logo from "../public/assets/images/hb-logo.png"
 const LoadingScreen = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate an asynchronous operation, like fetching data or loading resources
     const fakeAsyncOperation = () => {
       setTimeout(() => {
         setLoading(false);
-      }, 2000); // Adjust the duration as needed
+      }, 2000);
     };
 
     fakeAsyncOperation();
@@ -18,8 +18,14 @@ const LoadingScreen = () => {
 
   return (
     <div className={`loading-screen ${loading ? 'visible' : 'hidden'}`}>
-      {/* Your logo image */}
-      <img src="/assets/images/hb-logo.png" alt="Logo" className="logo" />
+      <Image
+        src={Logo}
+        alt="Hero"
+        layout="responsive"
+        width={400}
+        height={400}
+        loading="eager"
+      />
     </div>
   );
 };

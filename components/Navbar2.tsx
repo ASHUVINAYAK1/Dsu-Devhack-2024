@@ -7,6 +7,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { IoMdClose } from "react-icons/io";
 import { WiStormShowers } from "react-icons/wi";
+import Logo from "../public/assets/images/hb-logo.png"
 
 const Navbar2 = (activeSection: any) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -59,11 +60,12 @@ const Navbar2 = (activeSection: any) => {
       <div className="nav flex py-8 glassy-effect">
         <div className="sm:pl-7 mr-auto">
           <a href="https://dsudevhack.tech/#top">
-            <img
-              src="/assets/images/hb-logo.png"
+            <Image
+              src={Logo}
               alt="DU Hacks"
               width={50}
               height={50}
+              loading="lazy"
             />
           </a>
         </div>
