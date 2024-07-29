@@ -52,6 +52,15 @@
     /* border: 1px solid rgba(113, 63, 18, 0.3); */
 }
 
+.hover-effect-platform:hover {
+    background: rgba(168, 85, 247, 0.37);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(9px);
+    /* border: 1px solid rgba(113, 63, 18, 0.3); */
+}
+
 .hover-effect-title:hover {
     background: rgba(126, 1, 138, 0.37);
     border-radius: 16px;
