@@ -39,29 +39,30 @@ export default function SponsorsSection2() {
     visible: { opacity: 1, transition: { duration: 1 } },
   };
   const sponsors: SponsorsGroup = {
-    platform: [],
+    platform: [
+      {
+        src: "/sponsors_logos/Devfolio_Logo-White.svg",
+        alt: "DEVFOLIO LOGO",
+        link: "https://devfolio.co",
+        class: "scale-[0.8] md:scale-[1.1]",
+      },
+    ],
     title: [],
     diamond: [],
     platinum: [],
     gold: [
-      //   {
-      //     src: "/sponsors_logos/Devfolio_Logo-White.svg",
-      //     alt: "DEVFOLIO LOGO",
-      //     link: "https://devfolio.co",
-      //     class: "scale-[0.8] md:scale-[1.1]",
-      //   },
-      //   {
-      //     src: "/sponsors_logos/Polygon_Logo-White.svg",
-      //     alt: "POLYGON LOGO",
-      //     link: "https://polygon.technology/",
-      //     class: "scale-[0.8] md:scale-[1.1]",
-      //   },
-      //   {
-      //     src: "/sponsors_logos/replit-light.png",
-      //     alt: "REPLIT LOGO",
-      //     link: "https://replit.com/",
-      //     class: "scale-[0.75]",
-      //   },
+        {
+          src: "/sponsors_logos/Polygon_Logo-White.svg",
+          alt: "POLYGON LOGO",
+          link: "https://polygon.technology/",
+          class: "scale-[0.8] md:scale-[1.1]",
+        },
+        {
+          src: "/sponsors_logos/ethindia-light.svg",
+          alt: "REPLIT LOGO",
+          link: "https://ethindia.co/",
+          class: "scale-[0.75]",
+        },
       //   {
       //     src: "/sponsors_logos/wolfram-lg.png",
       //     alt: "WOLFARM LOGO",
@@ -324,7 +325,10 @@ export default function SponsorsSection2() {
             {category === "title" ? "Sponsor" : "Sponsors"}
           </h2>
           <div className="flex flex-wrap justify-center md:px-20">
-            <p>Coming Soon...</p>
+            {/* <p>Coming Soon...</p> */}
+            {
+              sponsorList.length === 0 && <p className="text-white text-center">Coming Soon...</p>
+            }
             {sponsorList.map((sponsor, index) => (
               <a href={sponsor.link ? sponsor.link : ""} target="_blank">
                 <div
