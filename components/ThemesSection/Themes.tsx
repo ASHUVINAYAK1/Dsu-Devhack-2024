@@ -82,6 +82,7 @@ export default function Themes() {
                     src={image}
                     alt={title}
                     className="md:w-[10rem] md:h-[10rem] w-[15rem] h-[rem] "
+                    loading="lazy"
                   />
                 }
               />

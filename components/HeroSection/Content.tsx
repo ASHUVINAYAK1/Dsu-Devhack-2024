@@ -104,7 +104,7 @@ const Content: React.FC = () => {
       <div className="">
         <div
           className="apply-button"
-          data-hackathon-slug="duhacks3"
+          data-hackathon-slug="dsudevhack"
           data-button-theme="dark-inverted"
         />
       </div>
