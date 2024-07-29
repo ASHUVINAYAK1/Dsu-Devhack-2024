@@ -306,6 +306,7 @@ export default function SponsorsSection2() {
             </motion.p>
 
             <button
+              onClick={() => handleClick("https://dsudevhack.tech/")}
               className={`mt-10 ${" mt-6 rounded-xl bg-gradient-to-l from-purple-500 to-pink-500 text-white"} py-2 px-5 rounded-md font-semibold transition-colors duration-300`}
             >
               Download Sponsorship Deck
