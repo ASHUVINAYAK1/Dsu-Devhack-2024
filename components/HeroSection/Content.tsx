@@ -4,16 +4,16 @@ import CountdownTimer from "./CountdownTimer";
 import "../../styles/hero.css";
 
 const Content: React.FC = () => {
-  // useEffect(() => {
-  //   const script = document.createElement("script");
-  //   script.src = "https://apply.devfolio.co/v2/sdk.js";
-  //   script.async = true;
-  //   script.defer = true;
-  //   document.body.appendChild(script);
-  //   return () => {
-  //     document.body.removeChild(script);
-  //   };
-  // }, []);
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://apply.devfolio.co/v2/sdk.js";
+    script.async = true;
+    script.defer = true;
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
 
   const h1Variants = {
     hidden: { opacity: 0, x: 0, y: 0 },
