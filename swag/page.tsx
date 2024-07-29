@@ -3,7 +3,6 @@
 import React, { ChangeEvent, useCallback, useRef, useState } from 'react';
 import { toPng } from 'html-to-image';
 import '../../styles/frame.css';
-import UploadImageInput from '@/components/UploadImageInput';
 import ConfettiAnimation from '@/components/ConfettiAnimation';
 import { Toaster, toast } from 'react-hot-toast';
 
@@ -96,7 +95,6 @@ export default function Swag() {
 
             {/* <input type="file" onChange={handleImageUpload}/> */}
             <div className=' cursor-pointer mt-4'>
-            <UploadImageInput onUpload={handleImageUpload}/>
             </div>
             <div className='flex md:flex-row flex-col  md:space-x-3 space-x-0 '>
 

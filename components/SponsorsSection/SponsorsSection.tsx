@@ -6,31 +6,29 @@ import "../../styles/sponsors/background.css";
 
 function SponsorsSection() {
   const gold = [
-    { src: "/sponsors_logos/Devfolio_Logo-White.svg", alt: "DEVFOLIO LOGO" },
-    { src: "/sponsors_logos/Polygon_Logo-White.svg", alt: "POLYGON LOGO" },
-    { src: "/sponsors_logos/replit-light.png", alt: "REPLIT LOGO" },
-    { src: "/sponsors_logos/wolfram-lg.png", alt: "WOLFARM LOGO" },
-    { src: "/sponsors_logos/xyz-logo-white.svg", alt: "XYZ LOGO" },
+    { id: 1, src: "/sponsors_logos/Devfolio_Logo-White.svg", alt: "DEVFOLIO LOGO" },
+    { id: 2, src: "/sponsors_logos/Polygon_Logo-White.svg", alt: "POLYGON LOGO" },
+    { id: 3, src: "/sponsors_logos/replit-light.png", alt: "REPLIT LOGO" },
+    { id: 4, src: "/sponsors_logos/wolfram-lg.png", alt: "WOLFARM LOGO" },
+    { id: 5, src: "/sponsors_logos/xyz-logo-white.svg", alt: "XYZ LOGO" },
   ];
+  
   const platinum = [
-    { src: "/sponsors_logos/Devfolio_Logo-White.svg", alt: "DEVFOLIO LOGO" },
+    { id: 1, src: "/sponsors_logos/Devfolio_Logo-White.svg", alt: "DEVFOLIO LOGO" },
   ];
-
+  
   const silver = [
-    { src: "/sponsors_logos/beeceptor-white.svg", alt: "BEECEPTOR LOGO" },
-    {
-      src: "/sponsors_logos/Leading_Learner_2.png",
-      alt: "LEADING LEARNER LOGO",
-    },
+    { id: 1, src: "/sponsors_logos/beeceptor-white.svg", alt: "BEECEPTOR LOGO" },
+    { id: 2, src: "/sponsors_logos/Leading_Learner_2.png", alt: "LEADING LEARNER LOGO" },
   ];
-
+  
   const bronze = [
-    { src: "/sponsors_logos/Rosenfeld.webp", alt: "ROSENFSRCD LOGO" },
-    { src: "/sponsors_logos/echo3D.jpg", alt: "ECHO3D LOGO" },
-    { src: "/sponsors_logos/axure.svg", alt: "AXURE LOGO" },
-    { src: "/sponsors_logos/loft-white.png", alt: "LOFT.SH LOGO" },
-
+    { id: 1, src: "/sponsors_logos/Rosenfeld.webp", alt: "ROSENFSRCD LOGO" },
+    { id: 2, src: "/sponsors_logos/echo3D.jpg", alt: "ECHO3D LOGO" },
+    { id: 3, src: "/sponsors_logos/axure.svg", alt: "AXURE LOGO" },
+    { id: 4, src: "/sponsors_logos/loft-white.png", alt: "LOFT.SH LOGO" },
   ];
+  
   return (
     <div className="mt-36 sm:mt-56">
       <h1 className="my-10 text-center text-white text-3xl sm:text-4xl md:text-4xl xl:text-5xl font-logo sponsorContainer1">
@@ -41,9 +39,9 @@ function SponsorsSection() {
           Platinum Sponsors
         </h2>
         <Marquee speed={20} autoFill={true}>
-          {platinum.map(({ src, alt }) => (
+          {platinum.map(({ id,src, alt }) => (
             <SponsorCard
-              key={src}
+              key={id}
               imageUrl={src}
               imageSize={"w-48 h-16 sm:w-72 sm:h-28"}
               hoverEffect={"hover-effect-emerald"}
@@ -53,9 +51,9 @@ function SponsorsSection() {
         </Marquee>
 
         <Marquee speed={40} direction={"right"} autoFill={true}>
-          {platinum.map(({ src, alt }) => (
+          {platinum.map(({id, src, alt }) => (
             <SponsorCard
-              key={src}
+              key={id}
               imageUrl={src}
               imageSize={"w-48 h-16 sm:w-72 sm:h-24"}
               hoverEffect={"hover-effect-emerald"}
@@ -68,9 +66,9 @@ function SponsorsSection() {
         </h2>
 
         <Marquee speed={60} autoFill={true}>
-          {gold.map(({ src, alt }) => (
+          {gold.map(({ id,src, alt }) => (
             <SponsorCard
-              key={src}
+              key={id}
               imageUrl={src}
               imageSize={"w-36 h-12 sm:w-80 sm:h-20"}
               hoverEffect={"hover-effect-gold"}
@@ -84,9 +82,9 @@ function SponsorsSection() {
         </h2>
 
         <Marquee speed={80} direction={"right"} autoFill={true}>
-          {silver.map(({ src, alt }) => (
+          {silver.map(({ id,src, alt }) => (
             <SponsorCard
-              key={src}
+              key={id}
               imageUrl={src}
               imageSize={"w-24 h-10 sm:w-64 sm:h-16"}
               hoverEffect={"hover-effect-silver"}
@@ -99,9 +97,9 @@ function SponsorsSection() {
         </h2>
 
         <Marquee speed={100} autoFill={true}>
-          {bronze.map(({ src, alt }) => (
+          {bronze.map(({ id,src, alt }) => (
             <SponsorCard
-              key={src}
+              key={id}
               imageUrl={src}
               imageSize={"w-20 h-8 sm:w-40 sm:h-14"}
               hoverEffect={"hover-effect-bronze"}
