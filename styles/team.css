@@ -21,9 +21,9 @@
 .navigation .animation{
     position: absolute;
     height: 100%;
-    width: 110px;
+    width: 70px;
     top : 0;
-    left: 100px;
+    left: 5px;
     z-index: -1;
     transition: 0.35s ease-in-out;
     border-radius: 10px ;
@@ -33,29 +33,34 @@
     position: relative;
 } */
 
+
 .navigation .organizer,button:hover~.animation{
     left: 5px;
-    width: 50px;
+    width: 70px;
 }
 
 .navigation .web,button:nth-child(2):hover~.animation{
-    left: 71px;
-    width: 50px;
+    left: 80px;
+    width: 55px;
 }
 
 
 .navigation .sponsorship,button:nth-child(3):hover~.animation{
-    left: 130px;
-    width: 124px;
+    left: 145px;
+    width: 50px;
 }
 .navigation .promotion,button:nth-child(4):hover~.animation{
-    left: 250px;
-    width: 124px;
+    left: 200px;
+    width: 130px;
 }
 
 .navigation .design,button:nth-child(5):hover~.animation{
-    left: 370px;
-    width: 78px;
+    left: 332px;
+    width: 110px;
+}
+.navigation .design,button:nth-child(6):hover~.animation{
+    left: 450px;
+    width: 70px;
 }
 
 
