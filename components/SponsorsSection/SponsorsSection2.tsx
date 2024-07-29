@@ -3,7 +3,7 @@ import "./sponsorTilt.css";
 import "../../styles/sponsors/background.css";
 import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
-import { useMediaQuery } from 'react-responsive';
+import { useMediaQuery } from "react-responsive";
 // import Image from "next/image";
 
 type Sponsor = {
@@ -16,6 +16,7 @@ type Sponsor = {
 };
 
 type SponsorsGroup = {
+  platform: Sponsor[];
   title?: Sponsor[];
   diamond?: Sponsor[];
   platinum?: Sponsor[];
@@ -38,6 +39,7 @@ export default function SponsorsSection2() {
     visible: { opacity: 1, transition: { duration: 1 } },
   };
   const sponsors: SponsorsGroup = {
+    platform: [],
     title: [],
     diamond: [],
     platinum: [],
@@ -132,6 +134,10 @@ export default function SponsorsSection2() {
   };
 
   const categorySizes: { [key: string]: CategorySize } = {
+    platform: {
+      imgSize:
+        "h-[100px] w-[340px]  md:px-8 px-4 py-1 md:h-[200px] md:w-[800px] ",
+    },
 
     title: {
       imgSize:
@@ -149,7 +155,6 @@ export default function SponsorsSection2() {
   };
 
   const isMobile = useMediaQuery({ maxWidth: 767 });
-
 
   return (
     <div className="mt-36 sm:mt-56">
@@ -176,66 +181,135 @@ export default function SponsorsSection2() {
               variants={childVariants}
               className="md:text-1xl text-[1rem] text-slate-50 font-content font-semibold m-1 mb-2"
             >
-              • <span className={`font-bold ${isMobile ? 'text-white' : 'text-purple-500'}`}>Access Top Talent</span>
-              {!isMobile && ": Connect with over 150+ innovative minds from across the nation, representing the next generation of tech leaders."}
+              •{" "}
+              <span
+                className={`font-bold ${
+                  isMobile ? "text-white" : "text-purple-500"
+                }`}
+              >
+                Access Top Talent
+              </span>
+              {!isMobile &&
+                ": Connect with over 150+ innovative minds from across the nation, representing the next generation of tech leaders."}
+              <br />•{" "}
+              <span
+                className={`font-bold ${
+                  isMobile ? "text-white" : "text-purple-500"
+                }`}
+              >
+                Brand Visibility
+              </span>
+              {!isMobile &&
+                ": Showcase your company to a highly engaged audience of developers, designers, and tech enthusiasts."}
+              <br />•{" "}
+              <span
+                className={`font-bold ${
+                  isMobile ? "text-white" : "text-purple-500"
+                }`}
+              >
+                Product Exposure
+              </span>
+              {!isMobile &&
+                ": Introduce your latest technologies or APIs to potential users and gather valuable feedback."}
+              <br />•{" "}
+              <span
+                className={`font-bold ${
+                  isMobile ? "text-white" : "text-purple-500"
+                }`}
+              >
+                Recruitment Opportunities
+              </span>
+              {!isMobile &&
+                ": Identify and engage with skilled candidates for internships or full-time positions."}
+              <br />•{" "}
+              <span
+                className={`font-bold ${
+                  isMobile ? "text-white" : "text-purple-500"
+                }`}
+              >
+                Corporate Social Responsibility
+              </span>
+              {!isMobile &&
+                ": Demonstrate your commitment to education and innovation in the tech community."}
+              <br />•{" "}
+              <span
+                className={`font-bold ${
+                  isMobile ? "text-white" : "text-purple-500"
+                }`}
+              >
+                Market Research
+              </span>
+              {!isMobile &&
+                ": Gain insights into emerging trends and technologies through direct interaction with participants."}
+              <br />•{" "}
+              <span
+                className={`font-bold ${
+                  isMobile ? "text-white" : "text-purple-500"
+                }`}
+              >
+                Networking
+              </span>
+              {!isMobile &&
+                ": Connect with other industry leaders, academic institutions, and potential business partners."}
+              <br />•{" "}
+              <span
+                className={`font-bold ${
+                  isMobile ? "text-white" : "text-purple-500"
+                }`}
+              >
+                Innovation Pipeline
+              </span>
+              {!isMobile &&
+                ": Witness groundbreaking ideas that could lead to future collaborations or acquisitions."}
+              <br />•{" "}
+              <span
+                className={`font-bold ${
+                  isMobile ? "text-white" : "text-purple-500"
+                }`}
+              >
+                Media Coverage
+              </span>
+              {!isMobile &&
+                ": Benefit from increased visibility through event-related press and social media exposure."}
               <br />
-              • <span className={`font-bold ${isMobile ? 'text-white' : 'text-purple-500'}`}>Brand Visibility</span>
-              {!isMobile && ": Showcase your company to a highly engaged audience of developers, designers, and tech enthusiasts."}
               <br />
-              • <span className={`font-bold ${isMobile ? 'text-white' : 'text-purple-500'}`}>Product Exposure</span>
-              {!isMobile && ": Introduce your latest technologies or APIs to potential users and gather valuable feedback."}
-              <br />
-              • <span className={`font-bold ${isMobile ? 'text-white' : 'text-purple-500'}`}>Recruitment Opportunities</span>
-              {!isMobile && ": Identify and engage with skilled candidates for internships or full-time positions."}
-              <br />
-              • <span className={`font-bold ${isMobile ? 'text-white' : 'text-purple-500'}`}>Corporate Social Responsibility</span>
-              {!isMobile && ": Demonstrate your commitment to education and innovation in the tech community."}
-              <br />
-              • <span className={`font-bold ${isMobile ? 'text-white' : 'text-purple-500'}`}>Market Research</span>
-              {!isMobile && ": Gain insights into emerging trends and technologies through direct interaction with participants."}
-              <br />
-              • <span className={`font-bold ${isMobile ? 'text-white' : 'text-purple-500'}`}>Networking</span>
-              {!isMobile && ": Connect with other industry leaders, academic institutions, and potential business partners."}
-              <br />
-              • <span className={`font-bold ${isMobile ? 'text-white' : 'text-purple-500'}`}>Innovation Pipeline</span>
-              {!isMobile && ": Witness groundbreaking ideas that could lead to future collaborations or acquisitions."}
-              <br />
-              • <span className={`font-bold ${isMobile ? 'text-white' : 'text-purple-500'}`}>Media Coverage</span>
-              {!isMobile && ": Benefit from increased visibility through event-related press and social media exposure."}
-              <br />
-              <br />
-                <>
-                  <span className="font-bold text-purple-500">SPOTLIGHT:</span> Our
-                  Recent Success{" "}
-                  <span className="font-bold text-purple-500 text-[1.1rem]">
-                    InterContinental InnovoQuest - 24
-                  </span>{" "}
-                  We recently hosted a groundbreaking 36-hour hackathon in
-                  collaboration with LeTourneau University, Texas, USA on March
-                  1st-3rd, 2024 showcasing our ability to organize high-impact,
-                  international tech events.
-                  <br />
-                  <br />
-                  <span className="font-bold text-purple-500">Key Highlights:</span>
-                  <br />•{" "}
-                  <span className="font-bold text-purple-500">
-                    Participants:
-                  </span>{" "}
-                  400+ innovators, including 20 teams from LeTourneau University,
-                  Texas
-                  <br />•{" "}
-                  <span className="font-bold text-purple-500">
-                    Prize Pool:
-                  </span>{" "}
-                  ₹50,000 Cash Pool
-                  <br />•{" "}
-                  <span className="font-bold text-purple-500">
-                    Chief Guest:
-                  </span>{" "}
-                  Mr. Johnson Jose (Director at Google)
-                </>
-    
+              <>
+                <span className="font-bold text-purple-500">SPOTLIGHT:</span>{" "}
+                Our Recent Success{" "}
+                <span className="font-bold text-purple-500 text-[1.1rem]">
+                  InterContinental InnovoQuest - 24
+                </span>{" "}
+                We recently hosted a groundbreaking 36-hour hackathon in
+                collaboration with LeTourneau University, Texas, USA on March
+                1st-3rd, 2024 showcasing our ability to organize high-impact,
+                international tech events.
+                <br />
+                <br />
+                <span className="font-bold text-purple-500">
+                  Key Highlights:
+                </span>
+                <br />•{" "}
+                <span className="font-bold text-purple-500">Participants:</span>{" "}
+                400+ innovators, including 20 teams from LeTourneau University,
+                Texas
+                <br />•{" "}
+                <span className="font-bold text-purple-500">
+                  Prize Pool:
+                </span>{" "}
+                ₹50,000 Cash Pool
+                <br />•{" "}
+                <span className="font-bold text-purple-500">
+                  Chief Guest:
+                </span>{" "}
+                Mr. Johnson Jose (Director at Google)
+              </>
             </motion.p>
+
+            <button
+              className={`mt-10 ${" mt-6 rounded-xl bg-gradient-to-l from-purple-500 to-pink-500 text-white"} py-2 px-5 rounded-md font-semibold transition-colors duration-300`}
+            >
+              Download Sponsorship Deck
+            </button>
           </div>
         </div>
       </Tilt>
