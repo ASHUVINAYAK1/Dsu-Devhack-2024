@@ -89,8 +89,8 @@ const Content: React.FC = () => {
           animate="visible"
           className=" text-white max-w-[360px] font-poppins m-auto md:mt-1 md:text-[1.1rem]"
         >
-          Compete to Win Big: ₹2 Lakh Case Prize.
-          <br /> 3 Lakh+ Pool Prize Awaits!
+          Compete to Win Big: <span className="orange-logo md:mt-1 md:text-[1.1rem] font-poppins">₹2 Lakh Cash Prize.</span>
+          <br /><span className="orange-logo md:mt-1 md:text-[1.1rem] font-poppins">3 Lakh+ Pool Prize </span>Awaits!
         </motion.p>
       </div>
       <motion.div className="text-md text-white">
