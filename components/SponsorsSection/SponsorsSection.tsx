@@ -93,7 +93,7 @@ function SponsorsSection() {
           ))}
         </Marquee>
         <h2 className="text-center m-auto md:my-8 my-4 text-white text-lg md:text-xl xl:text-2xl   md:w-1/6 w-1/2  font-semibold px-1 py-2 title-bronze rounded-md">
-          Bronze Sponsors
+          Community Partner
         </h2>
 
         <Marquee speed={100} autoFill={true}>

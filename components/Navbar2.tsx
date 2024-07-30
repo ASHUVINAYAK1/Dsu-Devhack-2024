@@ -62,10 +62,10 @@ const Navbar2 = (activeSection: any) => {
           <a href="https://dsudevhack.tech/#top">
             <Image
               src={Logo}
-              alt="DU Hacks"
+              alt="DSU Hack"
               width={50}
               height={50}
-              loading="lazy"
+              priority
             />
           </a>
         </div>

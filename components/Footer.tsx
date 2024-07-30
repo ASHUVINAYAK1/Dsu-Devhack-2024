@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { SocialIcon } from "react-social-icons";
-import "../styles/about/about.css"
+import "../styles/about/about.css";
 
 import {
   FaDiscord,
@@ -22,7 +22,7 @@ const Footer = () => {
   const SOCIALS = {
     instagram: "https://instagram.com/duhacks2022?igshid=YmMyMTA2M2Y=",
     discord: "https://discord.gg/T2fzD8c2j2",
-    linkedin: "https://www.linkedin.com/company/duhacks/",
+    linkedin: "https://www.linkedin.com/company/dsu-devhack/about/",
     twitter: "https://twitter.com/DuHacks?t=CPjNJmQX1JxhIHb_YI0Tuw&s=09",
     email: "mailto:contact@duhacks.tech",
     mail: "contact@duhacks.tech",
@@ -31,8 +31,10 @@ const Footer = () => {
   return (
     <footer className="mt-24 pt-5 lg:pt-8 pb-2 lg:pb-8 bg-black bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20">
       <div className="flex flex-col">
+        <div className="text-center mb-4 sm:mb-6">
+          <h2 className="text-gold-500 font-bold text-3xl lg:text-2xl">Connect with Us</h2>
+        </div>
         <div className="lg:hidden flex justify-center mb-7 font-bold" />
-
         <div className="flex justify-center text-sm lg:text-3xl space-x-4 mb-9">
           <a href="https://discord.com/invite/Hz5UxnUNBV" target="_black">
             <span className="sr-only">Discord</span>
@@ -45,7 +47,7 @@ const Footer = () => {
           </a>
           <div className=" border-r-2 transform rotate-12" />
 
-          <a href="https://www.linkedin.com/in/dsu-devhack/" target="_black">
+          <a href="https://www.linkedin.com/company/dsu-devhack/about" target="_black">
             <span className="sr-only ">LinkedIn</span>
             <FaLinkedinIn />
           </a>
@@ -67,17 +69,36 @@ const Footer = () => {
             <FaMapMarkerAlt />
           </a>
         </div>
-        <div className="lg:hidden flex justify-center mb-7 font-bold" />
+        <div className="flex flex-wrap justify-around font-bold">
+          <div className="flex flex-col items-center text-sm space-y-4 mb-7">
+            <h2 className="text-lg text-purple-400 font-semibold">Contact Us</h2>
+            <div className="flex flex-col items-center sm:items-start">
+              <a href="mailto:dsudevhack@dsu.edu.in" className="mb-2">Email: dsudevhack@dsu.edu.in</a>
+              <p className="text-sm mb-2">Student coordinators</p>
+              <a href="tel:8154852286" className="mb-2">Patel Muhammad: +91 81548 52286</a>
+              <a href="tel:9939635206">Utkarsh Priye: +91 99396 35206</a>
+            </div>
+          </div>
 
-        <div className="flex justify-center footer-container text-sm space-x-4 mb-0">
-          <a href="mailto:dsudevhack@dsu.edu.in">dsudevhack@dsu.edu.in</a>
-          <a className="pl-4" href="tel:8154852286">
-          Patel Muhammad: +91 81548 52286
-          </a>
-          <a className="pl-4" href="tel:9939635206">
-          Utkarsh Priye: +91 99396 35206
-          </a>
+          <div className="flex flex-col items-center text-sm space-y-4">
+            <h2 className="text-lg text-purple-400 font-semibold">Hackathon Venue</h2>
+            <div className="text-center items-start space-y-2">
+              <p><strong>Dayananda Sagar University Harohalli </strong></p>
+              <p></p>
+              <p className="sm:text-left space-y-2">Bangalore, Karnataka 562112</p>
+            </div>
+            <a
+              href="https://maps.app.goo.gl/UBETR1E3qbbqNDtY8"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-4 bg-white text-gray-500 px-4 py-2 rounded hover:text-slate-100 hover:bg-purple-700"
+            >
+              Get Directions
+            </a>
+          </div>
         </div>
+
+
       </div>
     </footer>
   );

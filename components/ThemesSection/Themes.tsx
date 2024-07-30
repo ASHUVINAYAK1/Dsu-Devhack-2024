@@ -1,9 +1,10 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import "../../styles/themes.css";
 import "../../styles/themes/background.css";
-import Image from "next/image";
 import Tilt from "react-parallax-tilt";
+import Image from "next/image";
+
 const themes = [
   {
     id: 1,
@@ -37,31 +38,27 @@ const themes = [
   },
 ];
 
-
 export default function Themes() {
-
-
   return (
     <>
       <h1 className="mt-36 sm:mt-56 text-center text-white text-3xl sm:text-4xl md:text-4xl xl:text-5xl font-logo">
         Themes
       </h1>
 
-      <div className="flex justify-center mt-28 ">
-        <div className="grid grid-cols-2  md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 md:gap-x-8 md:gap-y-8 gap-3    themeContainer1">
-          {[...themes].map(({ id, title, image }) => (
-            <div className="max-w-md mx-auto  md:w-64 md:h-full sm:w-44 w-40 h-full overflow-hidden ">
+      <div className="flex justify-center mt-28">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 md:gap-x-8 md:gap-y-8 gap-3 themeContainer1">
+          {themes.map(({ id, title, image }) => (
+            <div key={id} className="max-w-md mx-auto md:w-64 md:h-full sm:w-44 w-40 h-full overflow-hidden">
               <Card
-                key={id}
                 title={title}
                 icon={
                   <Image
                     src={image}
                     alt={title}
-                    width={300} // Default width
-                    height={300} // Default height
-                    className="w-[15rem] h-[15rem] md:w-[10rem] md:h-[10rem] object-cover"
                     loading="lazy"
+                    width={170}
+                    height={170}
+                    className="object-cover"
                   />
                 }
               />
@@ -82,13 +79,13 @@ function Card(props: any) {
       glareEnable
       tiltAngleYInitial={0}
       glareMaxOpacity={0.1}
-      className="fix-safari-tilt relative overflow-hidden rounded-2xl glassy-effect p-px "
+      className="fix-safari-tilt relative overflow-hidden rounded-2xl glassy-effect p-px"
     >
-      <div className="relative flex md:h-64 h-48 flex-col gap-3 rounded-2xl  p-7 ">
+      <div className="relative flex md:h-64 h-48 flex-col gap-3 rounded-2xl p-7">
         <div className="flex items-center justify-center">{icon}</div>
 
         <div>
-          <h4 className="md:text-xl  text-md text-center font-semibold text-white dark:text-white">
+          <h4 className="md:text-xl text-md text-center font-semibold text-white dark:text-white">
             {title}
           </h4>
         </div>
