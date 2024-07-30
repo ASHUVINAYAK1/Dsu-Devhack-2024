@@ -75,7 +75,7 @@ const Navbar = (activeSection: any) => {
                 alt="DSU Hack"
                 width={80}
                 height={80}
-                loading="lazy"
+                priority
                 className=" ml-1"
               />
             </a>
@@ -102,7 +102,7 @@ const Navbar = (activeSection: any) => {
               <a href="#prizes">Prizes</a>
             </div>
             <div
-              className={`nav-titles nav-titles-ltr ${activeSection === "prizes" ? "before:w-full" : ""
+              className={`nav-titles nav-titles-ltr ${activeSection === "themes" ? "before:w-full" : ""
                 } `}
             >
               <a href="#themes">Themes</a>
@@ -120,7 +120,7 @@ const Navbar = (activeSection: any) => {
               <a href="#sponsors">Sponsors</a>
             </div>
             <div
-              className={`nav-titles nav-titles-ltr ${activeSection === "team" ? "before:w-full" : ""
+              className={`nav-titles nav-titles-ltr ${activeSection === "panel" ? "before:w-full" : ""
                 } `}
             >
               <a href="#pannel">Pannel</a>
@@ -176,6 +176,13 @@ const Navbar = (activeSection: any) => {
               onClick={toggleDropdown}
             >
               Schedule
+            </a>
+            <a
+              href="#themes"
+              className="nav-dropdown-titles hover:scale-20"
+              onClick={toggleDropdown}
+            >
+              Themes
             </a>
             <a
               href="#sponsors"

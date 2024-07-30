@@ -14,17 +14,18 @@ export default function HeroSection() {
         <div className="">
           <Content />
         </div>
+        <Reveal>
           <div className="heroContainer1 text-center">
             <Image
               src={Boy}
               alt="Hero"
               width={400}
               height={400}
-              layout="responsive"
-              loading="eager"
+              priority
               className="object-contain -ml-10"
             />
           </div>
+          </Reveal>
       </div>
     </div>
   );

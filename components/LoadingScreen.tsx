@@ -21,11 +21,11 @@ const LoadingScreen = () => {
       <Image
         src={Logo}
         alt="Hero"
-        layout="responsive"
+        fill
         width={400}
         height={400}
-        loading="eager"
-      />
+        priority
+        />
     </div>
   );
 };

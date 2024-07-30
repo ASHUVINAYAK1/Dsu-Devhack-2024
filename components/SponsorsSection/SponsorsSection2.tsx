@@ -1,10 +1,9 @@
-import React, { createFactory } from "react";
+import React from "react";
 import "./sponsorTilt.css";
 import "../../styles/sponsors/background.css";
 import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 import { useMediaQuery } from "react-responsive";
-// import Image from "next/image";
 
 type Sponsor = {
   id: number;
@@ -23,6 +22,9 @@ type SponsorsGroup = {
   platinum?: Sponsor[];
   gold?: Sponsor[];
   silver?: Sponsor[];
+  community?:Sponsor[];
+
+
 };
 
 type CategorySize = {
@@ -69,6 +71,7 @@ export default function SponsorsSection2() {
       },
     ],
     silver: [],
+    community:[],
   };
 
   const categorySizes: { [key: string]: CategorySize } = {
@@ -90,6 +93,9 @@ export default function SponsorsSection2() {
     silver: {
       imgSize: "h-[80px] w-[250px] px-2 py-1 md:h-[140px] md:w-[420px]",
     },
+    community: {
+      imgSize: "h-[80px] w-[250px] px-2 py-1 md:h-[140px] md:w-[420px]",
+    }
   };
 
   const isMobile = useMediaQuery({ maxWidth: 767 });
@@ -266,10 +272,9 @@ export default function SponsorsSection2() {
             {
               sponsorList.length === 0 && <p className="text-white text-center">Coming Soon...</p>
             }
-            {sponsorList.map((sponsor, index) => (
-              <a href={sponsor.link ? sponsor.link : ""} target="_blank">
+            {sponsorList.map((sponsor) => (
+              <a key={sponsor.id} href={sponsor.link ? sponsor.link : ""} target="_blank">
                 <div
-                  key={index}
                   className={`m-4 glassy-div bg-cover bg-center flex items-center justify-center no-repeat rounded-2xl md:p-5 p-1 hover-effect-${category} ${
                     sponsor.link ? "cursor-pointer" : "cursor-default"
                   } ${categorySizes[category]?.imgSize}`}
@@ -282,7 +287,7 @@ export default function SponsorsSection2() {
                   }
                 >
                   <img
-                    alt=""
+                    alt={sponsor.alt}
                     src={`${sponsor.src}`}
                     className={`
                 ${sponsor.class ? sponsor.class : "h-full w-full "}`}

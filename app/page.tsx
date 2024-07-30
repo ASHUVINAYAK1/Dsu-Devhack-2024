@@ -5,7 +5,6 @@ import Navbar from "../components/Navbar";
 import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection/HeroSection";
 
-// Dynamically import sections to optimize initial load
 const PrizeSection = dynamic(() => import('@/components/PrizeSection/PrizeSection'), {
   loading: () => <p>Loading...</p>,
 });
@@ -122,7 +121,7 @@ export default function Home() {
         <br />
         <SponsorsSection2/>
       </div>
-      <div id="team">
+      <div id="panel">
         <br />
         <TeamSection />
       </div>

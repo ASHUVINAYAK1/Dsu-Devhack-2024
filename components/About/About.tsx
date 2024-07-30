@@ -13,10 +13,11 @@ import naacImage from "../../public/assets/images/naac.png";
 
 const About = () => {
   const [isMobile, setIsMobile] = useState(false);
+  const [countersAnimated, setCountersAnimated] = useState(false);
   const ref1 = useRef(null);
   const ref2 = useRef(null);
-  const isInView1 = useInView(ref1, { once: false });
-  const isInView2 = useInView(ref2, { once: false });
+  const isInView1 = useInView(ref1, { once: true });
+  const isInView2 = useInView(ref2, { once: true });
   const controls1 = useAnimation();
   const controls2 = useAnimation();
 
@@ -35,10 +36,15 @@ const About = () => {
       controls2.start("visible");
     }
 
+    // Set countersAnimated to true when the page loads to animate once
+    if (!countersAnimated) {
+      setCountersAnimated(true);
+    }
+
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, [isInView1, isInView2, controls1, controls2]);
+  }, [isInView1, isInView2, controls1, controls2, countersAnimated]);
 
   return (
     <>
@@ -91,31 +97,35 @@ const About = () => {
         <div className="mt-24 flex flex-col sm:flex-row w-full items-center justify-center gap-5 px-5">
           <div className="basis-1/3 border-2 rounded-2xl w-full p-5 glassy-effect aboutContainer1  ">
             <h1 className="text-4xl my-2 font-semibold blue-logo">
-              <CountUp
-                start={0}
-                end={6}
-                duration={4}
-                className="font-bold blue-logo"
-                enableScrollSpy={true}
-              />
+              {countersAnimated && (
+                <CountUp
+                  start={0}
+                  end={6}
+                  duration={4}
+                  className="font-bold blue-logo"
+                  enableScrollSpy={false}
+                />
+              )}
               +
             </h1>
             <p className="text-slate-200">Themes</p>
           </div>
           <div className="basis-1/3 border-2 rounded-2xl  w-full p-5 glassy-effect">
             <h1 className="text-4xl my-2 font-semibold text-rose-500">
-              <CountUp
-                start={0}
-                end={36}
-                duration={4}
-                className="font-bold text-rose-500"
-                enableScrollSpy={true}
-              />
+              {countersAnimated && (
+                <CountUp
+                  start={0}
+                  end={36}
+                  duration={4}
+                  className="font-bold text-rose-500"
+                  enableScrollSpy={false}
+                />
+              )}
               +
             </h1>
             <p className="text-slate-200 ">Hours of Hacking</p>
           </div>
-          <div className="basis-1/3 border-2 rounded-2xl  w-full p-5  glassy-effect">
+          <div className="basis-1/3 border-2 rounded-2xl  w-full p-5 glassy-effect">
             <h1 className="text-[1.6rem] my-2 font-semibold text-purple-500">
               Online/Offline
             </h1>
@@ -124,25 +134,21 @@ const About = () => {
           <div className="basis-1/3 border-2 rounded-2xl  w-full p-5 glassy-effect">
             <h1 className="text-4xl my-2 font-semibold orange-logo">
               ₹ &nbsp;
-              <CountUp
-                start={0}
-                end={0}
-                duration={0}
-                enableScrollSpy={true}
-                className="font-bold orange-logo"
-              />
+              <span className="font-bold orange-logo">0</span>
             </h1>
             <p className="text-slate-200 ">Free Registrations</p>
           </div>
           <div className="basis-1/3 border-2 rounded-2xl  w-full p-5 glassy-effect">
             <h1 className="text-4xl my-2 font-semibold  text-green-500">
-              <CountUp
-                start={0}
-                end={3}
-                duration={4}
-                enableScrollSpy={true}
-                className="font-bold text-green-500"
-              />
+              {countersAnimated && (
+                <CountUp
+                  start={0}
+                  end={3}
+                  duration={4}
+                  enableScrollSpy={false}
+                  className="font-bold text-green-500"
+                />
+              )}
             </h1>
             <p className="text-slate-200 ">Team Size</p>
           </div>
