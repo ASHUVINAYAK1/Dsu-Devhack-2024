@@ -23,7 +23,6 @@ function SponsorCard({ imageUrl, imageSize, hoverEffect, imageAlt }: any) {
             src={imageUrl as string}
             width={100}
             height={100}
-            objectFit="cover"
             alt={imageAlt}
           />
         </div>

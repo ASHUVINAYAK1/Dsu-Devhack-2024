@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
+import Image from 'next/image';
 
 function Images({ ease }: any) {
   const box1Controls = useAnimation();
@@ -55,8 +56,9 @@ function Images({ ease }: any) {
           initial={{ opacity: 0, y: -500, x: -300 }}
           animate={box1Controls}
         >
-          <img
+          <Image
             src="/assets/images/gdsc.png"
+            loading="lazy"
             alt="Alt"
             className="bg-white border-2 border-solid border-red-500 rounded w-40 h-24"
           />
@@ -66,9 +68,10 @@ function Images({ ease }: any) {
           initial={{ opacity: 0, y: 400, x: 200 }}
           animate={box2Controls}
         >
-          <img
+          <Image
             src="/assets/images/gdsc.png"
             alt="Alt"
+            loading="lazy"
             className="bg-white rounded"
           />
         </motion.div>
@@ -80,9 +83,10 @@ function Images({ ease }: any) {
           initial={{ opacity: 0, y: -400 }}
           animate={box3Controls}
         >
-          <img
+          <Image
             src="/assets/images/gdsc.png"
             alt="Alt"
+            loading="lazy"
             className="bg-white border-2 border-solid border-yellow-500 rounded w-64 h-28"
           />
         </motion.div>

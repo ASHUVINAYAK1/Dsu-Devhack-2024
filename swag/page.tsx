@@ -3,9 +3,9 @@
 import React, { ChangeEvent, useCallback, useRef, useState } from 'react';
 import { toPng } from 'html-to-image';
 import '../../styles/frame.css';
-import UploadImageInput from '@/components/UploadImageInput';
 import ConfettiAnimation from '@/components/ConfettiAnimation';
 import { Toaster, toast } from 'react-hot-toast';
+import Image from 'next/image';
 
 import { IoMdDownload } from "react-icons/io";
 import { FaSquareXTwitter } from "react-icons/fa6";
@@ -74,7 +74,7 @@ export default function Swag() {
             <Toaster />
             {confetti && <ConfettiAnimation />}
             <div className='glassy-effect rounded-lg flex flex-col justify-center items-center px-20 py-10 max-w-[800px] mx-auto my-36'>
-                <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Camera%20with%20Flash.png" alt="Camera with Flash" width="70" height="70" />
+                <Image src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Camera%20with%20Flash.png" alt="Camera with Flash" width={70} height={70} />
                 <br />
                 <h1 className='font-logo text-center text-xl md:text-3xl mb-4'>Digital Swag
                 </h1>
@@ -87,7 +87,7 @@ export default function Swag() {
 
             <input type="text" className='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full md:w-1/2 p-2.5 m-4' onChange={(e) => setUserName(e.target.value)}  placeholder="Your Name" value={userName} name='userName'/>
             <div ref={ref} className="frame">
-                <img src={userImage} className="innerFrame" alt="userImage" />
+                <Image src={userImage} className="innerFrame" alt="userImage" />
                 <h1 className='text-4xl font-bold  userText m-auto'>{userName}</h1>
             </div>
 
@@ -96,7 +96,6 @@ export default function Swag() {
 
             {/* <input type="file" onChange={handleImageUpload}/> */}
             <div className=' cursor-pointer mt-4'>
-            <UploadImageInput onUpload={handleImageUpload}/>
             </div>
             <div className='flex md:flex-row flex-col  md:space-x-3 space-x-0 '>
 

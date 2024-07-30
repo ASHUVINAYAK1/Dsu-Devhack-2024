@@ -7,6 +7,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { IoMdClose } from "react-icons/io";
 import { WiStormShowers } from "react-icons/wi";
+import Logo from "../public/assets/images/hb-logo.png"
 
 const Navbar2 = (activeSection: any) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -59,11 +60,12 @@ const Navbar2 = (activeSection: any) => {
       <div className="nav flex py-8 glassy-effect">
         <div className="sm:pl-7 mr-auto">
           <a href="https://dsudevhack.tech/#top">
-            <img
-              src="/assets/images/hb-logo.png"
-              alt="DU Hacks"
+            <Image
+              src={Logo}
+              alt="DSU Hack"
               width={50}
               height={50}
+              priority
             />
           </a>
         </div>
@@ -73,7 +75,7 @@ const Navbar2 = (activeSection: any) => {
               className={`nav-titles nav-titles-ltr ${
 activeSection === "about" ? "before:w-full bg-red-500" : "" }`}
             >
-              <a href="https://duhacks.tech/#about">About</a>
+              <a href="https://dsudevhack.tech/#about">About</a>
             </div>
 
             <div
@@ -81,35 +83,35 @@ activeSection === "about" ? "before:w-full bg-red-500" : "" }`}
                 activeSection === "schedule" ? "before:w-full" : ""
               } `}
             >
-              <a href="https://duhacks.tech/#schedule">Schedule</a>
+              <a href="https://dsudevhack.tech/#schedule">Schedule</a>
             </div>
             <div
               className={`nav-titles nav-titles-ltr ${
                 activeSection === "sponsors" ? "before:w-full" : ""
               } `}
             >
-              <a href="https://duhacks.tech/#sponsors">Sponsors</a>
+              <a href="https://dsudevhack.tech/#sponsors">Sponsors</a>
             </div>
             <div
               className={`nav-titles nav-titles-ltr ${
                 activeSection === "prizes" ? "before:w-full" : ""
               } `}
             >
-              <a href="https://duhacks.tech/#prizes">Prizes</a>
+              <a href="https://dsudevhack.tech/#prizes">Prizes</a>
             </div>
             <div
               className={`nav-titles nav-titles-ltr ${
                 activeSection === "team" ? "before:w-full" : ""
               } `}
             >
-              <a href="https://duhacks.tech/#team">Team</a>
+              <a href="https://dsudevhack.tech/#team">Team</a>
             </div>
             <div
               className={`nav-titles nav-titles-ltr ${
                 activeSection === "faq" ? "before:w-full" : ""
               } `}
             >
-              <a href="https://duhacks.tech/#faq">FAQs</a>
+              <a href="https://dsudevhack.tech/#faq">FAQs</a>
             </div>
           </div>
 

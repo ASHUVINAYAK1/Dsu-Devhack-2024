@@ -8,6 +8,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { IoMdClose } from "react-icons/io";
 import { WiStormShowers } from "react-icons/wi";
+import Logo from "../public/assets/images/hb-logo.png"
 
 const Navbar = (activeSection: any) => {
 
@@ -69,27 +70,14 @@ const Navbar = (activeSection: any) => {
         <div className="sm:pl-7 mr-auto flex content-between">
           <div className="flex items-center">
             <a href="#top" className="flex">
-              <img
-                src="/assets/images/hb-logo.png"
-                alt="DU Hacks"
+              <Image
+                src={Logo}
+                alt="DSU Hack"
                 width={80}
                 height={80}
+                priority
                 className=" ml-1"
               />
-              {/* <img
-                src="/assets/images/dsu.png"
-                alt="DU Hacks"
-                width={60}
-                height={60}
-                className=" ml-1"
-              />
-              <img
-                src="/assets/images/acm.png"
-                alt="DU Hacks"
-                width={60}
-                height={60}
-                className=" ml-1"
-              /> */}
             </a>
           </div>
 
@@ -114,7 +102,7 @@ const Navbar = (activeSection: any) => {
               <a href="#prizes">Prizes</a>
             </div>
             <div
-              className={`nav-titles nav-titles-ltr ${activeSection === "prizes" ? "before:w-full" : ""
+              className={`nav-titles nav-titles-ltr ${activeSection === "themes" ? "before:w-full" : ""
                 } `}
             >
               <a href="#themes">Themes</a>
@@ -132,7 +120,7 @@ const Navbar = (activeSection: any) => {
               <a href="#sponsors">Sponsors</a>
             </div>
             <div
-              className={`nav-titles nav-titles-ltr ${activeSection === "team" ? "before:w-full" : ""
+              className={`nav-titles nav-titles-ltr ${activeSection === "panel" ? "before:w-full" : ""
                 } `}
             >
               <a href="#pannel">Pannel</a>
@@ -174,8 +162,6 @@ const Navbar = (activeSection: any) => {
             className="xl:hidden nav-dropdown rounded-t-2xl bg-transparent md:hidden"
           >
             <h1 className="-mt-40 mb-10 text-sm flex gap-2 items-center" />
-            {/* <WiStormShowers className="text-2xl" /> */}
-            {/* duhacks | gdsc */}
 
             <a
               href="#about"
@@ -190,6 +176,13 @@ const Navbar = (activeSection: any) => {
               onClick={toggleDropdown}
             >
               Schedule
+            </a>
+            <a
+              href="#themes"
+              className="nav-dropdown-titles hover:scale-20"
+              onClick={toggleDropdown}
+            >
+              Themes
             </a>
             <a
               href="#sponsors"

@@ -2,9 +2,11 @@
 import { useState } from "react";
 import { Container } from "./Container";
 import "../../styles/faq/background.css";
-
+import Image from 'next/image';
+import Boy from "../../public/assets/images/faqboy.png"
 const duHacksFaq = [
   {
+    id: 1,
     question: <>What is DSU Dev Hacks 2024?</>,
     answer: (
       <>
@@ -14,6 +16,7 @@ const duHacksFaq = [
     ),
   },
   {
+    id: 2,
     question: <>At which level is this hackathon conducted?</>,
     answer: (
       <>
@@ -22,6 +25,7 @@ const duHacksFaq = [
     ),
   },
   {
+    id: 3,
     question: <>How many members can participate in a team?</>,
     answer: (
       <>
@@ -30,13 +34,16 @@ const duHacksFaq = [
     ),
   },
   {
+    id: 4,
     question: <>What is the qualification to participate?</>,
     answer: (
       <>
-        Participants must be currently enrolled in an undergraduate Engineering program      </>
+        Participants must be currently enrolled in an undergraduate Engineering program.
+      </>
     ),
   },
   {
+    id: 5,
     question: <>Can participants attend online?</>,
     answer: (
       <>
@@ -45,21 +52,25 @@ const duHacksFaq = [
     ),
   },
   {
+    id: 6,
     question: <>What is the participation fee?</>,
     answer: (
       <>
-        The participation in DSU Dev Hacks 2024 is completely free!</>
-    ),
-  },
-  {
-    question: <>Is this online hackathon or offline hackathon?</>,
-    answer: (
-      <>
-       It is a hybrid hackathon and prefered offline.
+        The participation in DSU Dev Hacks 2024 is completely free!
       </>
     ),
   },
   {
+    id: 7,
+    question: <>Is this online hackathon or offline hackathon?</>,
+    answer: (
+      <>
+        It is a hybrid hackathon and preferred offline.
+      </>
+    ),
+  },
+  {
+    id: 8,
     question: <>What are the restrictions on team formation for the event?</>,
     answer: (
       <>
@@ -68,6 +79,7 @@ const duHacksFaq = [
     ),
   },
   {
+    id: 9,
     question: <>What are the perks and benefits of participating in the hackathon?</>,
     answer: (
       <>
@@ -76,10 +88,11 @@ const duHacksFaq = [
     ),
   },
   {
+    id: 10,
     question: <>I have a question related to the hackathon which is not listed above. What should I do?</>,
     answer: (
       <>
-        Feel free to reach out to us. Just drop a mail to <strong><a href="mailto:dsudevhack@dsu.edu.in">dsudevhack@dsu.edu.in</a></strong>. You can also contact the organizer at <strong>+91-8154852286</strong>.
+        Feel free to reach out to us. Just drop a mail to <strong><a href="mailto:dsudevhack@dsu.edu.in">dsudevhack@dsu.edu.in</a></strong>. You can also contact the student coordinator at <strong>+91-8154852286</strong>.
       </>
     ),
   },
@@ -104,13 +117,14 @@ export default function FAQ() {
             <div className="faqContainer1 relative">
               {/* <div className="flex justify-center"> */}
 
-              <img
-                src="/assets/images/faqboy.png"
+              <Image
+                src={Boy}
                 alt="faq boy"
                 width={400}
                 height={400}
-                className=" object-contain "
-              />
+                className="object-contain"
+                loading="lazy"
+                  />
               {/* </div> */}
             </div>
           </div>
@@ -134,8 +148,8 @@ export function Disclosures({ full = false }) {
     <div className="divide-y divide-zinc-200 border-y border-zinc-200 dark:divide-zinc-800 dark:border-zinc-800 cursor-pointer">
       {duHacksFaq.map((item, i) => (
         <div
-          key={String(i)}
-          className={`mx-auto text-lg ${full ? "" : "max-w-2xl"}`}
+        key={item.id}
+        className={`mx-auto text-lg ${full ? "" : "max-w-2xl"}`}
         >
           {/* rome-ignore lint/a11y/useKeyWithClickEvents: <explanation> */}
           <div

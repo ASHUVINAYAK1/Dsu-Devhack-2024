@@ -20,8 +20,9 @@ function Card({ member }: any) {
             src={member.image}
             width={100}
             height={100}
-            objectFit="cover"
             alt="TBD"
+            loading="lazy"
+
           />
         </div>
 

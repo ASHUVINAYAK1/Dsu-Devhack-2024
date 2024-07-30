@@ -1,12 +1,12 @@
-import React, { createFactory } from "react";
+import React from "react";
 import "./sponsorTilt.css";
 import "../../styles/sponsors/background.css";
 import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 import { useMediaQuery } from "react-responsive";
-// import Image from "next/image";
 
 type Sponsor = {
+  id: number;
   src: string;
   alt: string;
   link?: string;
@@ -22,6 +22,9 @@ type SponsorsGroup = {
   platinum?: Sponsor[];
   gold?: Sponsor[];
   silver?: Sponsor[];
+  community?:Sponsor[];
+
+
 };
 
 type CategorySize = {
@@ -41,6 +44,7 @@ export default function SponsorsSection2() {
   const sponsors: SponsorsGroup = {
     platform: [
       {
+        id: 1,
         src: "/sponsors_logos/Devfolio_Logo-White.svg",
         alt: "DEVFOLIO LOGO",
         link: "https://devfolio.co",
@@ -51,87 +55,23 @@ export default function SponsorsSection2() {
     diamond: [],
     platinum: [],
     gold: [
-        {
-          src: "/sponsors_logos/Polygon_Logo-White.svg",
-          alt: "POLYGON LOGO",
-          link: "https://polygon.technology/",
-          class: "scale-[0.8] md:scale-[1.1]",
-        },
-        {
-          src: "/sponsors_logos/ethindia-light.svg",
-          alt: "REPLIT LOGO",
-          link: "https://ethindia.co/",
-          class: "scale-[0.75]",
-        },
-      //   {
-      //     src: "/sponsors_logos/wolfram-lg.png",
-      //     alt: "WOLFARM LOGO",
-      //     link: "https://www.wolframalpha.com/",
-      //     class: "scale-[0.90]",
-      //   },
-      //   {
-      //     src: "/sponsors_logos/xyz-logo-white.svg",
-      //     alt: "XYZ LOGO",
-      //     link: "https://nic.xyz/",
-      //     class: "scale-[0.5] md:scale-[0.6]",
-      //   },
-      //   {
-      //     src: "/sponsors_logos/JD_logo_white.png",
-      //     alt: "JDOODLE LOGO",
-      //     link: "https://www.jdoodle.com/code-online-compiler-ide?utm_source=DUHacks&utm_medium=title&utm_campaign=Hackathon+Sponsorship",
-      //     class: "scale-[0.9] md:scale-[0.8]",
-      //   },
-      //   {
-      //     src: "/sponsors_logos/verbwire.svg",
-      //     alt: "VERBWIRE LOGO",
-      //     link: "https://www.verbwire.com/",
-      //     class: "scale-[0.9] md:scale-[0.8]",
-      //   },
+      {
+        id: 2,
+        src: "/sponsors_logos/Polygon_Logo-White.svg",
+        alt: "POLYGON LOGO",
+        link: "https://polygon.technology/",
+        class: "scale-[0.8] md:scale-[1.1]",
+      },
+      {
+        id: 3,
+        src: "/sponsors_logos/ethindia-light.svg",
+        alt: "REPLIT LOGO",
+        link: "https://ethindia.co/",
+        class: "scale-[0.75]",
+      },
     ],
-    silver: [
-      //   {
-      //     src: "/sponsors_logos/beeceptor-white.svg",
-      //     alt: "BEECEPTOR LOGO",
-      //     link: "https://beeceptor.com/",
-      //     class: "scale-[0.8]",
-      //   },
-      //   {
-      //     src: "/sponsors_logos/Leading_Learner_2.png",
-      //     alt: "LEADING LEARNER LOGO",
-      //     link: "https://www.leading-learners.com/",
-      //   },
-    ],
-    // title: [
-    //   {
-    //     src: "/sponsors_logos/Rosenfeld-white.webp",
-    //     alt: "ROSENFSRCD LOGO",
-    //     link: "https://rosenfeldmedia.com/duhacks",
-    //   },
-    //   {
-    //     src: "/sponsors_logos/echo3D.jpg",
-    //     alt: "ECHO3D LOGO",
-    //     link: "https://www.echo3d.com/",
-    //     class: "scale-[0.8] sm:scale-1",
-    //   },
-    //   {
-    //     src: "/sponsors_logos/axure.svg",
-    //     alt: "AXURE LOGO",
-    //     link: "https://www.axure.com/",
-    //     class: "scale-90 md:scale-125",
-    //   },
-    //   {
-    //     src: "/sponsors_logos/loft-white.png",
-    //     alt: "LOFT.SH LOGO",
-    //     link: "https://www.loft.sh/",
-    //     class: "w-1/3 scale-90 md:scale-125",
-    //   },
-    //   {
-    //     src: "/sponsors_logos/slido.svg",
-    //     alt: "SLIDO LOGO",
-    //     link: "https://www.slido.com/",
-    //     class: "w-1/3 scale-90 md:scale-125",
-    //   },
-    // ],
+    silver: [],
+    community:[],
   };
 
   const categorySizes: { [key: string]: CategorySize } = {
@@ -153,6 +93,9 @@ export default function SponsorsSection2() {
     silver: {
       imgSize: "h-[80px] w-[250px] px-2 py-1 md:h-[140px] md:w-[420px]",
     },
+    community: {
+      imgSize: "h-[80px] w-[250px] px-2 py-1 md:h-[140px] md:w-[420px]",
+    }
   };
 
   const isMobile = useMediaQuery({ maxWidth: 767 });
@@ -329,10 +272,9 @@ export default function SponsorsSection2() {
             {
               sponsorList.length === 0 && <p className="text-white text-center">Coming Soon...</p>
             }
-            {sponsorList.map((sponsor, index) => (
-              <a href={sponsor.link ? sponsor.link : ""} target="_blank">
+            {sponsorList.map((sponsor) => (
+              <a key={sponsor.id} href={sponsor.link ? sponsor.link : ""} target="_blank">
                 <div
-                  key={index}
                   className={`m-4 glassy-div bg-cover bg-center flex items-center justify-center no-repeat rounded-2xl md:p-5 p-1 hover-effect-${category} ${
                     sponsor.link ? "cursor-pointer" : "cursor-default"
                   } ${categorySizes[category]?.imgSize}`}
@@ -345,7 +287,7 @@ export default function SponsorsSection2() {
                   }
                 >
                   <img
-                    alt=""
+                    alt={sponsor.alt}
                     src={`${sponsor.src}`}
                     className={`
                 ${sponsor.class ? sponsor.class : "h-full w-full "}`}
