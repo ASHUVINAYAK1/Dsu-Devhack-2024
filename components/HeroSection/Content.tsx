@@ -117,7 +117,7 @@ const Content: React.FC = () => {
         <button
           className={`m-1 ${" mt-6 rounded-xl bg-gradient-to-l from-purple-500 to-pink-500 text-white"} w-full py-2 rounded-md font-semibold transition-colors duration-300`}
         >
-          Register Now!!
+          Registeration Starts Soon!
         </button>
       </motion.div>
       <div className="">
