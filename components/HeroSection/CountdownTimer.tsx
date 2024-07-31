@@ -33,7 +33,7 @@ const CountdownTimer = () => {
   };
 
   useEffect(() => {
-    const endDate = new Date("2024-09-20T23:59:00"); // September 20, 2024, at 11:59 PM
+    const endDate = new Date("2024-09-20T23:59:00");
 
     const intervalId = setInterval(() => {
       calculateTimeRemaining(endDate);
@@ -46,7 +46,7 @@ const CountdownTimer = () => {
 
   return (
     <>
-      <div className="flex justify-center space-x-4 mt-2">
+      <div className="flex justify-center space-x-4">
         <div className="p-2 rounded-md  shadow-md transform hover:scale-105 transition-transform duration-300  bg-black bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30  w-full">
           <div className="text-4xl font-bold blue-logo">{days}</div>
           <div className="text-sm text-gray-400 px-3">Days</div>
