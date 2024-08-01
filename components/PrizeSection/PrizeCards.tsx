@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../../styles/prizesection.css";
 import Tilt from "react-parallax-tilt";
 import "../../styles/prizes/background.css";
@@ -20,7 +20,30 @@ const Card = ({
   // console.log("imgWidth:", imgWidth);
 
   const [isFlipped, setIsFlipped] = useState(false);
+  const [computedPaddingTop, setComputedPaddingTop] = useState<string | undefined>(undefined);
+
   let myMargin = "";
+  useEffect(() => {
+    if (paddingTop) {
+      const handleResize = () => {
+        const newPaddingTop =
+          window.innerWidth >= 768
+            ? `${parseInt(paddingTop) * 2}px`  
+            : `${paddingTop}px`;                
+        setComputedPaddingTop(newPaddingTop);
+      };
+
+      // Call the function to set initial value
+      handleResize();
+
+      // Add event listener to handle resize
+      window.addEventListener('resize', handleResize);
+
+      // Cleanup the event listener on component unmount
+      return () => window.removeEventListener('resize', handleResize);
+    }
+  }, [paddingTop]);
+
 
   // Set z-index class based on position
   switch (position) {
@@ -64,9 +87,10 @@ const Card = ({
                     width={imgWidth ? imgWidth : 200}
                     height={200}
                     loading="lazy"
-                    className={`pt-${paddingTop}`}
-                    style={{ objectFit: 'cover' }}
-                  />
+                    style={{
+                      paddingTop: computedPaddingTop,                  
+                      objectFit: 'cover'
+                    }}                    />
               </div>
               <div className="content flex-grow flex flex-col justify-evenly">
                 <div className=" h-[220px]px-2">
