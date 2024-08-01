@@ -122,8 +122,8 @@ const cardContents = [
       "Winners Certificate",
     ],
     image: "/sponsors_logos/Polygon_Logo-White.svg",
-    imgWidth: 200,
-    paddingTop: 20,
+    imgWidth: 160,
+    paddingTop: 30,
     link: "https://polygon.technology"
   },
   {
@@ -140,8 +140,8 @@ const cardContents = [
       "Winners Certificate",
     ],
     image: "/sponsors_logos/ethindia-light.svg",
-    imgWidth: 200,
-    paddingTop: 20,
+    imgWidth: 160,
+    paddingTop: 30,
   }
   
  
