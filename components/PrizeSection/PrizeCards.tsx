@@ -128,7 +128,7 @@ const PrizeCards = () => {
       <div className="flex-col flex lg:justify-center">
       <div className="prizeContainer1">
           <div className="prizeContainer md:grid hidden grid-cols-1 sm:grid-cols-3 gap-3 lg:grid-cols-3 mb-10">
-            {prizeData.cardContents.slice(0, 6).map((card: any, index: any) => (
+            {prizeData.cardContents.slice(0, 8).map((card: any, index: any) => (
               <Card
                 key={card.id || index}
                 texts={card.texts}
@@ -144,7 +144,7 @@ const PrizeCards = () => {
           </div>
         </div>
         <div className="prizeContainer grid md:hidden grid-cols-1 sm:grid-cols-3 gap-3 lg:grid-cols-3 mb-10">
-          {prizeData.cardContents.slice(0, 6).map((card: any, index: any) => (
+          {prizeData.cardContents.slice(0, 8).map((card: any, index: any) => (
             <Card
               key={card.id || index} 
               texts={card.texts}
