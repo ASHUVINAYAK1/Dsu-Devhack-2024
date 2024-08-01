@@ -114,11 +114,23 @@ const Content: React.FC = () => {
       </div>
       <motion.div className="text-md text-white">
         <CountdownTimer />
-        <button
+        {/* <button
           className={`m-1 ${" mt-6 rounded-xl bg-gradient-to-l from-purple-500 to-pink-500 text-white"} w-full py-2 rounded-md font-semibold transition-colors duration-300`}
         >
           Registeration Starts Soon!
-        </button>
+        </button> */}
+        <button
+  className={`m-1 mt-6 rounded-xl w-full py-2 font-semibold transition-colors duration-300 border-2 border-transparent bg-clip-padding bg-origin-border`}
+  style={{ 
+    backgroundImage: 'linear-gradient(to left, #a855f7, #ec4899)',
+    WebkitBackgroundClip: 'text',
+    color: 'transparent',
+    borderImage: 'linear-gradient(to left, #a855f7, #ec4899) 1',
+  }}
+>
+  Registration Starts Soon!
+</button>
+
       </motion.div>
       <div className="">
         <div
