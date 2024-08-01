@@ -102,9 +102,7 @@ const cardContents = [
        "Industry Exposure",
         "Career Opportunities",
         "Networking",
-        "Mentorship",
         "Certificate",
-        "Mementos"
     ],
     image: "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Activities/Sparkles.png",
     imgWidth: 100,
