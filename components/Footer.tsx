@@ -67,8 +67,10 @@ const Footer = () => {
             <div className="flex flex-col items-center sm:items-start">
               <a href="mailto:dsudevhack@dsu.edu.in" className="mb-2">Email: dsudevhack@dsu.edu.in</a>
               <p className="text-sm mb-2">Student coordinators</p>
-              <a href="tel:8154852286" className="mb-2">Patel Muhammad: +91 81548 52286</a>
-              <a href="tel:9939635206">Utkarsh Priye: +91 99396 35206</a>
+              <a href="tel:8154852286">Patel Muhammad: +91 8154852286</a>
+              <a href="tel:9939635206">Utkarsh Priye: +91 9939635206</a>
+              <a href="tel:8299686568">Ritvik Vasundh: +91 8299686568</a>
+
             </div>
           </div>
 

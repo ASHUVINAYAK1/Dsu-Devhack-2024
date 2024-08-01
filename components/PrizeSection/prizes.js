@@ -96,19 +96,54 @@ const cardContents = [
   
   {id:5,
     texts: [
-      "All participants will get DSU devHacks certificates",
+      "All participants will get DSU DevHacks certificates",
     ],
     textsBack: [
        "Industry Exposure",
         "Career Opportunities",
         "Networking",
-        "Mentorship",
         "Certificate",
     ],
     image: "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Activities/Sparkles.png",
     imgWidth: 100,
     // link: "https://www.verbwire.com/",
   },
+  {
+    id: 6,
+    texts: [
+      "Polygon Track Prize For Best Hack Built on Polygon",
+      "<span class='text-4xl  text-green-500'><br />$200 Prize</span>",
+    ],
+    textsBack: [
+      "Industry Recognition",
+      "Career Growth Opportunities",
+      "Exclusive Networking",
+      "Technical Mentorship",
+      "Winners Certificate",
+    ],
+    image: "/sponsors_logos/Polygon_Logo-White.svg",
+    imgWidth: 160,
+    paddingTop: 30,
+    link: "https://polygon.technology"
+  },
+  {
+    id: 7,
+    texts: [
+      "Ethereum Track price For Best Hack Built on Ethereum",
+      "<span class='text-4xl text-green-500'><br />$100 Prize </span>",
+    ],
+    textsBack: [
+      "Industry Recognition",
+      "Career Growth Opportunities",
+      "Exclusive Networking",
+      "Technical Mentorship",
+      "Winners Certificate",
+    ],
+    image: "/sponsors_logos/ethindia-light.svg",
+    imgWidth: 160,
+    paddingTop: 30,
+  }
+  
  
 ];
 

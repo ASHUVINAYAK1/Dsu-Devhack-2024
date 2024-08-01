@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../../styles/prizesection.css";
 import Tilt from "react-parallax-tilt";
 import "../../styles/prizes/background.css";
@@ -20,7 +20,30 @@ const Card = ({
   // console.log("imgWidth:", imgWidth);
 
   const [isFlipped, setIsFlipped] = useState(false);
+  const [computedPaddingTop, setComputedPaddingTop] = useState<string | undefined>(undefined);
+
   let myMargin = "";
+  useEffect(() => {
+    if (paddingTop) {
+      const handleResize = () => {
+        const newPaddingTop =
+          window.innerWidth >= 768
+            ? `${parseInt(paddingTop) * 2}px`  
+            : `${paddingTop}px`;                
+        setComputedPaddingTop(newPaddingTop);
+      };
+
+      // Call the function to set initial value
+      handleResize();
+
+      // Add event listener to handle resize
+      window.addEventListener('resize', handleResize);
+
+      // Cleanup the event listener on component unmount
+      return () => window.removeEventListener('resize', handleResize);
+    }
+  }, [paddingTop]);
+
 
   // Set z-index class based on position
   switch (position) {
@@ -64,9 +87,10 @@ const Card = ({
                     width={imgWidth ? imgWidth : 200}
                     height={200}
                     loading="lazy"
-                    className={`pt-${paddingTop}`}
-                    style={{ objectFit: 'cover' }}
-                  />
+                    style={{
+                      paddingTop: computedPaddingTop,                  
+                      objectFit: 'cover'
+                    }}                    />
               </div>
               <div className="content flex-grow flex flex-col justify-evenly">
                 <div className=" h-[220px]px-2">
@@ -128,7 +152,7 @@ const PrizeCards = () => {
       <div className="flex-col flex lg:justify-center">
       <div className="prizeContainer1">
           <div className="prizeContainer md:grid hidden grid-cols-1 sm:grid-cols-3 gap-3 lg:grid-cols-3 mb-10">
-            {prizeData.cardContents.slice(0, 6).map((card: any, index: any) => (
+            {prizeData.cardContents.slice(0, 8).map((card: any, index: any) => (
               <Card
                 key={card.id || index}
                 texts={card.texts}
@@ -144,7 +168,7 @@ const PrizeCards = () => {
           </div>
         </div>
         <div className="prizeContainer grid md:hidden grid-cols-1 sm:grid-cols-3 gap-3 lg:grid-cols-3 mb-10">
-          {prizeData.cardContents.slice(0, 6).map((card: any, index: any) => (
+          {prizeData.cardContents.slice(0, 8).map((card: any, index: any) => (
             <Card
               key={card.id || index} 
               texts={card.texts}
