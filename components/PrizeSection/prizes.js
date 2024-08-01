@@ -112,7 +112,7 @@ const cardContents = [
     id: 6,
     texts: [
       "Polygon Track Prize For Best Hack Built on Polygon",
-      "<span class='text-4xl  text-green-500'><br />$200 USD Prize</span>",
+      "<span class='text-4xl  text-green-500'><br />$200 Prize</span>",
     ],
     textsBack: [
       "Industry Recognition",
@@ -130,7 +130,7 @@ const cardContents = [
     id: 7,
     texts: [
       "Ethereum Track price For Best Hack Built on Ethereum",
-      "<span class='text-4xl text-green-500'><br />$100 USD Prize </span>",
+      "<span class='text-4xl text-green-500'><br />$100 Prize </span>",
     ],
     textsBack: [
       "Industry Recognition",
