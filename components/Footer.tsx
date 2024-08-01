@@ -19,17 +19,9 @@ import {
 import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
-  const SOCIALS = {
-    instagram: "https://instagram.com/duhacks2022?igshid=YmMyMTA2M2Y=",
-    discord: "https://discord.gg/T2fzD8c2j2",
-    linkedin: "https://www.linkedin.com/company/dsu-devhack/about/",
-    twitter: "https://twitter.com/DuHacks?t=CPjNJmQX1JxhIHb_YI0Tuw&s=09",
-    email: "mailto:contact@duhacks.tech",
-    mail: "contact@duhacks.tech",
-  };
 
   return (
-    <footer className="mt-24 pt-5 lg:pt-8 pb-2 lg:pb-8 bg-black bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20">
+    <footer className="mt-24 pt-5 lg:pt-8 pb-8 bg-black bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20">
       <div className="flex flex-col">
         <div className="text-center mb-4 sm:mb-6">
           <h2 className="text-gold-500 font-bold text-3xl lg:text-2xl">Connect with Us</h2>

@@ -250,10 +250,10 @@ export default function SponsorsSection2() {
             </motion.p>
 
             <button
-              onClick={() => handleClick("https://dsudevhack.tech/")}
+              onClick={() => handleClick("https://drive.google.com/file/d/1znefUyJ0GjJXS1bi4tSvBoGIofqodrQA/view?usp=sharing")}
               className={`mt-10 ${" mt-6 rounded-xl bg-gradient-to-l from-purple-500 to-pink-500 text-white"} py-2 px-5 rounded-md font-semibold transition-colors duration-300`}
             >
-              Download Sponsorship Deck
+              Download Sponsorship Brochure
             </button>
           </div>
         </div>
