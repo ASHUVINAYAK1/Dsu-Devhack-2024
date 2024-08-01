@@ -4,73 +4,89 @@
     font-family: 'Newsreader', serif;
 }
 
-.font-PorietOne {
+.font-PoiretOne {
     font-family: 'Poiret One', sans-serif;
 }
 
-.team-image{
+.team-image {
     background-image: url("../public/assets/images/team.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+.navigation {
+    position: relative;
+}
 
- 
-
-.navigation .animation{
+.navigation .animation {
     position: absolute;
     height: 100%;
-    width: 70px;
-    top : 0;
-    left: 5px;
+    width: 70px; /* Default width */
+    top: 0;
+    left: 0;
     z-index: -1;
     transition: 0.35s ease-in-out;
-    border-radius: 10px ;
+    border-radius: 10px;
+    background-image: linear-gradient(to left, var(--tw-gradient-stops));
+    --tw-gradient-from: #a855f7 var(--tw-gradient-from-position);
+    --tw-gradient-to: rgba(168, 85, 247, 0) var(--tw-gradient-to-position);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+    --tw-gradient-to: #ec4899 var(--tw-gradient-to-position);
+    background-color: var(--tw-gradient-from);}
+
+.navigation button {
+    position: relative;
+    z-index: 1;
 }
 
-/* .navigation .start {
-    position: relative;
-} */
-
-
-.navigation .organizer,button:hover~.animation{
-    left: 5px;
+.navigation .student {
+    left: 0;
     width: 70px;
 }
 
-.navigation .web,button:nth-child(2):hover~.animation{
-    left: 80px;
+.navigation .organizer {
+    left: 72px;
+    width: 70px;
+}
+
+.navigation .web {
+    left: 142px;
     width: 55px;
 }
 
-
-.navigation .sponsorship,button:nth-child(3):hover~.animation{
-    left: 145px;
-    width: 50px;
-}
-.navigation .promotion,button:nth-child(4):hover~.animation{
+.navigation .sponsorship {
     left: 200px;
     width: 130px;
 }
 
-.navigation .design,button:nth-child(5):hover~.animation{
-    left: 332px;
+.navigation .promotion {
+    left: 330px;
     width: 110px;
 }
-.navigation .design,button:nth-child(6):hover~.animation{
-    left: 450px;
-    width: 70px;
+
+.navigation .design {
+    left: 440px;
+    width: 90px;
 }
 
-
-@media (max-width: 768px){
-  .animation{
-    display : none ;
-  }
-
-  .navigation .active{
-    @apply  bg-gradient-to-l  from-purple-500  to-pink-500 rounded-md;
-  }
+.navigation .technical {
+    left: 530px;
+    width: 100px;
 }
 
+.navigation .drafting {
+    left: 630px;
+    width: 100px;
+}
+
+@media (max-width: 768px) {
+    .navigation .animation {
+        display: none;
+    }
+
+    .navigation .active {
+        background: linear-gradient(to left, #955b8a, #d5a6a6); /* Example gradient */
+        border-radius: 0.25rem;
+    }
+}

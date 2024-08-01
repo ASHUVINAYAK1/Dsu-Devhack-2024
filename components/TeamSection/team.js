@@ -1,13 +1,12 @@
 const teamData = {
-  organizers: [
+  coordinators: [
     {
       key: 1,
       id: "Student coordinator",
       name: "Patel Muhammad",
       linkedin: "https://www.linkedin.com/in/patel-muhammad/",
       github: "https://github.com/patel-muhammad/",
-      image:
-        "/team_members/Patel_Muhammad.jpg",
+      image: "/team_members/Patel_Muhammad.jpg",
     },
     {
       key: 2,
@@ -22,9 +21,51 @@ const teamData = {
       id: "Student coordinator",
       name: "Ritvik Vasundh",
       linkedin: "https://www.linkedin.com/in/ritvikvasundh",
-      github: "Avi-https://github.com/retvq",
+      github: "https://github.com/retvq",
       image: "/team_members/Ritvik_Vasundh.jpg",
     },
+  ],
+  organizers: [
+  //   {
+  //     key: 4,
+  //     id: "Core",
+  //     name: "Patel Muhammad",
+  //     linkedin: "https://www.linkedin.com/in/patel-muhammad/",
+  //     github: "https://github.com/patel-muhammad/",
+  //     image: "/team_members/Patel_Muhammad.jpg",
+  //   },
+  //   {
+  //     key: 5,
+  //     id: "Web Lead",
+  //     id: "Core",
+  //     linkedin: "https://www.linkedin.com/in/dev-ganesh-shinde/",
+  //     github: "https://github.com/Ganeshshinde-2003",
+  //     image: "/team_members/ganesh.jpg",
+  //   },
+  //   {
+  //     key: 6,
+  //     id: "Web",
+  //     id: "Core",
+  //     linkedin: "https://www.linkedin.com/in/dev-amar-kumar/",
+  //     github: "https://github.com/amaranand360",
+  //     image: "/team_members/amar_kumar.jpg",
+  //   },
+  //   {
+  //     key: 7,
+  //     id: "Student coordinator",
+  //     id: "Core",
+  //     linkedin: "http://www.linkedin.com/in/utkarsh-priye-jha",
+  //     github: "https://github.com/Code-X-utkarsh",
+  //     image: "/team_members/Utkarsh.jpg",
+  //   },
+  //   {
+  //     key: 8,
+  //     id: "Core",
+  //     name: "Ritvik Vasundh",
+  //     linkedin: "https://www.linkedin.com/in/ritvikvasundh",
+  //     github: "https://github.com/retvq",
+  //     image: "/team_members/Ritvik_Vasundh.jpg",
+  //   },
   ],
   web_team: [
     {
@@ -49,23 +90,23 @@ const teamData = {
       name: "Ashutosh kumar",
       linkedin: "https://www.linkedin.com/in/ashutosh-kumar-dev/",
       github: "https://github.com/ASHUVINAYAK1",
-      image: "/team_members/ashutosh.jpeg"
+      image: "/team_members/ashutosh.jpeg",
+    },
+    {
+      key: 7,
+      id: "Web",
+      name: "Sai Jadhav",
+      linkedin: "https://www.linkedin.com/in/sai-jadhav-371871200/",
+      github: "https://github.com/saijadhav369",
+      image: "/team_members/sai.jpg",
     },
     {
       key: 7,
       id: "Web",
       name: "Somanath meda",
-      linkedin: "https://www.linkedin.com/in/dev-amar-kumar/",
-      github: "https://www.linkedin.com/in/dev-amar-kumar/",
-      image: "/team_members/",
-    },
-    {
-      key: 8,
-      id: "Web",
-      name: "Sai yadav",
-      linkedin: "https://www.linkedin.com/in/dev-amar-kumar/",
-      github: "https://www.linkedin.com/in/dev-amar-kumar/",
-      image: "/team_members/",
+      linkedin: "https://www.linkedin.com/in/venkata-somanath-meda-1968032a6",
+      github: "https://github.com/Somanath-03",
+      image: "/team_members/Somanath.jpg",
     },
   ],
   sponsorship_team: [
@@ -75,8 +116,7 @@ const teamData = {
       name: "Patel Muhammad",
       linkedin: "https://www.linkedin.com/in/patel-muhammad/",
       github: "https://github.com/patel-muhammad/",
-      image:
-        "/team_members/Patel_Muhammad.jpg",
+      image: "/team_members/Patel_Muhammad.jpg",
     },
     {
       key: 10,
@@ -91,7 +131,7 @@ const teamData = {
       id: "Sponsorship",
       name: "Ritvik Vasundh",
       linkedin: "https://www.linkedin.com/in/ritvikvasundh",
-      github: "Avi-https://github.com/retvq",
+      github: "https://github.com/retvq",
       image: "/team_members/Ritvik_Vasundh.jpg",
     },
   ],
@@ -100,21 +140,97 @@ const teamData = {
       key: 12,
       id: "Design Lead",
       name: "Jiya Patel",
-      linkedin: "https://www.linkedin.com/in/pateljiya ",
-      github: "https://github.com/pateljiya ",
-      image:
-        "",
+      linkedin: "https://www.linkedin.com/in/pateljiya",
+      github: "https://github.com/pateljiya",
+      image: "",
+    },
+    {
+      key: 13,
+      id: "Design",
+      name: "Sofia Rebecca",
+      linkedin: "https://www.linkedin.com/in/sofia-rebecca-830475280",
+      github: "https://github.com/SofiaRebecca",
+      image: "/team_members/sofia.jpg",
+    },
+    {
+      key: 14,
+      id: "Design",
+      name: "Samridhi D",
+      linkedin: "https://www.linkedin.com/in/samridhi-d-365a47265",
+      github: "https://github.com/samriddhid04",
+      image: "",
+    },
+    {
+      key: 15,
+      id: "Design",
+      name: "Sameer Katte",
+      linkedin: "https://www.linkedin.com/in/sameer-katte-7569a6190",
+      github: "https://github.com/sam25kat",
+      image: "/team_members/Sameer_Katte.jpg",
+    },
+    {
+      key: 16,
+      id: "Design",
+      name: "Mohamed Aasim Amjad",
+      linkedin: "https://www.linkedin.com/in/mohamed-aasim-amjad-5b1baa2a0/",
+      github: "https://github.com/Aasim141004",
+      image: "/team_members/mohamed_aasim_amjad.jpg",
     },
   ],
-  promotion_team: [{
-    key: 13,
-      id: "promotion",
+  promotion_team: [
+    {
+      key: 17,
+      id: "Promotion",
       name: "Shreya Sridharan",
-      linkedin: "https://www.linkedin.com/in/shreya-sridharan-a14a512b9/  ",
-      github: " ",
-      image: "/team_members/soundarya.jpg",
-  }],
-
+      linkedin: "https://www.linkedin.com/in/shreya-sridharan-a14a512b9/",
+      github: "",
+      image: "",
+    },
+    {
+      key: 18,
+      id: "Promotion",
+      name: "Savhar Verma",
+      linkedin: "https://www.linkedin.com/in/savhar-verma/",
+      github: "https://github.com/savhar28",
+      image: "/team_members/savhar_verma.jpg",
+    },
+    {
+      key: 19,
+      id: "Promotion",
+      name: "Samarth Kushwaha",
+      linkedin: "https://www.linkedin.com/in/samarth-kushwaha-187763268/",
+      github: "https://github.com/samarthkushwaha92",
+      image: "/team_members/samarth_kushwaha.jpg",
+    },
+  ],
+  technical_team: [
+    {
+      key: 20,
+      id: "Technical",
+      name: "Utpal Kumar",
+      linkedin: "https://www.linkedin.com/in/findutpalkumar",
+      github: "https://github.com/UtpalKuma-r",
+      image: "/team_members/UtpalKumar.jpg",
+    },
+  ],
+  drafting_team: [
+    {
+      key: 21,
+      id: "Drafting",
+      name: "Srushti L Gowda",
+      linkedin: "https://www.linkedin.com/in/srushti-lingegowda-18857527a",
+      github: "https://github.com/SLG20",
+      image: "/team_members/SrushtiLG.jpg",
+    },
+    {
+      key: 22,
+      id: "Drafting",
+      name: "NM Bhavana",
+      linkedin: "https://www.linkedin.com/in/bhavana-nm-963ba128b",
+      github: "",
+      image: "/team_members/NM_Bhavana.jpg",
+    },
+  ],
 };
 
 export default teamData;
