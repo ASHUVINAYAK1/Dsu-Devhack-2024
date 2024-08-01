@@ -4,6 +4,7 @@ import dynamic from 'next/dynamic';
 import Navbar from "../components/Navbar";
 import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection/HeroSection";
+import BackToTop from "@/components/Backtotop";
 
 const PrizeSection = dynamic(() => import('@/components/PrizeSection/PrizeSection'), {
   loading: () => <p>Loading...</p>,
@@ -32,7 +33,7 @@ const SponsorsSection2 = dynamic(() => import('@/components/SponsorsSection/Spon
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState("home");
-
+ 
   // const handleScrollSection = (
   //   about, themes, schedule, sponsors, prizes, team, faq
   // ) => {
@@ -98,7 +99,8 @@ export default function Home() {
   // }, [activeSection]);
 
   return (
-    <main className="overflow-x-hidden bg-grey-900">
+    <main className="overflow-x-hidden relative bg-grey-900">
+      <BackToTop/>
       <Navbar activeSection={activeSection}/>
       <HeroSection />
       <div id="about">
@@ -129,7 +131,7 @@ export default function Home() {
         <br />
         <TeamSection3 />
       </div>
-      <div id="faq">
+      <div className="mb-24" id="faq">
         <br />
         <Faq />
       </div>

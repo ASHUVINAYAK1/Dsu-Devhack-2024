@@ -120,16 +120,17 @@ const Content: React.FC = () => {
           Registeration Starts Soon!
         </button> */}
         <button
-  className={`m-1 mt-6 rounded-xl w-full py-2 font-semibold transition-colors duration-300 border-2 border-transparent bg-clip-padding bg-origin-border`}
-  style={{ 
-    backgroundImage: 'linear-gradient(to left, #a855f7, #ec4899)',
-    WebkitBackgroundClip: 'text',
-    color: 'transparent',
-    borderImage: 'linear-gradient(to left, #a855f7, #ec4899) 1',
-  }}
->
-  Registration Starts Soon!
-</button>
+          className={`m-1 mt-6 rounded w-full py-2 font-semibold transition-colors duration-300 border-2 border-transparent bg-clip-padding bg-origin-border`}
+          style={{
+            backgroundImage: 'linear-gradient(to left, #a855f7, #ec4899)',
+            WebkitBackgroundClip: 'text',
+            color: 'transparent',
+            borderImage: 'linear-gradient(to left, #a855f7, #ec4899) 1',
+            borderRadius:"10px",
+          }}
+        >
+          Registration will start from 5 Aug
+        </button>
 
       </motion.div>
       <div className="">
