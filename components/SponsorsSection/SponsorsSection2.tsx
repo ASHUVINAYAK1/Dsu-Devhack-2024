@@ -71,13 +71,21 @@ export default function SponsorsSection2() {
         class: "scale-[0.5] md:scale-[1.1]",
       },
     ],
-    community:[],
+    community:[
+      {
+        id: 1,
+        src: "/assets/images/acm.png",
+        alt: "ACM LOGO",
+        link: "https://dsu.acm.org/",
+        class: "h-[120px]",
+      },
+    ],
   };
 
   const categorySizes: { [key: string]: CategorySize } = {
     platform: {
       imgSize:
-        "h-[100px] w-[340px]  md:px-8 px-4 py-1 md:h-[200px] md:w-[800px] ",
+        "h-[80px] w-[250px] px-2 py-1 md:h-[140px] md:w-[420px] ",
     },
 
     title: {
@@ -265,7 +273,7 @@ export default function SponsorsSection2() {
             className={`text-center m-auto md:my-20 my-10 text-white text-lg md:text-xl xl:text-2xl md:w-1/6 w-1/2 font-semibold px-1 py-2 title-${category.toLowerCase()} rounded-md`}
           >
             {category.charAt(0).toUpperCase() + category.slice(1)}{" "}
-            {category === "title" ? "Sponsor" : "Sponsors"}
+            {category === "title" ? "Sponsor" : category === "community" ? "Partners" : "Sponsors"}
           </h2>
           <div className="flex flex-wrap justify-center md:px-20">
             {/* <p>Coming Soon...</p> */}
