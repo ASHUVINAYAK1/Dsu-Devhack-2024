@@ -8,7 +8,7 @@ import "../../styles/colors.css";
 import Tilt from "react-parallax-tilt";
 import Image from "next/image";
 import dsuImage from "../../public/assets/images/dsu.png";
-import soeImage from "../../public/assets/images/soe.png";
+import soeImage from "../../public/assets/images/school.png";
 import naacImage from "../../public/assets/images/naac.png";
 
 const About = () => {
@@ -58,37 +58,38 @@ const About = () => {
             glareMaxOpacity={0.1}
             className="fix-safari-tilt relative overflow-hidden mb-32 rounded-2xl glassy-effect p-px "
           >
-            <div className="relative flex items-center justify-center md:h-64 h-48 flex-col gap-3 rounded-2xl">
+            <div className="relative flex items-center justify-center md:h-64 h-48 flex-col gap-1 rounded-2xl">
               <div className="flex w-full items-center justify-evenly">
                 <Image
                   src={dsuImage}
                   width={100}
                   height={100}
                   loading="lazy"
-                  placeholder="blur" 
+                  placeholder="blur"
                   alt="DSU DevHacks"
-                  className="md:w-[10rem] md:h-[10rem] w-[5rem] h-[rem] object-cover object-center"
+                  className="md:w-[8rem] md:h-[8rem] w-[3rem] h-[2rem] sm:w-[5rem] sm:h-[5rem] object-cover object-center rounded-full"
                 />
                 <Image
                   src={naacImage}
-                  width={180}
+                  width={100}
                   height={100}
-                  loading="lazy"
-                  placeholder="blur" 
-                  alt="DSU DevHacks"
-                  className="md:w-[15rem] md:h-[10rem] w-[7rem] h-[rem] sm:w-[90px] object-cover object-center"
-                />
-                <Image
-                  src={soeImage}
-                  width={200}
-                  height={150}
                   loading="lazy"
                   placeholder="blur"
                   alt="DSU DevHacks"
-                  className="md:w-[15rem] md:h-[20rem] w-[8rem] h-[rem] sm:w-[90px] object-cover object-center"
+                  className="md:w-[10rem] md:h-[7rem] w-[3rem] h-[2rem] sm:w-[5rem] sm:h-[5rem] object-cover object-center rounded-full"
+                />
+                <Image
+                  src={soeImage}
+                  width={100}
+                  height={100}
+                  loading="lazy"
+                  placeholder="blur"
+                  alt="DSU DevHacks"
+                  className="md:w-[20rem] md:h-[13rem] w-[5rem] h-[3rem] sm:w-[5rem] sm:h-[5rem] md:object-center"
                 />
               </div>
             </div>
+
           </Tilt>
         </div>
         <h1 className="text-center text-white text-3xl sm:text-4xl md:text-4xl xl:text-5xl font-logo">
