@@ -8,7 +8,7 @@ import "../../styles/colors.css";
 import Tilt from "react-parallax-tilt";
 import Image from "next/image";
 import dsuImage from "../../public/assets/images/dsu.png";
-import soeImage from "../../public/assets/images/school.png";
+import soeImage from "../../public/assets/images/soe2.png";
 import naacImage from "../../public/assets/images/naac.png";
 
 const About = () => {
@@ -67,7 +67,7 @@ const About = () => {
                   loading="lazy"
                   placeholder="blur"
                   alt="DSU DevHacks"
-                  className="md:w-[8rem] md:h-[8rem] w-[2.2rem] h-[2.5rem] sm:w-[5rem] sm:h-[5rem] object-cover object-center rounded-full"
+                  className="md:w-[10rem] md:h-[10rem] w-[4rem] h-[4rem] sm:w-[5rem] sm:h-[5rem] object-contain object-center rounded-full"
                 />
                 <Image
                   src={naacImage}
@@ -76,7 +76,7 @@ const About = () => {
                   loading="lazy"
                   placeholder="blur"
                   alt="DSU DevHacks"
-                  className="md:w-[10rem] md:h-[7rem] w-[3rem] h-[2rem] sm:w-[5rem] sm:h-[5rem] object-cover object-center rounded-full"
+                  className="md:w-[10rem] md:h-[10rem] w-[4rem] h-[4rem] sm:w-[5rem] sm:h-[5rem] object-contain object-center rounded-full"
                 />
                 <Image
                   src={soeImage}
@@ -85,7 +85,7 @@ const About = () => {
                   loading="lazy"
                   placeholder="blur"
                   alt="DSU DevHacks"
-                  className="md:w-[20rem] md:h-[13rem] w-[5.4rem] h-[3.5rem] sm:w-[5rem] sm:h-[5rem] md:object-center"
+                  className="md:w-[10rem] md:h-[10rem] w-[4rem] h-[4rem] sm:w-[5rem] sm:h-[5rem] md:object-center object-contain"
                 />
               </div>
             </div>

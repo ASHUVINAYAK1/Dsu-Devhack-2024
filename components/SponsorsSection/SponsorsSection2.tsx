@@ -22,9 +22,7 @@ type SponsorsGroup = {
   platinum?: Sponsor[];
   gold?: Sponsor[];
   silver?: Sponsor[];
-  community?:Sponsor[];
-
-
+  community?: Sponsor[];
 };
 
 type CategorySize = {
@@ -71,21 +69,20 @@ export default function SponsorsSection2() {
         class: "scale-[0.5] md:scale-[1.1]",
       },
     ],
-    community:[
-      {
-        id: 1,
-        src: "/assets/images/acm.png",
-        alt: "ACM LOGO",
-        link: "https://dsu.acm.org/",
-        class: "h-[120px]",
-      },
+    community: [
+      // {
+      //   id: 1,
+      //   src: "/assets/images/acm.png",
+      //   alt: "ACM LOGO",
+      //   link: "https://dsu.acm.org/",
+      //   class: "h-[120px]",
+      // },
     ],
   };
 
   const categorySizes: { [key: string]: CategorySize } = {
     platform: {
-      imgSize:
-        "h-[80px] w-[250px] px-2 py-1 md:h-[140px] md:w-[420px] ",
+      imgSize: "h-[80px] w-[250px] px-2 py-1 md:h-[140px] md:w-[420px] ",
     },
 
     title: {
@@ -103,7 +100,7 @@ export default function SponsorsSection2() {
     },
     community: {
       imgSize: "h-[80px] w-[250px] px-2 py-1 md:h-[140px] md:w-[420px]",
-    }
+    },
   };
 
   const isMobile = useMediaQuery({ maxWidth: 767 });
@@ -258,7 +255,11 @@ export default function SponsorsSection2() {
             </motion.p>
 
             <button
- onClick={() => handleClick("https://drive.google.com/file/d/1Qy4HM0zHSezXle08_sXwweMMB3eQXMrO/view")}
+              onClick={() =>
+                handleClick(
+                  "https://drive.google.com/file/d/1Qy4HM0zHSezXle08_sXwweMMB3eQXMrO/view"
+                )
+              }
               className={`mt-10 ${" mt-6 rounded-xl bg-gradient-to-l from-purple-500 to-pink-500 text-white"} py-2 px-5 rounded-md font-semibold transition-colors duration-300`}
             >
               Download Sponsorship Brochure
@@ -273,15 +274,23 @@ export default function SponsorsSection2() {
             className={`text-center m-auto md:my-20 my-10 text-white text-lg md:text-xl xl:text-2xl md:w-1/6 w-1/2 font-semibold px-1 py-2 title-${category.toLowerCase()} rounded-md`}
           >
             {category.charAt(0).toUpperCase() + category.slice(1)}{" "}
-            {category === "title" ? "Sponsor" : category === "community" ? "Partners" : "Sponsors"}
+            {category === "title"
+              ? "Sponsor"
+              : category === "community"
+              ? "Partners"
+              : "Sponsors"}
           </h2>
           <div className="flex flex-wrap justify-center md:px-20">
             {/* <p>Coming Soon...</p> */}
-            {
-              sponsorList.length === 0 && <p className="text-white text-center">Coming Soon...</p>
-            }
+            {sponsorList.length === 0 && (
+              <p className="text-white text-center">Coming Soon...</p>
+            )}
             {sponsorList.map((sponsor) => (
-              <a key={sponsor.id} href={sponsor.link ? sponsor.link : ""} target="_blank">
+              <a
+                key={sponsor.id}
+                href={sponsor.link ? sponsor.link : ""}
+                target="_blank"
+              >
                 <div
                   className={`m-4 glassy-div bg-cover bg-center flex items-center justify-center no-repeat rounded-2xl md:p-5 p-1 hover-effect-${category} ${
                     sponsor.link ? "cursor-pointer" : "cursor-default"
