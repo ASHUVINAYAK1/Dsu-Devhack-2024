@@ -8,6 +8,7 @@ import Image from "next/image";
 import prizeData from "./prizes";
 
 const Card = ({
+  show,
   image,
   textsBack,
   texts,
@@ -154,6 +155,7 @@ const PrizeCards = () => {
           <div className="prizeContainer md:grid hidden grid-cols-1 sm:grid-cols-3 gap-3 lg:grid-cols-3 mb-10">
             {prizeData.cardContents.slice(0, 8).map((card: any, index: any) => (
               <Card
+                show = {card.show}
                 key={card.id || index}
                 texts={card.texts}
                 textsBack={card.textsBack}

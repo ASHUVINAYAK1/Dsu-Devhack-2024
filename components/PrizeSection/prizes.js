@@ -115,11 +115,8 @@ const cardContents = [
       "<span class='text-4xl  text-green-500'><br />$200 Prize</span>",
     ],
     textsBack: [
-      "Industry Recognition",
-      "Career Growth Opportunities",
-      "Exclusive Networking",
-      "Technical Mentorship",
-      "Winners Certificate",
+      "Read about the bounty details and find code templates for Polygon <a href='https://replit.com/@devfolio/Polygon-Smart-Contract-Template?v=1#README.md' class = ' underline'>here</a>:"
+
     ],
     image: "/sponsors_logos/Polygon_Logo-White.svg",
     imgWidth: 160,
@@ -131,13 +128,10 @@ const cardContents = [
     texts: [
       "Ethereum Track price For Best Hack Built on Ethereum",
       "<span class='text-4xl text-green-500'><br />$100 Prize </span>",
+      
     ],
     textsBack: [
-      "Industry Recognition",
-      "Career Growth Opportunities",
-      "Exclusive Networking",
-      "Technical Mentorship",
-      "Winners Certificate",
+      "Winner of this track receives $100 in prizes from ETHIndia.",
     ],
     image: "/sponsors_logos/ethindia-light.svg",
     imgWidth: 160,
