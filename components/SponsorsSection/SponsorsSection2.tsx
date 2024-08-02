@@ -70,13 +70,13 @@ export default function SponsorsSection2() {
       },
     ],
     community: [
-      // {
-      //   id: 1,
-      //   src: "/assets/images/acm.png",
-      //   alt: "ACM LOGO",
-      //   link: "https://dsu.acm.org/",
-      //   class: "h-[120px]",
-      // },
+      {
+        id: 1,
+        src: "/assets/images/acm.png",
+        alt: "ACM LOGO",
+        link: "https://dsu.acm.org/",
+        class: "h-[120px]",
+      },
     ],
   };
 
