@@ -67,7 +67,7 @@ const About = () => {
                   loading="lazy"
                   placeholder="blur" 
                   alt="DSU DevHacks"
-                  className="md:w-[10rem] md:h-[10rem] w-[7rem] h-[rem] "
+                  className="md:w-[10rem] md:h-[10rem] w-[5rem] h-[rem] object-cover object-center"
                 />
                 <Image
                   src={naacImage}
@@ -76,7 +76,7 @@ const About = () => {
                   loading="lazy"
                   placeholder="blur" 
                   alt="DSU DevHacks"
-                  className="md:w-[10rem] md:h-[10rem] w-[9rem] h-[rem] sm:w-[90px]"
+                  className="md:w-[15rem] md:h-[10rem] w-[7rem] h-[rem] sm:w-[90px] object-cover object-center"
                 />
                 <Image
                   src={soeImage}
@@ -85,7 +85,7 @@ const About = () => {
                   loading="lazy"
                   placeholder="blur"
                   alt="DSU DevHacks"
-                  className="md:w-[20rem] md:h-[20rem] w-[9rem] h-[rem] sm:w-[90px]"
+                  className="md:w-[15rem] md:h-[20rem] w-[8rem] h-[rem] sm:w-[90px] object-cover object-center"
                 />
               </div>
             </div>
