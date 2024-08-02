@@ -142,7 +142,7 @@ const teamData = {
       name: "Jiya Patel",
       linkedin: "https://www.linkedin.com/in/pateljiya",
       github: "https://github.com/pateljiya",
-      image: "",
+      image: "/team_members/Jiya.jpg",
     },
     {
       key: 13,

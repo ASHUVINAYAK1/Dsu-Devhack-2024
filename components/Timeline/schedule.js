@@ -1,7 +1,7 @@
 const items = [
   {
     key: 0,
-    title: "1th Aug 10:00 AM",
+    title: "1st Aug 10:00 AM",
     cardTitle: "Registration Starts",
     cardDetailedText: "Starting teaming up with your buddies to hack!",
   },
