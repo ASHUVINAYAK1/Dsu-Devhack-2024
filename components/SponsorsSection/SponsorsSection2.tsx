@@ -63,8 +63,8 @@ export default function SponsorsSection2() {
       id: 1,
       src: "/sponsors_logos/aic-dsu.png",
       alt: "AIC-DSU LOGO",
-      link: "/",
-      class: "scale-[0.75]",
+      link: "https://aicdsu.foundation/",
+      class: "scale-[0.5] md:scale-[0.65]",
     },],
     platform: [
       {
@@ -80,7 +80,7 @@ export default function SponsorsSection2() {
         id: 1,
         src: "/assets/images/acm.png",
         alt: "ACM LOGO",
-        link: "https://dsu.acm.org/",
+        link: "http://dsu.acm.org/",
         class: "h-[120px]",
       },
     ],
