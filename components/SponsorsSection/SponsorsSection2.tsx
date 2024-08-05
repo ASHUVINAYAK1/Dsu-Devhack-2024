@@ -59,7 +59,13 @@ export default function SponsorsSection2() {
         class: "scale-[0.75]",
       },
     ],
-    silver: [],
+    silver: [  {
+      id: 1,
+      src: "/sponsors_logos/aic-dsu.png",
+      alt: "AIC-DSU LOGO",
+      link: "/",
+      class: "scale-[0.75]",
+    },],
     platform: [
       {
         id: 1,
