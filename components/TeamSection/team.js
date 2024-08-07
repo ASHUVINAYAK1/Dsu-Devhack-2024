@@ -155,10 +155,10 @@ const teamData = {
     {
       key: 14,
       id: "Design",
-      name: "Samridhi D",
+      name: "Samrdhe D",
       linkedin: "https://www.linkedin.com/in/samridhi-d-365a47265",
       github: "https://github.com/samriddhid04",
-      image: "",
+      image: "/team_members/Samrdhe.jpeg",
     },
     {
       key: 15,
