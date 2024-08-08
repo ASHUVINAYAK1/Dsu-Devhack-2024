@@ -80,7 +80,7 @@ const Content: React.FC = () => {
             DevHack
           </motion.div>
           <a
-            href="https://discord.com/invite/Hz5UxnUNBV"
+            href="https://discord.gg/rs3dPP5PcM"
             target="_blank"
             className="inline-flex flex-row items-center bg-blue-600 text-white px-3 py-[2px] rounded gap-1"
           >

@@ -28,7 +28,7 @@ const Footer = () => {
         </div>
         <div className="lg:hidden flex justify-center mb-7 font-bold" />
         <div className="flex justify-center text-sm lg:text-3xl space-x-4 mb-9">
-          <a href="https://discord.com/invite/Hz5UxnUNBV" target="_black">
+          <a href="https://discord.gg/rs3dPP5PcM" target="_black">
             <span className="sr-only">Discord</span>
             <FaDiscord />
           </a>
