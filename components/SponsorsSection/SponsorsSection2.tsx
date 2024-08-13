@@ -65,7 +65,14 @@ export default function SponsorsSection2() {
       alt: "REPLIT LOGO",
       link: "https://ethindia.co/",
       class: "scale-[0.75]",
-    },],
+    },{
+      id: 3,
+      src: "/sponsors_logos/Axure_logo_175.svg",
+      alt: "Axure LOGO",
+      link: "https://www.axure.com/",
+      class: "scale-[0.75]",
+    },
+  ],
     platform: [
       {
         id: 1,
