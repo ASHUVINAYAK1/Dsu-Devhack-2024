@@ -14,7 +14,7 @@ const cardContents = [
     "Mementos"
   ],
   image:
-    "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Activities/1st%20Place%20Medal.png",
+  "/assets/images/winner.png",
   imgWidth: 160,
 },
   // second winner prize
@@ -33,7 +33,7 @@ const cardContents = [
       "Mementos"
     ],
     image:
-      "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Activities/2nd%20Place%20Medal.png",
+      "/assets/images/second-place.png",
     imgWidth: 160,
   },
 
@@ -53,7 +53,7 @@ const cardContents = [
       "Mementos"
     ],
     image:
-      "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Activities/3rd%20Place%20Medal.png",
+      "/assets/images/medal.png",
     imgWidth: 160,
   },
 
