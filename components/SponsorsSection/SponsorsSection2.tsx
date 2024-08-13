@@ -51,13 +51,7 @@ export default function SponsorsSection2() {
         link: "https://polygon.technology/",
         class: "scale-[0.8] md:scale-[1.1]",
       },
-      {
-        id: 3,
-        src: "/sponsors_logos/ethindia-light.svg",
-        alt: "REPLIT LOGO",
-        link: "https://ethindia.co/",
-        class: "scale-[0.75]",
-      },
+    
     ],
     silver: [  {
       id: 1,
@@ -65,6 +59,12 @@ export default function SponsorsSection2() {
       alt: "AIC-DSU LOGO",
       link: "https://aicdsu.foundation/",
       class: "scale-[0.5] md:scale-[0.65]",
+    },  {
+      id: 2,
+      src: "/sponsors_logos/ethindia-light.svg",
+      alt: "REPLIT LOGO",
+      link: "https://ethindia.co/",
+      class: "scale-[0.75]",
     },],
     platform: [
       {

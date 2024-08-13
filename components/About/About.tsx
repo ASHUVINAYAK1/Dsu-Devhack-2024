@@ -107,7 +107,7 @@ const About = () => {
                   enableScrollSpy={false}
                 />
               )}
-              +
+              
             </h1>
             <p className="text-slate-200">Themes</p>
           </div>
@@ -122,7 +122,7 @@ const About = () => {
                   enableScrollSpy={false}
                 />
               )}
-              +
+              
             </h1>
             <p className="text-slate-200 ">Hours of Hacking</p>
           </div>
