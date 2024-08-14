@@ -34,7 +34,7 @@ const themes = [
   {
     id: 6,
     title: "Open Innovation",
-    image: "/assets/images/projectmanagement.png",
+    image: "/assets/images/project-open.png",
   },
 ];
 
