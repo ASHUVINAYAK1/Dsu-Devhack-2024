@@ -71,8 +71,7 @@ const cardContents = [
       "Mementos"
     ],
     image: "/assets/images/best2.png",
-    imgWidth: 180,
-    paddingTop: "pt-4",
+    imgWidth: 150,
     // link: "https://www.verbwire.com/",
   },
 
@@ -87,11 +86,10 @@ const cardContents = [
       "3. Best Social Impact Project",
       "4. Best latest technology",
     ],
-    image: "/assets/images/track-rewad.png",
+    image: "/assets/images/badge.png",
 
-    imgWidth: 120,
-    paddingTop: "pt-4",
-    // link: "https://www.verbwire.com/",
+    imgWidth: 140,
+    paddingTop: 5,
   },
   
   {id:5,
@@ -104,8 +102,9 @@ const cardContents = [
         "Networking",
         "Certificate",
     ],
-    image: "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Activities/Sparkles.png",
-    imgWidth: 100,
+    image: "/assets/images/member-card.png",
+    imgWidth: 110,
+    paddingTop: 10,
     // link: "https://www.verbwire.com/",
   },
   {
