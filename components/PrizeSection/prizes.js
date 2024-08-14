@@ -33,7 +33,7 @@ const cardContents = [
       "Mementos"
     ],
     image:
-      "/assets/images/second-place.png",
+      "/assets/images/secondplace.png",
     imgWidth: 160,
   },
 
