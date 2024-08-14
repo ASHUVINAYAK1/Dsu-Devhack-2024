@@ -89,7 +89,7 @@ const cardContents = [
     image: "/assets/images/badge.png",
 
     imgWidth: 140,
-    paddingTop: 0,
+    paddingTop: 5,
   },
   
   {id:5,
@@ -103,8 +103,8 @@ const cardContents = [
         "Certificate",
     ],
     image: "/assets/images/member-card.png",
-    imgWidth: 120,
-    paddingTop: 0,
+    imgWidth: 110,
+    paddingTop: 10,
     // link: "https://www.verbwire.com/",
   },
   {
