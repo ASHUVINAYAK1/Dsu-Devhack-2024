@@ -48,7 +48,7 @@ export default function SponsorsSection2() {
         src: "/sponsors_logos/Devfolio_Logo-White.svg",
         alt: "DEVFOLIO LOGO",
         link: "https://devfolio.co",
-        class: "scale-[0.5] md:scale-[1.1]",
+        class: "scale-[0.8] md:scale-[1.1]",
       },
       {
         id: 2,
