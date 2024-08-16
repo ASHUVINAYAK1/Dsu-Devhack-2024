@@ -16,7 +16,6 @@ type Sponsor = {
 };
 
 type SponsorsGroup = {
-  platform: Sponsor[];
   title?: Sponsor[];
   diamond?: Sponsor[];
   platinum?: Sponsor[];
@@ -44,6 +43,13 @@ export default function SponsorsSection2() {
     diamond: [],
     platinum: [],
     gold: [
+      {
+        id: 1,
+        src: "/sponsors_logos/Devfolio_Logo-White.svg",
+        alt: "DEVFOLIO LOGO",
+        link: "https://devfolio.co",
+        class: "scale-[0.5] md:scale-[1.1]",
+      },
       {
         id: 2,
         src: "/sponsors_logos/Polygon_Logo-White.svg",
@@ -73,15 +79,7 @@ export default function SponsorsSection2() {
       class: "scale-[0.75]",
     },
   ],
-    platform: [
-      {
-        id: 1,
-        src: "/sponsors_logos/Devfolio_Logo-White.svg",
-        alt: "DEVFOLIO LOGO",
-        link: "https://devfolio.co",
-        class: "scale-[0.5] md:scale-[1.1]",
-      },
-    ],
+   
     community: [
       {
         id: 1,
