@@ -12,17 +12,15 @@ function Card({ member }: any) {
       glareMaxOpacity={0.1}
       className="fix-safari-tilt relative sm:w-64 w-40 overflow-hidden rounded-2xl "
     >
-      <div className="relative flex h-full flex-col gap-6 rounded-2xl sm:p-8 p-4 glassy-div ">
-        <div className="flex items-center justify-center">
-          {" "}
+      <div className="relative flex items-center h-full flex-col gap-6 rounded-2xl sm:p-8 p-4 glassy-div ">
+        <div className="flex items-center justify-center w-40 h-40">
           <Image
-            className="sm:w-40 h-full rounded-2xl"
+            className="w-full h-full object-cover rounded-2xl"
             src={member.image}
-            width={100}
-            height={100}
+            width={160}
+            height={160}
             alt="TBD"
             loading="lazy"
-
           />
         </div>
 
@@ -46,11 +44,7 @@ function Card({ member }: any) {
               </a>
             )}
             {member.github && (
-              <a
-                href={member.github}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href={member.github} target="_blank" rel="noopener noreferrer">
                 <RiGithubLine />
               </a>
             )}
