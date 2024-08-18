@@ -13,9 +13,9 @@ function Card({ member }: any) {
       className="fix-safari-tilt relative sm:w-64 w-40 overflow-hidden rounded-2xl "
     >
       <div className="relative flex items-center h-full flex-col gap-6 rounded-2xl sm:p-8 p-4 glassy-div ">
-        <div className="flex items-center justify-center w-40 h-40">
+        <div className="flex items-center justify-center w-28 h-28 md:w-40 md:h-40">
           <Image
-            className="w-full h-full object-cover rounded-2xl"
+            className="w-full h-full object-cover rounded-xl"
             src={member.image}
             width={160}
             height={160}
