@@ -230,6 +230,14 @@ const teamData = {
       github: "",
       image: "/team_members/NM_Bhavana.jpg",
     },
+    {
+      key: 23,
+      id: "Drafting",
+      name: "Rohan Jaiswal",
+      linkedin: "http://www.linkedin.com/in/rohanjais",
+      github: "https://github.com/Sonicof",
+      image: "/team_members/Rohan_Jaiswal.jpg",
+    },
   ],
 };
 

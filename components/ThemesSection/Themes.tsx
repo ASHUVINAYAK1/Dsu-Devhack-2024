@@ -14,12 +14,12 @@ const themes = [
   {
     id: 2,
     title: "Healthcare",
-    image: "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Stethoscope.png",
+    image: "/assets/images/healthcare.png",
   },
   {
     id: 3,
     title: "AI/ML",
-    image: "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png",
+    image: "/assets/images/chat-bot.png",
   },
   {
     id: 4,
@@ -34,7 +34,7 @@ const themes = [
   {
     id: 6,
     title: "Open Innovation",
-    image: "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Light%20Bulb.png",
+    image: "/assets/images/project-open.png",
   },
 ];
 

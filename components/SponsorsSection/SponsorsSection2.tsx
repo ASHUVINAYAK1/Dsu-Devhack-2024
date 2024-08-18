@@ -16,7 +16,6 @@ type Sponsor = {
 };
 
 type SponsorsGroup = {
-  platform: Sponsor[];
   title?: Sponsor[];
   diamond?: Sponsor[];
   platinum?: Sponsor[];
@@ -45,19 +44,20 @@ export default function SponsorsSection2() {
     platinum: [],
     gold: [
       {
+        id: 1,
+        src: "/sponsors_logos/Devfolio_Logo-White.svg",
+        alt: "DEVFOLIO LOGO",
+        link: "https://devfolio.co",
+        class: "scale-[0.8] md:scale-[1.1]",
+      },
+      {
         id: 2,
         src: "/sponsors_logos/Polygon_Logo-White.svg",
         alt: "POLYGON LOGO",
         link: "https://polygon.technology/",
         class: "scale-[0.8] md:scale-[1.1]",
       },
-      {
-        id: 3,
-        src: "/sponsors_logos/ethindia-light.svg",
-        alt: "REPLIT LOGO",
-        link: "https://ethindia.co/",
-        class: "scale-[0.75]",
-      },
+    
     ],
     silver: [  {
       id: 1,
@@ -65,16 +65,21 @@ export default function SponsorsSection2() {
       alt: "AIC-DSU LOGO",
       link: "https://aicdsu.foundation/",
       class: "scale-[0.5] md:scale-[0.65]",
-    },],
-    platform: [
-      {
-        id: 1,
-        src: "/sponsors_logos/Devfolio_Logo-White.svg",
-        alt: "DEVFOLIO LOGO",
-        link: "https://devfolio.co",
-        class: "scale-[0.5] md:scale-[1.1]",
-      },
-    ],
+    },  {
+      id: 2,
+      src: "/sponsors_logos/ethindia-light.svg",
+      alt: "REPLIT LOGO",
+      link: "https://ethindia.co/",
+      class: "scale-[0.75]",
+    },{
+      id: 3,
+      src: "/sponsors_logos/Axure_logo_175.svg",
+      alt: "Axure LOGO",
+      link: "https://www.axure.com/",
+      class: "scale-[0.75]",
+    },
+  ],
+   
     community: [
       {
         id: 1,
