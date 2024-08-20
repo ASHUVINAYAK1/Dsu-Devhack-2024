@@ -14,7 +14,7 @@ type TeamKey = "student" | "organizer" | "web" | "sponsorship" | "promotion" | "
 type TeamMember = {
   key: number;
   id: string;
-  name: string;
+  name?: string;
   linkedin: string;
   github: string;
   image: string;
@@ -46,7 +46,7 @@ function TeamSection3() {
 
   const teamMapping: TeamData = {
     student: teamData.coordinators,
-    organizer: teamData.organizers,
+    organizer: teamData.core,
     design: teamData.design_team,
     promotion: teamData.promotion_team,
     sponsorship: teamData.sponsorship_team,

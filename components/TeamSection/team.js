@@ -67,6 +67,48 @@ const teamData = {
     //     image: "/team_members/Ritvik_Vasundh.jpg",
     //   },
   ],
+  core: [
+    {
+      key: 5,
+      id: "Core",
+      name: "Ganesh Shinde",
+      linkedin: "https://www.linkedin.com/in/dev-ganesh-shinde/",
+      github: "https://github.com/Ganeshshinde-2003",
+      image: "/team_members/ganesh.jpg",
+    },
+    {
+      key: 5,
+      id: "Core",
+      name: "Amar Kumar",
+      linkedin: "https://www.linkedin.com/in/dev-amar-kumar/",
+      github: "https://github.com/amaranand360",
+      image: "/team_members/amar_kumar.jpg",
+    },
+    //   {
+    //     key: 6,
+    //     id: "Web",
+    //     id: "Core",
+    //     linkedin: "https://www.linkedin.com/in/dev-amar-kumar/",
+    //     github: "https://github.com/amaranand360",
+    //     image: "/team_members/amar_kumar.jpg",
+    //   },
+    //   {
+    //     key: 7,
+    //     id: "Student coordinator",
+    //     id: "Core",
+    //     linkedin: "http://www.linkedin.com/in/utkarsh-priye-jha",
+    //     github: "https://github.com/Code-X-utkarsh",
+    //     image: "/team_members/Utkarsh.jpg",
+    //   },
+    //   {
+    //     key: 8,
+    //     id: "Core",
+    //     name: "Ritvik Vasundh",
+    //     linkedin: "https://www.linkedin.com/in/ritvikvasundh",
+    //     github: "https://github.com/retvq",
+    //     image: "/team_members/Ritvik_Vasundh.jpg",
+    //   },
+  ],
   web_team: [
     {
       key: 4,
