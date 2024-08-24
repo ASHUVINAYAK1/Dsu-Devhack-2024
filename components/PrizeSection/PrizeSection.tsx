@@ -2,6 +2,7 @@ import React from "react";
 import RevealPrize from "./RevealPrize";
 import PrizeCards from "./PrizeCards";
 import "../../styles/prizes/background.css";
+import TrackPrizeCards from "./TrackPrizeCards";
 
 interface PrizeSectionProps {}
 
@@ -34,6 +35,10 @@ const PrizeSection: React.FC<PrizeSectionProps> = () => {
         Prizes
       </h1>
       <PrizeCards />
+      <h1 className="my-20 text-center text-white text-3xl sm:text-4xl md:text-4xl xl:text-5xl font-logo">
+        Track Prizes
+      </h1>
+      <TrackPrizeCards />
     </div>
   );
 };
