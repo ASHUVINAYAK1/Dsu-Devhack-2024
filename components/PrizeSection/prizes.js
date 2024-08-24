@@ -176,4 +176,57 @@ const cardTrackContents = [
   },
 ];
 
-export default { cardContents, cardTrackContents };
+const benifitContents = [
+  {
+    id: 4,
+    texts: [
+      "All hackathon participants will receive a <span class='font-semibold  text-purple-500'>$25</span>  credit towards subscribing to Beeceptor's Team Plan.",
+    ],
+    textsBack: [
+      // "<span class='font-semibold  text-purple-500'>Tentative categories</span>",
+      // "1. Best freshers team",
+      // "2. Most Innovative Solution",
+      // "3. Best Social Impact Project",
+      // "4. Best latest technology",
+    ],
+    image: "/sponsors_logos/beeceptor-logo-block.png",
+
+    imgWidth: 160,
+    paddingTop: 20,
+  },
+
+  {
+    id: 6,
+    texts: [
+      "Top 3 participants will receive certificates that can be redeemed for  Free 1-year subscription licenses of Axure RP Team Edition, valid for one user each valued at  <span class='font-semibold  text-purple-500'>$504</span> each",
+    ],
+    textsBack: [
+      "Read about the bounty details and find code templates for Polygon <a href='https://replit.com/@devfolio/Polygon-Smart-Contract-Template?v=1#README.md' class = ' underline'>here</a>",
+    ],
+    image: "/sponsors_logos/axure.png",
+    imgWidth: 160,
+    paddingTop: 20,
+  },
+  {
+    id: 7,
+    texts: [
+    "Free domain for 1-year validity for the top <span class='font-semibold text-purple-500'>300</span> participants."
+
+    ],
+    textsBack: ["Winner of this track receives $100 in prizes from ETHIndia."],
+    image: "/sponsors_logos/xyz-white-logo.svg",
+    imgWidth: 120,
+    paddingTop: 25,
+  },
+  {
+    id: 7,
+    texts: [
+    "<span class='font-semibold text-purple-500'>$25</span> coupons for the top 6 participants."    ],
+    textsBack: ["Winner of this track receives $100 in prizes from ETHIndia."],
+    image: "/sponsors_logos/AoPS_Logo.png",
+    imgWidth: 160,
+    paddingTop: 30,
+  },
+];
+
+export default { cardContents, cardTrackContents,benifitContents  };

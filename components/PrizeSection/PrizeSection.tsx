@@ -3,8 +3,9 @@ import RevealPrize from "./RevealPrize";
 import PrizeCards from "./PrizeCards";
 import "../../styles/prizes/background.css";
 import TrackPrizeCards from "./TrackPrizeCards";
+import BenifitCards from "./BeniifitCard";
 
-interface PrizeSectionProps {}
+interface PrizeSectionProps { }
 
 const Pillar: React.FC<{ height: number; bgColor: string; text: string }> = ({
   height,
@@ -39,6 +40,10 @@ const PrizeSection: React.FC<PrizeSectionProps> = () => {
         Track Prizes
       </h1>
       <TrackPrizeCards />
+      <h1 className="my-20 text-center text-white text-3xl sm:text-4xl md:text-4xl xl:text-5xl font-logo">
+        Benefits
+      </h1>
+      <BenifitCards />
     </div>
   );
 };

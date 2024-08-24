@@ -86,7 +86,7 @@ export default function SponsorsSection2() {
       },
       {
         id: 3,
-        src: "/sponsors_logos/Axure_logo_175.svg",
+        src: "/sponsors_logos/axure.png",
         alt: "Axure LOGO",
         link: "https://www.axure.com/",
         class: "scale-[0.75]",
@@ -107,7 +107,15 @@ export default function SponsorsSection2() {
       },
     ],
 
-    community: [],
+    community: [
+      {
+        id: 1,
+        src: "/sponsors_logos/AoPS_Logo.png",
+        alt: "AOPS  LOGO",
+        link: "https://artofproblemsolving.com/",
+        class: "scale-[0.75]",
+      },
+    ],
     media: [
       {
         id: 1,
