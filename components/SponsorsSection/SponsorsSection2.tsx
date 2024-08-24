@@ -86,7 +86,7 @@ export default function SponsorsSection2() {
       },
       {
         id: 3,
-        src: "/sponsors_logos/Axure_logo_175.svg",
+        src: "/sponsors_logos/axure.png",
         alt: "Axure LOGO",
         link: "https://www.axure.com/",
         class: "scale-[0.75]",
