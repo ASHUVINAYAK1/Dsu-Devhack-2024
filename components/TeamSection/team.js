@@ -239,6 +239,14 @@ const teamData = {
     {
       key: 18,
       id: "Promotion",
+      name: "Rishabh Singh",
+      linkedin: "https://www.linkedin.com/in/rishabh-singh-a29386225/",
+      github: "https://github.com/rishabh1801",
+      image: "/team_members/rish.jpg",
+    },
+    {
+      key: 18,
+      id: "Promotion",
       name: "Patel Ahmad",
       linkedin: "https://www.linkedin.com/in/patel-ahmad-582857307/",
       github: "https://github.com/Ammu007k",

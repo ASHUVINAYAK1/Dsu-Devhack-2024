@@ -123,11 +123,11 @@ const cardTrackContents = [
       "Track prize of <span class='font-semibold text-6xl text-green-500'><br />&#8377 40,000</span>",
     ],
     textsBack: [
-      "<span class='font-semibold  text-purple-500'>Tentative categories</span>",
-      "1. Best freshers team",
-      "2. Most Innovative Solution",
-      "3. Best Social Impact Project",
-      "4. Best latest technology",
+      // "<span class='font-semibold  text-purple-500'>Tentative categories</span>",
+      // "1. Best freshers team",
+      // "2. Most Innovative Solution",
+      // "3. Best Social Impact Project",
+      // "4. Best latest technology",
     ],
     image: "/assets/images/badge.png",
 
