@@ -94,7 +94,7 @@ const Card = ({
                     }}                    />
               </div>
               <div className="content flex-grow flex flex-col justify-evenly">
-                <div className=" h-[220px]px-2">
+                <div className=" h-[300px] px-2">
                   {texts?.map((text: any, index: number) => (
                     <li
                       key={index}
