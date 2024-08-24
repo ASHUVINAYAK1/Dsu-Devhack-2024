@@ -39,7 +39,15 @@ export default function SponsorsSection2() {
     visible: { opacity: 1, transition: { duration: 1 } },
   };
   const sponsors: SponsorsGroup = {
-    title: [],
+    title: [
+      {
+        id: 1,
+        src: "/assets/images/acm.png",
+        alt: "ACM LOGO",
+        link: "http://dsu.acm.org/",
+        class: "scale-[0.4] md:scale-[0.8]",
+      },
+    ],
     diamond: [],
     platinum: [],
     gold: [
@@ -57,38 +65,32 @@ export default function SponsorsSection2() {
         link: "https://polygon.technology/",
         class: "scale-[0.8] md:scale-[1.1]",
       },
-    
     ],
-    silver: [  {
-      id: 1,
-      src: "/sponsors_logos/aic-dsu.png",
-      alt: "AIC-DSU LOGO",
-      link: "https://aicdsu.foundation/",
-      class: "scale-[0.5] md:scale-[0.65]",
-    },  {
-      id: 2,
-      src: "/sponsors_logos/ethindia-light.svg",
-      alt: "REPLIT LOGO",
-      link: "https://ethindia.co/",
-      class: "scale-[0.75]",
-    },{
-      id: 3,
-      src: "/sponsors_logos/Axure_logo_175.svg",
-      alt: "Axure LOGO",
-      link: "https://www.axure.com/",
-      class: "scale-[0.75]",
-    },
-  ],
-   
-    community: [
+    silver: [
       {
         id: 1,
-        src: "/assets/images/acm.png",
-        alt: "ACM LOGO",
-        link: "http://dsu.acm.org/",
-        class: "h-[120px]",
+        src: "/sponsors_logos/aic-dsu.png",
+        alt: "AIC-DSU LOGO",
+        link: "https://aicdsu.foundation/",
+        class: "scale-[0.5] md:scale-[0.65]",
+      },
+      {
+        id: 2,
+        src: "/sponsors_logos/ethindia-light.svg",
+        alt: "REPLIT LOGO",
+        link: "https://ethindia.co/",
+        class: "scale-[0.75]",
+      },
+      {
+        id: 3,
+        src: "/sponsors_logos/Axure_logo_175.svg",
+        alt: "Axure LOGO",
+        link: "https://www.axure.com/",
+        class: "scale-[0.75]",
       },
     ],
+
+    community: [],
   };
 
   const categorySizes: { [key: string]: CategorySize } = {
