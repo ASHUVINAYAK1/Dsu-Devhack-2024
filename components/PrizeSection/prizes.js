@@ -89,20 +89,6 @@ const cardContents = [
   //   paddingTop: 5,
   // },
 
-  {
-    id: 5,
-    texts: ["All participants will get DSU DevHacks certificates"],
-    textsBack: [
-      "Industry Exposure",
-      "Career Opportunities",
-      "Networking",
-      "Certificate",
-    ],
-    image: "/assets/images/member-card.png",
-    imgWidth: 110,
-    paddingTop: 10,
-    // link: "https://www.verbwire.com/",
-  },
   // {
   //   id: 6,
   //   texts: [
@@ -173,6 +159,20 @@ const cardTrackContents = [
     image: "/sponsors_logos/ethindia-light.svg",
     imgWidth: 160,
     paddingTop: 30,
+  },
+  {
+    id: 5,
+    texts: ["All participants will get DSU DevHacks certificates"],
+    textsBack: [
+      "Industry Exposure",
+      "Career Opportunities",
+      "Networking",
+      "Certificate",
+    ],
+    image: "/assets/images/member-card.png",
+    imgWidth: 110,
+    paddingTop: 10,
+    // link: "https://www.verbwire.com/",
   },
 ];
 
