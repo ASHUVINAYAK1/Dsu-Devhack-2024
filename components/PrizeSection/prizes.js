@@ -198,7 +198,7 @@ const benifitContents = [
   {
     id: 6,
     texts: [
-      "3 certificates that can be redeemed for free 1-year subscription licenses of Axure RP Team Edition, valid for one user each valued at  <span class='font-semibold  text-purple-500'>$504</span> each",
+      "Top 3 participants will receive certificates that can be redeemed for  Free 1-year subscription licenses of Axure RP Team Edition, valid for one user each valued at  <span class='font-semibold  text-purple-500'>$504</span> each",
     ],
     textsBack: [
       "Read about the bounty details and find code templates for Polygon <a href='https://replit.com/@devfolio/Polygon-Smart-Contract-Template?v=1#README.md' class = ' underline'>here</a>",
@@ -210,7 +210,8 @@ const benifitContents = [
   {
     id: 7,
     texts: [
-      "<span class='font-semibold text-purple-500'>300 </span> free domains 1 year valid",
+    "Free domain for 1-year validity for the top <span class='font-semibold text-purple-500'>300</span> participants."
+
     ],
     textsBack: ["Winner of this track receives $100 in prizes from ETHIndia."],
     image: "/sponsors_logos/xyz-white-logo.svg",
@@ -220,8 +221,7 @@ const benifitContents = [
   {
     id: 7,
     texts: [
-      "6 coupons  <span class='font-semibold text-purple-500'>$25</span> each",
-    ],
+    "<span class='font-semibold text-purple-500'>$25</span> coupons for the top 6 participants."    ],
     textsBack: ["Winner of this track receives $100 in prizes from ETHIndia."],
     image: "/sponsors_logos/AoPS_Logo.png",
     imgWidth: 160,
