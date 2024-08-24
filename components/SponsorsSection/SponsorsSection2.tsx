@@ -39,7 +39,15 @@ export default function SponsorsSection2() {
     visible: { opacity: 1, transition: { duration: 1 } },
   };
   const sponsors: SponsorsGroup = {
-    title: [],
+    title: [
+      {
+        id: 1,
+        src: "/assets/images/acm.png",
+        alt: "ACM LOGO",
+        link: "http://dsu.acm.org/",
+        class: "scale-[0.4] md:scale-[0.8]",
+      },
+    ],
     diamond: [],
     platinum: [],
     gold: [
@@ -81,13 +89,6 @@ export default function SponsorsSection2() {
   ],
    
     community: [
-      {
-        id: 1,
-        src: "/assets/images/acm.png",
-        alt: "ACM LOGO",
-        link: "http://dsu.acm.org/",
-        class: "h-[120px]",
-      },
     ],
   };
 
