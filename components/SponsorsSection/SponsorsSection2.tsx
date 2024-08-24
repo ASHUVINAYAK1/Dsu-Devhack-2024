@@ -19,6 +19,7 @@ type SponsorsGroup = {
   title?: Sponsor[];
   diamond?: Sponsor[];
   platinum?: Sponsor[];
+  track?: Sponsor[];
   gold?: Sponsor[];
   silver?: Sponsor[];
   community?: Sponsor[];
@@ -50,6 +51,7 @@ export default function SponsorsSection2() {
     ],
     diamond: [],
     platinum: [],
+    track: [],
     gold: [
       {
         id: 1,
