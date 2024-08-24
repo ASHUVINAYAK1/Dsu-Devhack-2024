@@ -108,7 +108,15 @@ export default function SponsorsSection2() {
     ],
 
     community: [],
-    media: [],
+    media: [
+      {
+        id: 1,
+        src: "/sponsors_logos/legras.png",
+        alt: "Le-Gras LOGO",
+        link: "https://linktr.ee/legrasblvd",
+        class: "scale-[0.5] md:scale-[0.65]",
+      },
+    ],
   };
 
   const categorySizes: { [key: string]: CategorySize } = {
@@ -310,7 +318,7 @@ export default function SponsorsSection2() {
             {category.charAt(0).toUpperCase() + category.slice(1)}{" "}
             {category === "title"
               ? "Sponsor"
-              : (category === "community" || category === "media") 
+              : category === "community" || category === "media"
               ? "Partner"
               : "Sponsors"}
           </h2>
