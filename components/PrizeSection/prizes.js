@@ -180,7 +180,8 @@ const benifitContents = [
   {
     id: 4,
     texts: [
-      "All hackathon participants will receive a <span class='font-semibold  text-purple-500'>$25</span>  credit towards subscribing to Beeceptor's Team Plan.",
+      "Beeceptor will provide the winning team with a free 1-year Team Plan subscription valued at <span class='font-semibold  text-purple-500'>$240</span>",
+      "Participants get a <span class='font-semibold  text-purple-500'>$25</span> credit towards the Team Plan to speed up their projects."
     ],
     textsBack: [
       // "<span class='font-semibold  text-purple-500'>Tentative categories</span>",
