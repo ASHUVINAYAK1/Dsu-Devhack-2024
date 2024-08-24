@@ -23,6 +23,7 @@ type SponsorsGroup = {
   gold?: Sponsor[];
   silver?: Sponsor[];
   community?: Sponsor[];
+  media?: Sponsor[];
 };
 
 type CategorySize = {
@@ -90,9 +91,24 @@ export default function SponsorsSection2() {
         link: "https://www.axure.com/",
         class: "scale-[0.75]",
       },
+      {
+        id: 4,
+        src: "/sponsors_logos/xyz-white-logo.svg",
+        alt: "XYZ LOGO",
+        link: "https://gen.xyz/",
+        class: "scale-[0.75]",
+      },
+      {
+        id: 5,
+        src: "/sponsors_logos/beeceptor-logo-block.png",
+        alt: "Beeceptor LOGO",
+        link: "https://beeceptor.com/",
+        class: "scale-[0.75]",
+      },
     ],
 
     community: [],
+    media: [],
   };
 
   const categorySizes: { [key: string]: CategorySize } = {
@@ -114,6 +130,9 @@ export default function SponsorsSection2() {
       imgSize: "h-[80px] w-[250px] px-2 py-1 md:h-[140px] md:w-[420px]",
     },
     community: {
+      imgSize: "h-[80px] w-[250px] px-2 py-1 md:h-[140px] md:w-[420px]",
+    },
+    media: {
       imgSize: "h-[80px] w-[250px] px-2 py-1 md:h-[140px] md:w-[420px]",
     },
   };
@@ -291,8 +310,8 @@ export default function SponsorsSection2() {
             {category.charAt(0).toUpperCase() + category.slice(1)}{" "}
             {category === "title"
               ? "Sponsor"
-              : category === "community"
-              ? "Partners"
+              : (category === "community" || category === "media") 
+              ? "Partner"
               : "Sponsors"}
           </h2>
           <div className="flex flex-wrap justify-center md:px-20">
