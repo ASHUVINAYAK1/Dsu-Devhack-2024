@@ -115,6 +115,13 @@ export default function SponsorsSection2() {
         link: "https://artofproblemsolving.com/",
         class: "scale-[0.75]",
       },
+      {
+        id: 2,
+        src: "/sponsors_logos/urBuddy.png",
+        alt: "URBUDDY  LOGO",
+        link: "https://urbuddy.oscode.co.in/",
+        class: "scale-[0.5]",
+      },
     ],
     media: [
       {
@@ -327,7 +334,7 @@ export default function SponsorsSection2() {
             {category === "title"
               ? "Sponsor"
               : category === "community" || category === "media"
-              ? "Partner"
+              ? "Partners"
               : "Sponsors"}
           </h2>
           <div className="flex flex-wrap justify-center md:px-20">
