@@ -70,14 +70,17 @@ const Content: React.FC = () => {
             Department of Computer Science & Eng
             <span className="hidden md:inline font-poppins leading-3">ineering</span>
             <br />
-            <span className="text-xs leading-tight">Harohalli, Bengaluru</span>
+            <span className="text-xs leading-tight">Harohalli, Bengaluru </span>
+            <br />
+            Presented by
+            <span className="text-xl leading-tight text-[#41cddf] font-semibold"> ACM DSU</span>
           </motion.div>
 
           <motion.div
             variants={childVariants}
             className="md:text-3xl text-3xl text-white tracking-wider font-logo font-extrabold m-1 mb-2"
           >
-            DevHack
+            DSU DevHack
           </motion.div>
           <a
             href="https://discord.gg/rs3dPP5PcM"

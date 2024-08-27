@@ -102,7 +102,7 @@ export default function SponsorsSection2() {
         id: 5,
         src: "/sponsors_logos/beeceptor-logo-block.png",
         alt: "Beeceptor LOGO",
-        link: "https://beeceptor.com/",
+        link: "https://beeceptor.com/?utm_source=hackathon&utm_medium=email&utm_campaign=dsudevhack2024",
         class: "scale-[0.75]",
       },
     ],
