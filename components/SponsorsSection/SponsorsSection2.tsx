@@ -52,7 +52,15 @@ export default function SponsorsSection2() {
     ],
     diamond: [],
     platinum: [],
-    track: [],
+    track: [
+      {
+        id: 1,
+        src: "/sponsors_logos/tezos.png",
+        alt: "TEZOS LOGO",
+        link: "https://tezosindia.org.in/",
+        class: "scale-[1.0] md:scale-[1.5]",
+      },
+    ],
     gold: [
       {
         id: 1,
@@ -153,6 +161,9 @@ export default function SponsorsSection2() {
 
     platinum: { imgSize: "w-48 h-16 sm:h-full sm:w-full" },
     diamond: { imgSize: "w-48 h-16 sm:h-full sm:w-full" },
+    track: {
+      imgSize: "h-[120px] w-[250px] px-2 py-1 md:h-[190px] md:w-[570px]",
+    },
     gold: {
       imgSize: "h-[120px] w-[250px] px-2 py-1 md:h-[160px] md:w-[500px]",
     },

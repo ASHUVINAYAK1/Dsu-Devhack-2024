@@ -226,7 +226,7 @@ const benifitContents = [
     textsBack: ["Winner of this track receives $100 in prizes from ETHIndia."],
     image: "/sponsors_logos/AoPS_Logo.png",
     imgWidth: 160,
-    paddingTop: 30,
+    paddingTop: 25,
   },
   {
     id: 8,
@@ -237,7 +237,18 @@ const benifitContents = [
     textsBack: ["Winner of this track receives $100 in prizes from ETHIndia."],
     image: "/sponsors_logos/verbwire.svg",
     imgWidth: 160,
-    paddingTop: 30,
+    paddingTop: 25,
+  },
+  {
+    id: 9,
+    texts: [
+      "Top 3 Tezos Projects: <span class='font-semibold text-purple-500'>$300</span> prize pool divided as follows: 1st - <span class='font-semibold text-purple-400'>$150</span>, 2nd - <span class='font-semibold text-purple-400'>$100</span>, 3rd - <span class='font-semibold text-purple-400'>$50</span>.",
+      "<span class='font-semibold text-purple-500'>$200</span> prize pool shared among non-top 3 Tezos/Etherlink projects, with a max of $40 per project.",
+    ],
+    textsBack: ["Winner of this track receives $100 in prizes from ETHIndia."],
+    image: "/sponsors_logos/tezos.png",
+    imgWidth: 160,
+    paddingTop: 20,
   },
 ];
 
