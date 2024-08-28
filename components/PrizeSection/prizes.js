@@ -181,7 +181,7 @@ const benifitContents = [
     id: 4,
     texts: [
       "Beeceptor will provide the winning team with a free 1-year Team Plan subscription valued at <span class='font-semibold  text-purple-500'>$240</span>",
-      "Participants get a <span class='font-semibold  text-purple-500'>$25</span> credit towards the Team Plan to speed up their projects."
+      "Participants get a <span class='font-semibold  text-purple-500'>$25</span> credit towards the Team Plan to speed up their projects.",
     ],
     textsBack: [
       // "<span class='font-semibold  text-purple-500'>Tentative categories</span>",
@@ -211,8 +211,7 @@ const benifitContents = [
   {
     id: 7,
     texts: [
-    "Free domain for 1-year validity for the top <span class='font-semibold text-purple-500'>300</span> participants."
-
+      "Free domain for 1-year validity for the top <span class='font-semibold text-purple-500'>300</span> participants.",
     ],
     textsBack: ["Winner of this track receives $100 in prizes from ETHIndia."],
     image: "/sponsors_logos/xyz-white-logo.svg",
@@ -222,12 +221,24 @@ const benifitContents = [
   {
     id: 7,
     texts: [
-    "<span class='font-semibold text-purple-500'>$25</span> coupons for the top 6 participants."    ],
+      "<span class='font-semibold text-purple-500'>$25</span> coupons for the top 6 participants.",
+    ],
     textsBack: ["Winner of this track receives $100 in prizes from ETHIndia."],
     image: "/sponsors_logos/AoPS_Logo.png",
     imgWidth: 160,
     paddingTop: 30,
   },
+  {
+    id: 8,
+    texts: [
+      "Best use of AI & Verbwire API - Up to <span class='font-semibold text-purple-500'>$4000</span> in API Credits, for up to 15 teams",
+      "Most innovative use of Verbwire API - Up to <span class='font-semibold text-purple-500'>$1000</span> in API Credits, for up to 5 teams",
+    ],
+    textsBack: ["Winner of this track receives $100 in prizes from ETHIndia."],
+    image: "/sponsors_logos/verbwire.svg",
+    imgWidth: 160,
+    paddingTop: 30,
+  },
 ];
 
-export default { cardContents, cardTrackContents,benifitContents  };
+export default { cardContents, cardTrackContents, benifitContents };

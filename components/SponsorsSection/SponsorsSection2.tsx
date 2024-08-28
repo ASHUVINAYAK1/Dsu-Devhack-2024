@@ -56,13 +56,20 @@ export default function SponsorsSection2() {
     gold: [
       {
         id: 1,
+        src: "/sponsors_logos/verbwire.svg",
+        alt: "VERBWIRE LOGO",
+        link: "https://www.verbwire.com/",
+        class: "scale-[0.8] md:scale-[0.9]",
+      },
+      {
+        id: 2,
         src: "/sponsors_logos/Devfolio_Logo-White.svg",
         alt: "DEVFOLIO LOGO",
         link: "https://devfolio.co",
         class: "scale-[0.8] md:scale-[1.1]",
       },
       {
-        id: 2,
+        id: 3,
         src: "/sponsors_logos/Polygon_Logo-White.svg",
         alt: "POLYGON LOGO",
         link: "https://polygon.technology/",
