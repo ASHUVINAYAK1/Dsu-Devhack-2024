@@ -120,7 +120,38 @@ const cardTrackContents = [
   {
     id: 4,
     texts: [
-      "Track prize of <span class='font-semibold text-6xl text-green-500'><br />&#8377 40,000</span>",
+      "Track prize for best Tezos projects",
+      "<span class='text-4xl  text-green-500'><br />$500 Prize</span>",
+    ],
+    textsBack: [
+      "Top 3 Tezos Projects: <span class='font-semibold text-purple-500'>$300</span> prize pool divided as follows: 1st - <span class='font-semibold text-purple-400'>$150</span>, 2nd - <span class='font-semibold text-purple-400'>$100</span>, 3rd - <span class='font-semibold text-purple-400'>$50</span>.",
+      "<span class='font-semibold text-purple-500'>$200</span> prize pool shared among non-top 3 Tezos/Etherlink projects, with a max of $40 per project.",
+    ],
+    image: "/sponsors_logos/tezos.png",
+    imgWidth: 160,
+    paddingTop: 25,
+  },
+
+  {
+    id: 6,
+    texts: [
+      "Track prize for best Verbwire API projects",
+      "<span class='text-4xl  text-green-500'><br />$5000 Credits</span>",
+    ],
+    textsBack: [
+      "Best use of AI & Verbwire API - Up to <span class='font-semibold text-purple-500'>$4000</span> in API Credits, for up to 15 teams",
+      "Most innovative use of Verbwire API - Up to <span class='font-semibold text-purple-500'>$1000</span> in API Credits, for up to 5 teams",
+    ],
+    image: "/sponsors_logos/verbwire.svg",
+    imgWidth: 160,
+    paddingTop: 30,
+    link: "https://polygon.technology",
+  },
+  {
+    id: 4,
+    texts: [
+      "Track prize of",
+      "<span class='text-4xl  text-green-500'><br />&#8377 40,000</span>"
     ],
     textsBack: [
       // "<span class='font-semibold  text-purple-500'>Tentative categories</span>",
@@ -228,28 +259,7 @@ const benifitContents = [
     imgWidth: 160,
     paddingTop: 25,
   },
-  {
-    id: 8,
-    texts: [
-      "Best use of AI & Verbwire API - Up to <span class='font-semibold text-purple-500'>$4000</span> in API Credits, for up to 15 teams",
-      "Most innovative use of Verbwire API - Up to <span class='font-semibold text-purple-500'>$1000</span> in API Credits, for up to 5 teams",
-    ],
-    textsBack: ["Winner of this track receives $100 in prizes from ETHIndia."],
-    image: "/sponsors_logos/verbwire.svg",
-    imgWidth: 160,
-    paddingTop: 25,
-  },
-  {
-    id: 9,
-    texts: [
-      "Top 3 Tezos Projects: <span class='font-semibold text-purple-500'>$300</span> prize pool divided as follows: 1st - <span class='font-semibold text-purple-400'>$150</span>, 2nd - <span class='font-semibold text-purple-400'>$100</span>, 3rd - <span class='font-semibold text-purple-400'>$50</span>.",
-      "<span class='font-semibold text-purple-500'>$200</span> prize pool shared among non-top 3 Tezos/Etherlink projects, with a max of $40 per project.",
-    ],
-    textsBack: ["Winner of this track receives $100 in prizes from ETHIndia."],
-    image: "/sponsors_logos/tezos.png",
-    imgWidth: 160,
-    paddingTop: 20,
-  },
+  
 ];
 
 export default { cardContents, cardTrackContents, benifitContents };
