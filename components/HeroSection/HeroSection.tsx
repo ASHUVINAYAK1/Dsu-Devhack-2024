@@ -25,7 +25,7 @@ export default function HeroSection() {
               priority
               className="object-contain -ml-10"
             />
-            <div className="absolute top-0 right-[190px] md:top-[-40px] md:right-[-50px] h-8 w-40 py-5 flex items-center justify-center ">
+            <div className="hidden md:flex absolute top-0 md:top-[-40px] right-[-50px] h-8 w-40 py-5  items-center md:justify-center ">
               <h1 className="text-xl font-light text-rose-500">
                 <CountUp
                   start={0}
