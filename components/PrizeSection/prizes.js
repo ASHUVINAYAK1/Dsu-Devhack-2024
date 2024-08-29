@@ -147,24 +147,24 @@ const cardTrackContents = [
     paddingTop: 30,
     link: "https://polygon.technology",
   },
-  {
-    id: 4,
-    texts: [
-      "Track prize of",
-      "<span class='text-4xl  text-green-500'><br />&#8377 40,000</span>"
-    ],
-    textsBack: [
-      // "<span class='font-semibold  text-purple-500'>Tentative categories</span>",
-      // "1. Best freshers team",
-      // "2. Most Innovative Solution",
-      // "3. Best Social Impact Project",
-      // "4. Best latest technology",
-    ],
-    image: "/assets/images/badge.png",
+  // {
+  //   id: 4,
+  //   texts: [
+  //     "Track prize of",
+  //     "<span class='text-4xl  text-green-500'><br />&#8377 40,000</span>"
+  //   ],
+  //   textsBack: [
+  //     // "<span class='font-semibold  text-purple-500'>Tentative categories</span>",
+  //     // "1. Best freshers team",
+  //     // "2. Most Innovative Solution",
+  //     // "3. Best Social Impact Project",
+  //     // "4. Best latest technology",
+  //   ],
+  //   image: "/assets/images/badge.png",
 
-    imgWidth: 140,
-    paddingTop: 5,
-  },
+  //   imgWidth: 140,
+  //   paddingTop: 5,
+  // },
 
   {
     id: 6,
@@ -190,20 +190,6 @@ const cardTrackContents = [
     image: "/sponsors_logos/ethindia-light.svg",
     imgWidth: 160,
     paddingTop: 30,
-  },
-  {
-    id: 5,
-    texts: ["All participants will get DSU DevHacks certificates"],
-    textsBack: [
-      "Industry Exposure",
-      "Career Opportunities",
-      "Networking",
-      "Certificate",
-    ],
-    image: "/assets/images/member-card.png",
-    imgWidth: 110,
-    paddingTop: 10,
-    // link: "https://www.verbwire.com/",
   },
 ];
 
@@ -258,6 +244,20 @@ const benifitContents = [
     image: "/sponsors_logos/AoPS_Logo.png",
     imgWidth: 160,
     paddingTop: 25,
+  },
+  {
+    id: 8,
+    texts: ["All participants will get DSU DevHacks certificates"],
+    textsBack: [
+      "Industry Exposure",
+      "Career Opportunities",
+      "Networking",
+      "Certificate",
+    ],
+    image: "/assets/images/member-card.png",
+    imgWidth: 110,
+    paddingTop: 10,
+    // link: "https://www.verbwire.com/",
   },
   
 ];
