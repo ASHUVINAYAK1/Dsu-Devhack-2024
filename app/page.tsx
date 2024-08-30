@@ -123,7 +123,7 @@ export default function Home() {
         <br />
         <SponsorsSection2/>
       </div>
-      <div id="panel">
+      <div id="team">
         <br />
         <TeamSection />
       </div>
