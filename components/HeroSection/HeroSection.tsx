@@ -27,19 +27,22 @@ export default function HeroSection() {
               priority
               className="object-contain -ml-10"
             />
-            <div className="flex absolute top-0 md:top-[-40px] right-[-50px] h-8 w-28 md:w-40 py-5 items-center md:justify-center ">
-              <h1 className="text-xl font-light text-rose-500">
-                <CountUp
-                  start={0}
-                  end={670}
-                  duration={2}
-                  className="font-semibold text-rose-500"
-                  enableScrollSpy={false}
-                />
-              </h1>
-              <p className="text-xl font-medium text-rose-500">+ </p>
-              <span className="w-1"></span>
-              <p className="text-base font-medium text-rose-500 hidden md:inline">Joined</p>
+            <div className="flex flex-col md:flex-row items-start md:items-center md:justify-center absolute top-0 md:top-[-40px] right-[-50px] h-auto w-28 md:w-40 py-5 pl-1 md:gap-1">
+              <div className="flex items-center">
+                <h1 className="text-sm md:text-xl font-light text-rose-500">
+                  <CountUp
+                    start={0}
+                    end={670}
+                    duration={2}
+                    className="font-semibold text-rose-500"
+                    enableScrollSpy={false}
+                  />
+                </h1>
+                <p className="text-sm md:text-xl font-medium text-rose-500">+ </p>
+              </div>
+              <p className="text-sm md:text-base font-medium text-rose-500">
+                Joined
+              </p>
             </div>
           </div>
         </Reveal>
