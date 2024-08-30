@@ -5,6 +5,7 @@ import Navbar from "../components/Navbar";
 import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection/HeroSection";
 import BackToTop from "@/components/Backtotop";
+import Notification from "@/components/Notifications/Notification";
 
 const PrizeSection = dynamic(() => import('@/components/PrizeSection/PrizeSection'), {
   loading: () => <p>Loading...</p>,
@@ -103,6 +104,10 @@ export default function Home() {
       <BackToTop/>
       <Navbar activeSection={activeSection}/>
       <HeroSection />
+      {/* <div id="notification">
+        <br />
+        <Notification />
+      </div> */}
       <div id="about">
         <br />
         <About />
