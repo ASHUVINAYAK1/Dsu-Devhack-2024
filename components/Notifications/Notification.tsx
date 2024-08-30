@@ -30,11 +30,11 @@ const Notification: React.FC = () => {
       >
         <div className="flex-shrink-0 pr-8 text-[12px]">
           🔔 Exciting Update! DSU DevHack'24 Idea Submissions are Open! Let's
-          Make Magic🌟 Use our{" "}
+          Make Magic Use our{" "}
           <Link
             href="https://docs.google.com/presentation/d/1LGfCzBDcBt_yQQyhIgiLcjkmTkBOUsY1/edit?usp=drive_link&ouid=117836667679660512457&rtpof=true&sd=true"
             target="_blank"
-            className="orange-logo font-bold underline"
+            className="text-[11px] font-medium bg-black bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-50 rounded-sm px-[4px] py-[2px]"
           >
             Template
           </Link>{" "}
@@ -42,11 +42,11 @@ const Notification: React.FC = () => {
         </div>
         <div className="flex-shrink-0 pr-8 text-[12px]">
           🔔 Exciting Update! DSU DevHack'24 Idea Submissions are Open! Let's
-          Make Magic🌟 Use our{" "}
+          Make Magic Use our{" "}
           <Link
             href="https://docs.google.com/presentation/d/1LGfCzBDcBt_yQQyhIgiLcjkmTkBOUsY1/edit?usp=drive_link&ouid=117836667679660512457&rtpof=true&sd=true"
             target="_blank"
-            className="orange-logo font-bold underline"
+            className="text-[11px] font-medium bg-black bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-50 rounded-sm px-[4px] py-[2px]"
           >
             Template
           </Link>{" "}
