@@ -27,7 +27,7 @@ export default function HeroSection() {
               priority
               className="object-contain -ml-10"
             />
-            <div className="hidden md:flex absolute top-0 md:top-[-40px] right-[-50px] h-8 w-40 py-5  items-center md:justify-center ">
+            <div className="flex absolute top-0 md:top-[-40px] right-[-50px] h-8 w-28 md:w-40 py-5 items-center md:justify-center ">
               <h1 className="text-xl font-light text-rose-500">
                 <CountUp
                   start={0}
@@ -39,7 +39,7 @@ export default function HeroSection() {
               </h1>
               <p className="text-xl font-medium text-rose-500">+ </p>
               <span className="w-1"></span>
-              <p className="text-base font-medium text-rose-500">Joined</p>
+              <p className="text-base font-medium text-rose-500 hidden md:inline">Joined</p>
             </div>
           </div>
         </Reveal>
