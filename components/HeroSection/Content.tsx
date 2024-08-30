@@ -72,7 +72,7 @@ const Content: React.FC = () => {
             <br />
             <span className="text-xs leading-tight">Harohalli, Bengaluru </span>
             <br />
-            <span className="text-[18px] leading-tight text-[#41cddf] font-semibold"> ACM DSU </span>
+            <span className="text-[18px] leading-tight text-[#41cddf] font-semibold">DSU ACM</span>
             Presents
           </motion.div>
 
