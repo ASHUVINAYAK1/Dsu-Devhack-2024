@@ -226,7 +226,7 @@ const About = () => {
           </div>
           <div className="basis-1/2 border-2 rounded-2xl sm:h-[26rem] w-full p-5 overflow-hidden glassy-effect flex items-center justify-center">
             <p className="text-slate-200 text-lg sm:text-[1rem] sm:mt-3">
-              • <span className={`font-bold ${isMobile ? 'text-white' : 'text-purple-500'}`}>Mini-Events and Workshop</span> {isMobile ? '' : ': Industry Expert Workshops on 23rd - 24rth Sept 2024 Sessions on latest tech stack'} <br />
+              • <span className={`font-bold ${isMobile ? 'text-white' : 'text-purple-500'}`}>Mini-Events and Workshop</span> {isMobile ? '' : ': Industry Expert Workshop Sessions on latest tech stack'} <br />
               • <span className={`font-bold ${isMobile ? 'text-white' : 'text-purple-500'}`}>Showcase Your Skills</span> {isMobile ? '' : ': Demonstrate your coding prowess and innovative thinking on a national stage.'} <br />
               • <span className={`font-bold ${isMobile ? 'text-white' : 'text-purple-500'}`}>Win Big</span> {isMobile ? '' : ': Compete for a prize pool of ₹3 Lakh+, including a grand prize of ₹70,000!'} <br />
               • <span className={`font-bold ${isMobile ? 'text-white' : 'text-purple-500'}`}>Network with Professionals</span> {isMobile ? '' : ': Connect with tech leaders and fellow developers from across the country.'} <br />

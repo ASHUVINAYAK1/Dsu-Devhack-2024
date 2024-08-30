@@ -123,7 +123,7 @@ const Navbar = (activeSection: any) => {
               className={`nav-titles nav-titles-ltr ${activeSection === "panel" ? "before:w-full" : ""
                 } `}
             >
-              <a href="#pannel">Pannel</a>
+              <a href="#team">Team</a>
             </div>
             {/* <div
               className={`nav-titles nav-titles-ltr ${activeSection === "team" ? "before:w-full" : ""
