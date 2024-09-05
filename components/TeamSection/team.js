@@ -260,14 +260,14 @@ const teamData = {
     //   github: "https://github.com/savhar28",
     //   image: "/team_members/savhar_verma.jpg",
     // },
-    {
-      key: 19,
-      id: "Promotion",
-      name: "Samarth Kushwaha",
-      linkedin: "https://www.linkedin.com/in/samarth-kushwaha-187763268/",
-      github: "https://github.com/samarthkushwaha92",
-      image: "/team_members/samarth_kushwaha.jpg",
-    },
+    // {
+    //   key: 19,
+    //   id: "Promotion",
+    //   name: "Samarth Kushwaha",
+    //   linkedin: "https://www.linkedin.com/in/samarth-kushwaha-187763268/",
+    //   github: "https://github.com/samarthkushwaha92",
+    //   image: "/team_members/samarth_kushwaha.jpg",
+    // },
   ],
   technical_team: [
     {
