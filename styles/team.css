@@ -79,6 +79,14 @@
     left: 630px;
     width: 100px;
 }
+.navigation .Facuty_Coordinator {
+    left: 730px;
+    width: 180px;
+}
+.navigation .Faculty {
+    left: 925px;
+    width: 80px;
+}
 
 @media (max-width: 768px) {
     .navigation .animation {

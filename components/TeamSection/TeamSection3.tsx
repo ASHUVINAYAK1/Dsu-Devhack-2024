@@ -9,7 +9,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 import Card from "./MemberTilt";
 
-type TeamKey = "student" | "organizer" | "web" | "sponsorship" | "promotion" | "design" | "technical" | "drafting";
+type TeamKey = "student" | "organizer" | "web" | "sponsorship" | "promotion" | "design" | "technical" | "drafting" | "Facuty_Coordinator" | "Faculty";
 
 type TeamMember = {
   key: number;
@@ -42,6 +42,8 @@ function TeamSection3() {
     { team: "design", label: "Design" },
     { team: "technical", label: "Technical" },
     { team: "drafting", label: "Drafting" },
+    { team: "Facuty_Coordinator", label: "Faculty Coordinator" },
+    { team: "Faculty", label: "Faculty" },
   ];
 
   const teamMapping: TeamData = {
@@ -53,6 +55,8 @@ function TeamSection3() {
     web: teamData.web_team,
     technical: teamData.technical_team,
     drafting: teamData.drafting_team,
+    Facuty_Coordinator: teamData.Facuty_Coordinator,
+    Faculty: teamData.Faculty,
   };
 
   const variants = {
