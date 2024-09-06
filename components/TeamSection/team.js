@@ -22,7 +22,7 @@ const teamData = {
       name: "Prof. Suvika K V",
       linkedin: "",
       github: "",
-      image: "/team_members/teacher1.png",
+      image: "",
     },
     {
       key: 27,
@@ -30,7 +30,7 @@ const teamData = {
       name: "Dr. George Farnandez",
       linkedin: "",
       github: "",
-      image: "/team_members/teacher2.png",
+      image: "",
     },
     {
       key: 28,
@@ -38,7 +38,7 @@ const teamData = {
       name: "Dr. T. Poongodi ",
       linkedin: "",
       github: "",
-      image: "/team_members/teacher2.png",
+      image: "",
     },
     {
       key: 29,
@@ -46,7 +46,7 @@ const teamData = {
       name: "Prof. Pooja Shree H R",
       linkedin: "",
       github: "",
-      image: "/team_members/teacher1.png",
+      image: "",
     },
     {
       key: 30,
@@ -54,7 +54,7 @@ const teamData = {
       name: "Prof. Bharath M B",
       linkedin: "",
       github: "",
-      image: "/team_members/teacher2.png",
+      image: "",
     },
     {
       key: 31,
@@ -62,7 +62,7 @@ const teamData = {
       name: "Prof. Kavyashree I Pattan ",
       linkedin: "",
       github: "",
-      image: "/team_members/teacher1.png",
+      image: "",
     },
     {
       key: 32,
@@ -70,7 +70,7 @@ const teamData = {
       name: "Prof. Naitik ST",
       linkedin: "",
       github: "",
-      image: "/team_members/teacher2.png",
+      image: "",
     },
     {
       key: 33,
@@ -78,7 +78,7 @@ const teamData = {
       name: "Prof. Sasikala N",
       linkedin: "",
       github: "",
-      image: "/team_members/teacher1.png",
+      image: "",
     },
     {
       key: 34,
@@ -86,7 +86,7 @@ const teamData = {
       name: "Prof. Mala B A",
       linkedin: "",
       github: "",
-      image: "/team_members/teacher2.png",
+      image: "",
     },
     {
       key: 35,
@@ -94,7 +94,7 @@ const teamData = {
       name: "Prof. Dharmendra D P ",
       linkedin: "",
       github: "",
-      image: "/team_members/teacher2.png",
+      image: "",
     },
     {
       key: 36,
@@ -102,7 +102,7 @@ const teamData = {
       name: "Prof. Arpita Paria",
       linkedin: "",
       github: "",
-      image: "/team_members/teacher1.png",
+      image: "",
     },
     {
       key: 37,
@@ -110,7 +110,7 @@ const teamData = {
       name: "Dr. Shreekant Salotagi",
       linkedin: "",
       github: "",
-      image: "/team_members/teacher2.png",
+      image: "",
     },
   ],
   organizers: [
@@ -266,7 +266,7 @@ const teamData = {
       name: "Shreya Sridharan",
       linkedin: "https://www.linkedin.com/in/shreya-sridharan-a14a512b9/",
       github: "",
-      image: "",
+      image: "/team_members/Shreya S.jpg",
     },
     {
       key: 15,
@@ -546,7 +546,7 @@ const teamData = {
       name: "Prof. Suvika K V",
       linkedin: "",
       github: "",
-      image: "/team_members/teacher1.png",
+      image: "",
     },
     {
       key: 27,
@@ -554,7 +554,7 @@ const teamData = {
       name: "Dr. George Farnandez",
       linkedin: "",
       github: "",
-      image: "/team_members/teacher2.png",
+      image: "",
     },
     {
       key: 28,
@@ -562,7 +562,7 @@ const teamData = {
       name: "Dr. T. Poongodi ",
       linkedin: "",
       github: "",
-      image: "/team_members/teacher2.png",
+      image: "",
     },
     {
       key: 29,
@@ -570,7 +570,7 @@ const teamData = {
       name: "Prof. Pooja Shree H R",
       linkedin: "",
       github: "",
-      image: "/team_members/teacher1.png",
+      image: "",
     },
     {
       key: 30,
@@ -578,7 +578,7 @@ const teamData = {
       name: "Prof. Bharath M B",
       linkedin: "",
       github: "",
-      image: "/team_members/teacher2.png",
+      image: "",
     },
     {
       key: 31,
@@ -586,7 +586,7 @@ const teamData = {
       name: "Prof. Kavyashree I Pattan ",
       linkedin: "",
       github: "",
-      image: "/team_members/teacher1.png",
+      image: "",
     },
     {
       key: 32,
@@ -594,7 +594,7 @@ const teamData = {
       name: "Prof. Naitik ST",
       linkedin: "",
       github: "",
-      image: "/team_members/teacher2.png",
+      image: "",
     },
     {
       key: 33,
@@ -602,7 +602,7 @@ const teamData = {
       name: "Prof. Sasikala N",
       linkedin: "",
       github: "",
-      image: "/team_members/teacher1.png",
+      image: "",
     },
     {
       key: 34,
@@ -610,7 +610,7 @@ const teamData = {
       name: "Prof. Mala B A",
       linkedin: "",
       github: "",
-      image: "/team_members/teacher2.png",
+      image: "",
     },
     {
       key: 35,
@@ -618,7 +618,7 @@ const teamData = {
       name: "Prof. Dharmendra D P ",
       linkedin: "",
       github: "",
-      image: "/team_members/teacher2.png",
+      image: "",
     },
     {
       key: 36,
@@ -626,7 +626,7 @@ const teamData = {
       name: "Prof. Arpita Paria",
       linkedin: "",
       github: "",
-      image: "/team_members/teacher1.png",
+      image: "",
     },
     {
       key: 37,
@@ -634,7 +634,7 @@ const teamData = {
       name: "Dr. Shreekant Salotagi",
       linkedin: "",
       github: "",
-      image: "/team_members/teacher2.png",
+      image: "",
     },
   ],
 };

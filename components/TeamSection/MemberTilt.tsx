@@ -12,16 +12,20 @@ function Card({ member }: any) {
       glareMaxOpacity={0.1}
       className="fix-safari-tilt relative sm:w-64 w-40 overflow-hidden rounded-2xl "
     >
-      <div className="relative flex items-center h-full flex-col gap-6 rounded-2xl sm:p-8 p-4 glassy-div ">
-        <div className="flex items-center justify-center w-28 h-28 md:w-40 md:h-40">
-          <Image
-            className="w-full h-full object-cover rounded-xl"
-            src={member.image}
-            width={160}
-            height={160}
-            alt="TBD"
-            loading="lazy"
-          />
+      <div className="relative flex items-center h-full flex-col gap-6 rounded-2xl sm:px-2 sm:py-8 px-1 py-4 glassy-div ">
+        <div className={`flex items-center justify-center ${member.image ? "w-28 h-28 md:w-40 md:h-40" : ""} `}>
+          {member.image ? (
+            <Image
+              className="w-full h-full object-cover rounded-xl"
+              src={member.image}
+              width={160}
+              height={160}
+              alt="TBD"
+              loading="lazy"
+            />
+          ) : (
+            <></>
+          )}
         </div>
 
         <div className="flex flex-col items-center">
