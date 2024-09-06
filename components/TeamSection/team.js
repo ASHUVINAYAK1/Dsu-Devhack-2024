@@ -2,7 +2,7 @@ const teamData = {
   coordinators: [
     {
       key: 24,
-      id: "Facuty Coordinator",
+      id: "Faculty Coordinator",
       name: "Dr. Bipin Kumar Rai",
       linkedin: "https://www.linkedin.com/in/bipin-kumar-rai-b3a41690/",
       github: "",
@@ -10,7 +10,7 @@ const teamData = {
     },
     {
       key: 25,
-      id: "Facuty Coordinator",
+      id: "Faculty Coordinator",
       name: "Dr. Meenakshi Malhotra",
       linkedin: "https://www.linkedin.com/in/dr-meenakshi-malhotra-b0898219/",
       github: "",
@@ -204,14 +204,14 @@ const teamData = {
       github: "https://github.com/ASHUVINAYAK1",
       image: "/team_members/ashutosh.jpeg",
     },
-    {
-      key: 7,
-      id: "Web",
-      name: "Sai Jadhav",
-      linkedin: "https://www.linkedin.com/in/sai-jadhav-371871200/",
-      github: "https://github.com/saijadhav369",
-      image: "/team_members/sai.jpg",
-    },
+    // {
+    //   key: 7,
+    //   id: "Web",
+    //   name: "Sai Jadhav",
+    //   linkedin: "https://www.linkedin.com/in/sai-jadhav-371871200/",
+    //   github: "https://github.com/saijadhav369",
+    //   image: "/team_members/sai.jpg",
+    // },
     {
       key: 8,
       id: "Web",
@@ -236,14 +236,14 @@ const teamData = {
       github: "https://github.com/SofiaRebecca",
       image: "/team_members/sofia.jpg",
     },
-    {
-      key: 11,
-      id: "Design",
-      name: "Samrdhe D",
-      linkedin: "https://www.linkedin.com/in/samridhi-d-365a47265",
-      github: "https://github.com/samriddhid04",
-      image: "/team_members/Samrdhe.jpeg",
-    },
+    // {
+    //   key: 11,
+    //   id: "Design",
+    //   name: "Samrdhe D",
+    //   linkedin: "https://www.linkedin.com/in/samridhi-d-365a47265",
+    //   github: "https://github.com/samriddhid04",
+    //   image: "/team_members/Samrdhe.jpeg",
+    // },
     {
       key: 12,
       id: "Design",
@@ -276,14 +276,14 @@ const teamData = {
       github: "https://github.com/savhar28",
       image: "/team_members/savhar_verma.jpg",
     },
-    {
-      key: 16,
-      id: "Promotion",
-      name: "Rishabh Singh",
-      linkedin: "https://www.linkedin.com/in/rishabh-singh-a29386225/",
-      github: "https://github.com/rishabh1801",
-      image: "/team_members/rish.jpg",
-    },
+    // {
+    //   key: 16,
+    //   id: "Promotion",
+    //   name: "Rishabh Singh",
+    //   linkedin: "https://www.linkedin.com/in/rishabh-singh-a29386225/",
+    //   github: "https://github.com/rishabh1801",
+    //   image: "/team_members/rish.jpg",
+    // },
     {
       key: 17,
       id: "Promotion",
