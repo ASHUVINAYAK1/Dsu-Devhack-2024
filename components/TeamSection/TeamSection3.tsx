@@ -34,16 +34,16 @@ function TeamSection3() {
   };
 
   const teamButtons = [
-    { team: "student", label: "StuCo" },
-    { team: "organizer", label: "Core" },
-    { team: "web", label: "Web" },
-    { team: "sponsorship", label: "Sponsorship" },
-    { team: "promotion", label: "Promotion" },
-    { team: "design", label: "Design" },
-    { team: "technical", label: "Technical" },
-    { team: "drafting", label: "Drafting" },
-    { team: "Facuty_Coordinator", label: "Faculty Coordinator" },
-    { team: "Faculty", label: "Faculty" },
+    { team: "student", label: "Teacher Committee" },
+    { team: "organizer", label: "Student Committee" },
+    // { team: "web", label: "Web" },
+    // { team: "sponsorship", label: "Sponsorship" },
+    // { team: "promotion", label: "Promotion" },
+    // { team: "design", label: "Design" },
+    // { team: "technical", label: "Technical" },
+    // { team: "drafting", label: "Drafting" },
+    // { team: "Facuty_Coordinator", label: "Faculty Coordinator" },
+    // { team: "Faculty", label: "Faculty" },
   ];
 
   const teamMapping: TeamData = {
