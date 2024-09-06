@@ -34,7 +34,7 @@ function TeamSection3() {
   };
 
   const teamButtons = [
-    { team: "student", label: "Teacher Committee" },
+    { team: "student", label: "Faculty Committee" },
     { team: "organizer", label: "Student Committee" },
     // { team: "web", label: "Web" },
     // { team: "sponsorship", label: "Sponsorship" },
