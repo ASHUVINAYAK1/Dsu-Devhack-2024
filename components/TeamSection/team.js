@@ -158,7 +158,7 @@ const teamData = {
   core: [
     {
       key: 1,
-      id: "Student Coordinator",
+      id: "Coordinator",
       name: "Patel Muhammad",
       linkedin: "https://www.linkedin.com/in/patel-muhammad/",
       github: "https://github.com/patel-muhammad/",
@@ -166,7 +166,7 @@ const teamData = {
     },
     {
       key: 2,
-      id: "Student Coordinator",
+      id: "Coordinator",
       name: "Utkarsh Priye",
       linkedin: "http://www.linkedin.com/in/utkarsh-priye-jha",
       github: "https://github.com/Code-X-utkarsh",
@@ -174,7 +174,7 @@ const teamData = {
     },
     {
       key: 3,
-      id: "Student Coordinator",
+      id: "Coordinator",
       name: "Ritvik Vasundh",
       linkedin: "https://www.linkedin.com/in/ritvikvasundh",
       github: "https://github.com/retvq",
@@ -222,7 +222,7 @@ const teamData = {
     },
     {
       key: 9,
-      id: "Design Lead",
+      id: "Design",
       name: "Jiya Patel",
       linkedin: "https://www.linkedin.com/in/pateljiya",
       github: "https://github.com/pateljiya",
