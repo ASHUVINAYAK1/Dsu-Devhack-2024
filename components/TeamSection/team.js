@@ -182,7 +182,7 @@ const teamData = {
     },
     {
       key: 4,
-      id: "Core Team",
+      id: "Core Team / Web",
       name: "Ganesh Shinde",
       linkedin: "https://www.linkedin.com/in/dev-ganesh-shinde/",
       github: "https://github.com/Ganeshshinde-2003",
@@ -190,7 +190,7 @@ const teamData = {
     },
     {
       key: 5,
-      id: "Core Team",
+      id: "Core Team / Web",
       name: "Amar Kumar",
       linkedin: "https://www.linkedin.com/in/dev-amar-kumar/",
       github: "https://github.com/amaranand360",
