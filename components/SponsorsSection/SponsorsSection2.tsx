@@ -50,8 +50,8 @@ export default function SponsorsSection2() {
         class: "scale-[0.4] md:scale-[0.8]",
       },
     ],
-    diamond: [],
-    platinum: [],
+    // diamond: [],
+    // platinum: [],
     track: [
       {
         id: 1,
