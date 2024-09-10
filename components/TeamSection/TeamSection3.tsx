@@ -34,8 +34,8 @@ function TeamSection3() {
   };
 
   const teamButtons = [
-    { team: "student", label: "Faculty Committee" },
-    { team: "organizer", label: "Student Committee" },
+    { team: "student", label: "Student Committee" },
+    { team: "organizer", label: "Faculty Committee" },
     // { team: "web", label: "Web" },
     // { team: "sponsorship", label: "Sponsorship" },
     // { team: "promotion", label: "Promotion" },
@@ -47,8 +47,8 @@ function TeamSection3() {
   ];
 
   const teamMapping: TeamData = {
-    student: teamData.coordinators,
-    organizer: teamData.core,
+    student: teamData.core,
+    organizer: teamData.coordinators,
     design: teamData.design_team,
     promotion: teamData.promotion_team,
     sponsorship: teamData.sponsorship_team,
