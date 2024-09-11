@@ -71,13 +71,20 @@ export default function SponsorsSection2() {
       },
       {
         id: 2,
+        src: "/sponsors_logos/Aptos.png",
+        alt: "APOTS LOGO",
+        link: "https://aptosfoundation.org/",
+        class: "scale-[0.8] md:scale-[0.8]",
+      },
+      {
+        id: 3,
         src: "/sponsors_logos/Devfolio_Logo-White.svg",
         alt: "DEVFOLIO LOGO",
         link: "https://devfolio.co",
         class: "scale-[0.8] md:scale-[1.1]",
       },
       {
-        id: 3,
+        id: 4,
         src: "/sponsors_logos/Polygon_Logo-White.svg",
         alt: "POLYGON LOGO",
         link: "https://polygon.technology/",
