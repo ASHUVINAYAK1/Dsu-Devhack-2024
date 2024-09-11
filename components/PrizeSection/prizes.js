@@ -165,7 +165,20 @@ const cardTrackContents = [
   //   imgWidth: 140,
   //   paddingTop: 5,
   // },
-
+  {
+    id: 7,
+    texts: [
+      "Unique/Best dapp built on Aptos, 1 prize",
+      "<span class='text-4xl  text-green-500'><br />$250 Prize</span>",
+    ],
+    textsBack: [
+      "Unique/Best dapp built on Aptos, 1 prize: <span class='font-semibold text-purple-500'>$250</span>",
+      "What you can build: <a href='https://elegant-thumb-725.notion.site/Devfolio-x-Aptos-Hacker-Resources-f250cbb1debe4a629d02a60346703186' target ='_blank' class = ' underline'>here</a>",
+    ],
+    image: "/sponsors_logos/Aptos.png",
+    imgWidth: 160,
+    paddingTop: 25,
+  },
   {
     id: 6,
     texts: [
@@ -259,7 +272,6 @@ const benifitContents = [
     paddingTop: 10,
     // link: "https://www.verbwire.com/",
   },
-  
 ];
 
 export default { cardContents, cardTrackContents, benifitContents };
