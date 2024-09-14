@@ -50,9 +50,14 @@
     width: 185px;
 }
 
-.navigation .web {
-    left: 142px;
-    width: 55px;
+.navigation .organizer {
+    left: 190px;
+    width: 185px;
+}
+
+.navigation .Patrons {
+    left: 375px;
+    width: 95px;
 }
 
 .navigation .sponsorship {
