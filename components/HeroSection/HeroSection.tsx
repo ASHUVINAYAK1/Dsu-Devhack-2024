@@ -32,7 +32,7 @@ export default function HeroSection() {
                 <h1 className="text-sm md:text-xl font-light text-rose-500">
                   <CountUp
                     start={0}
-                    end={1080}
+                    end={1150}
                     duration={2}
                     className="font-semibold text-rose-500"
                     enableScrollSpy={false}
