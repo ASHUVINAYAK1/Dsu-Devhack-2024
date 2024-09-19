@@ -33,7 +33,7 @@ export default function HeroSection() {
                   <CountUp
                     start={0}
                     end={1450}
-                    duration={2}
+                    duration={4}
                     className="font-semibold text-rose-500"
                     enableScrollSpy={false}
                   />
