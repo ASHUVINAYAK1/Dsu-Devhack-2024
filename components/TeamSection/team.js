@@ -162,7 +162,7 @@ const teamData = {
       name: "Patel Muhammad",
       linkedin: "https://www.linkedin.com/in/patel-muhammad/",
       github: "https://github.com/patel-muhammad/",
-      image: "/team_members/md.jpeg",
+      image: "/team_members/Md-p.jpeg",
     },
     {
       key: 2,
