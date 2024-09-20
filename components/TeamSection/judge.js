@@ -58,13 +58,13 @@ const judgeData = {
       // },
     ],
     Mentor: [
-      // {
-      //   key: 1,
-      //   id: "Mentor",
-      //   name: "mentor 1",
-      //   linkedin: "TBD",
-      //   image: "",
-      // },
+      {
+        key: 1,
+        id: "Mentor",
+        name: "mentor 1",
+        linkedin: "TBD",
+        image: "",
+      },
       // {
       //   key: 2,
       //   id: "Mentor",
