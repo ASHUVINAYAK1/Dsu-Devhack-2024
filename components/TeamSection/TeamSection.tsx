@@ -14,7 +14,7 @@ function TeamSection() {
   const [showTeam, setShowTeam] = useState("Jury");
   const [animate, setAnimate] = useState(false);
 
-  const handleClick = (team:string) => {
+  const handleClick = (team: string) => {
     setAnimate(true);
     setShowTeam(team);
   };
@@ -43,7 +43,9 @@ function TeamSection() {
                 key={button.team}
                 onClick={() => handleClick(button.team)}
                 className={`m-1 ${
-                  showTeam === button.team ? "rounded-xl bg-gradient-to-l from-purple-500 to-pink-500 text-white" : ""
+                  showTeam === button.team
+                    ? "rounded-xl bg-gradient-to-l from-purple-500 to-pink-500 text-white"
+                    : ""
                 } px-7 py-1 rounded-md font-semibold transition-colors duration-300`}
               >
                 {button.label}
@@ -65,23 +67,17 @@ function TeamSection() {
           >
             {showTeam === "Jury" ? (
               <>
-                <div>
-                  {/* <Card member={judgeData.Judge[0]} /> */}
-                </div>
-
                 <div className="flex flex-row flex-wrap gap-4 items-center justify-center">
-                  {judgeData.Judge.map((member, index) =>
-                    index === 0 ? null : (
-                      <motion.div
-                        key={member.key}
-                        initial={{ opacity: 0, y: 0 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: 0 }}
-                      >
-                        {/* <Card member={member} /> */}
-                      </motion.div>
-                    )
-                  )}
+                  {judgeData.Judge.map((member, index) => (
+                    <motion.div
+                      key={member.key}
+                      initial={{ opacity: 0, y: 0 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: 0 }}
+                    >
+                      <Card member={member} />
+                    </motion.div>
+                  ))}
                 </div>
               </>
             ) : showTeam === "Mentor" ? (
@@ -93,7 +89,7 @@ function TeamSection() {
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: 0 }}
                   >
-                    {/* <Card member={member} /> */}
+                    <Card member={member} />
                   </motion.div>
                 ))}
               </>
