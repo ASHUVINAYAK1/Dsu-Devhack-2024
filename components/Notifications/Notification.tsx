@@ -15,7 +15,7 @@ const Notification: React.FC = () => {
 
       gsap.to(marquee, {
         x: `-${contentWidth}px`,
-        duration: 50,
+        duration: 40,
         ease: "linear",
         repeat: -1,
       });
