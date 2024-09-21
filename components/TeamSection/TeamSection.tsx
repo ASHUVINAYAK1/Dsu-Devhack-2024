@@ -19,10 +19,10 @@ function TeamSection() {
     setShowTeam(team);
   };
 
-  const teamButtons = [
-    { team: "Jury", label: "Jury" },
-    { team: "Mentor", label: "Mentor" },
-  ];
+  // const teamButtons = [
+  //   { team: "Jury", label: "Jury" },
+  //   { team: "Mentor", label: "Mentor" },
+  // ];
 
   const teamMapping = {
     Jury: judgeData.Judge,
@@ -37,7 +37,7 @@ function TeamSection() {
         </h1>
 
         <div className="sm:w-full sm:flex sm:items-center sm:justify-center mt-10">
-          <div className="text-center container1 container2 teamContainer1 sm:text-lg text-sm navigation relative">
+          {/* <div className="text-center container1 container2 teamContainer1 sm:text-lg text-sm navigation relative">
             {teamButtons.map((button) => (
               <button
                 key={button.team}
@@ -51,7 +51,7 @@ function TeamSection() {
                 {button.label}
               </button>
             ))}
-          </div>
+          </div> */}
         </div>
         <AnimatePresence mode="wait">
           <motion.div
@@ -79,19 +79,6 @@ function TeamSection() {
                     </motion.div>
                   ))}
                 </div>
-              </>
-            ) : showTeam === "Mentor" ? (
-              <>
-                {judgeData.Mentor.map((member) => (
-                  <motion.div
-                    key={member.key}
-                    initial={{ opacity: 0, y: 0 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: 0 }}
-                  >
-                    <Card member={member} />
-                  </motion.div>
-                ))}
               </>
             ) : null}
           </motion.div>
