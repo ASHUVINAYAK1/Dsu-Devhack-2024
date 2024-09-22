@@ -378,7 +378,7 @@ const teamData = {
     },
     {
       key: 8,
-      id: "Chairperson, CSE, SoE, DSU",
+      id: "Chairperson, CSE, SOE, DSU",
       name: "Dr. Girisha",
       linkedin: "",
       github: "",
