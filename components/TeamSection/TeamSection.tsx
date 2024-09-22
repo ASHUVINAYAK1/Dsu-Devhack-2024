@@ -33,7 +33,7 @@ function TeamSection() {
     <>
       <div className="mt-36 sm:mt-40 w-screen">
         <h1 className="text-center text-white text-3xl sm:text-4xl md:text-4xl xl:text-5xl font-logo mt-40">
-          Pannel Members
+        Judges 
         </h1>
 
         <div className="sm:w-full sm:flex sm:items-center sm:justify-center mt-10">
