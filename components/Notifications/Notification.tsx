@@ -15,7 +15,7 @@ const Notification: React.FC = () => {
 
       gsap.to(marquee, {
         x: `-${contentWidth}px`,
-        duration: 40,
+        duration: 26,
         ease: "linear",
         repeat: -1,
       });
@@ -29,13 +29,11 @@ const Notification: React.FC = () => {
         ref={marqueeRef}
       >
         <div className="flex-shrink-0 pr-8 text-[12px]">
-          🔔 Important Update! DSU DevHack'24 registrations are now closed. Thank you for your submissions! The results will be announced shortly. Stay tuned for updates!
-        </div>
+          🔔 Important Update! DSU DevHack'24 Idea submissions are closed. Thank you for your submissions! The shortlisted offline and online teams' details are released. Check your Email and Discord for updates. Stay tuned for the actual hackathon!        </div>
         <div className="flex-shrink-0 pr-8 text-[12px]">
-          🔔 Important Update! DSU DevHack'24 registrations are now closed. Thank you for your submissions! The results will be announced shortly. Stay tuned for updates!
+        🔔 Important Update! DSU DevHack'24 Idea submissions are closed. Thank you for your submissions! The shortlisted offline and online teams' details are released. Check your Email and Discord for updates. Stay tuned for the actual hackathon!        </div>
         </div>
       </div>
-    </div>
   );
 };
 
