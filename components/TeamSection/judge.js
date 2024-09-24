@@ -49,20 +49,28 @@ const judgeData = {
         linkedin: "https://www.linkedin.com/in/ksatyarth2/",
         image: "/team_members/KumarSatyarth.png",
       },
-      // {
-      //   key: 8,
-      //   id: "Judge",
-      //   name: "Judge 8",
-      //   linkedin: "TBD",
-      //   image: "/team_members/",
-      // },
-      // {
-      //   key: 9,
-      //   id: "Judge",
-      //   name: "Judge 8",
-      //   linkedin: "TBD",
-      //   image: "/team_members/",
-      // },
+      {
+        key: 8,
+        id: "Judge",
+        name: "Nandini Vats",
+        linkedin: "https://www.linkedin.com/in/nandini-vats-a8025a36/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+        image: "/team_members/Nandini.png",
+      },
+      {
+        key: 9,
+        id: "Judge",
+        name: "Abhay Singh",
+        linkedin: "TBD",
+        image: "/team_members/",
+      },
+      {
+        key: 10,
+        id: "Judge",
+        name: "Dr Karthikeyan Saminathan",
+        linkedin: "TBD",
+        image: "/team_members/",
+      },
+    
     ],
     Mentor: [
       {
