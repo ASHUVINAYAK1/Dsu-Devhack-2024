@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection/HeroSection";
 import BackToTop from "@/components/Backtotop";
 import Notification from "@/components/Notifications/Notification";
+import Rules from "@/components/Rules/Rules";
 
 const PrizeSection = dynamic(() => import('@/components/PrizeSection/PrizeSection'), {
   loading: () => <p>Loading...</p>,
@@ -108,6 +109,10 @@ export default function Home() {
         <br />
         <Notification />
       </div> */}
+       <div id="rules">
+        <br />
+        <Rules />
+      </div>
       <div id="about">
         <br />
         <About />
