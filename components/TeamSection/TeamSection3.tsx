@@ -9,7 +9,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 import Card from "./MemberTilt";
 
-type TeamKey = "student" | "organizer" | "web" | "sponsorship" | "promotion" | "design" | "technical" | "drafting" | "Facuty_Coordinator" | "Faculty";
+type TeamKey = "student" | "organizer" | "web"  | "promotion" | "design" | "technical" | "drafting" | "Facuty_Coordinator" | "Faculty" | "Patrons";
 
 type TeamMember = {
   key: number;
@@ -36,8 +36,8 @@ function TeamSection3() {
   const teamButtons = [
     { team: "student", label: "Student Committee" },
     { team: "organizer", label: "Faculty Committee" },
+    { team: "Patrons", label: "Patrons" },
     // { team: "web", label: "Web" },
-    // { team: "sponsorship", label: "Sponsorship" },
     // { team: "promotion", label: "Promotion" },
     // { team: "design", label: "Design" },
     // { team: "technical", label: "Technical" },
@@ -51,7 +51,7 @@ function TeamSection3() {
     organizer: teamData.coordinators,
     design: teamData.design_team,
     promotion: teamData.promotion_team,
-    sponsorship: teamData.sponsorship_team,
+    Patrons: teamData.Patrons,
     web: teamData.web_team,
     technical: teamData.technical_team,
     drafting: teamData.drafting_team,

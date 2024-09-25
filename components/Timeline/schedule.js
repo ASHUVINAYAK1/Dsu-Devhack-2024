@@ -13,7 +13,7 @@ const items = [
   },
   {
     key: 2,
-    title: "21st Sep ",
+    title: "21st Sep 9:00 AM",
     cardTitle: "Online Idea Submission Deadline",
     cardDetailedText: "This will be your final chance to submit your 3 page ppt!",
   },
@@ -40,12 +40,6 @@ const items = [
     title: "27th Sep 6:00 PM",
     cardTitle: "Initial Submission",
     cardDetailedText: "Initial submission on GitHub.",
-  },
-  {
-    key: 6,
-    title: "27th Sep 10:30 PM",
-    cardTitle: "Session Time!",
-    cardDetailedText: "Get ready for some amazing sessions.",
   },
   {
     key: 7,
