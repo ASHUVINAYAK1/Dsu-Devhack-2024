@@ -11,19 +11,19 @@ const themes = [
     id: 1,
     title: "Online Shortlisted Teams",
     image: "/assets/images/online-education.png",
-    url: "/"
+    url: "https://drive.google.com/file/d/1v-c04x6-LnzqcyZqH08WQC8ReBHgplEt/view?usp=drivesdk"
   },
   {
     id: 2,
     title: "Off-line Shortlisted Teams",
     image: "/assets/images/offline.png",
-    url: "/"
+    url: "https://drive.google.com/file/d/140qLit6UDNVh7CphpZwcEDqcnqdEdpmr/view?usp=drivesdk"
   },
   {
     id: 3,
     title: "Event Schedule",
     image: "/assets/images/calendar.png",
-    url: "/"
+    url: "https://docs.google.com/document/d/1gtSBTbEzXDQ5BwLconA-9Igwr6k50BCo/edit?usp=drivesdk&ouid=117836667679660512457&rtpof=true&sd=true"
   },
   {
     id: 4,
