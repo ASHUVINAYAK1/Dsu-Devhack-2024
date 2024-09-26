@@ -52,25 +52,24 @@ const judgeData = {
       {
         key: 8,
         id: "Judge",
-        name: "Nandini Vats",
-        linkedin: "https://www.linkedin.com/in/nandini-vats-a8025a36/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-        image: "/team_members/Nandini.png",
+        name: "Abhay Singh",
+        linkedin: "https://www.linkedin.com/in/abhay-singh-a64b89192/",
+        image: "/team_members/abhay.png",
       },
       {
         key: 9,
         id: "Judge",
-        name: "Abhay Singh",
-        linkedin: "TBD",
-        image: "/team_members/",
+        name: "Dr Karthikeyan Saminathan",
+        linkedin: "https://www.linkedin.com/in/karthikdecodes/",
+        image: "/team_members/karthikdecodes.png",
       },
       {
-        key: 10,
+        key:10,
         id: "Judge",
-        name: "Dr Karthikeyan Saminathan",
-        linkedin: "TBD",
-        image: "/team_members/",
+        name: "Nandini Vats",
+        linkedin: "https://www.linkedin.com/in/nandini-vats-a8025a36/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+        image: "/team_members/Nandini.png",
       },
-    
     ],
     Mentor: [
       {

@@ -228,14 +228,14 @@ const teamData = {
       github: "https://github.com/SofiaRebecca",
       image: "/team_members/sofia.jpg",
     },
-    // {
-    //   key: 11,
-    //   id: "Design",
-    //   name: "Samrdhe D",
-    //   linkedin: "https://www.linkedin.com/in/samridhi-d-365a47265",
-    //   github: "https://github.com/samriddhid04",
-    //   image: "/team_members/Samrdhe.jpeg",
-    // },
+    {
+      key: 11,
+      id: "Design",
+      name: "Samrdhe D",
+      linkedin: "https://www.linkedin.com/in/samridhi-d-365a47265",
+      github: "https://github.com/samriddhid04",
+      image: "/team_members/Samrdhe.jpeg",
+    },
     {
       key: 12,
       id: "Design",
