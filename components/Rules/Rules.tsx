@@ -29,7 +29,7 @@ const themes = [
     id: 4,
     title: "Code of Conduct",
     image: "/assets/images/judgment.png",
-    url: "/"
+    url: "https://docs.google.com/document/d/1hgUSRE4gZtyVG9aQHfP2dXYwe6ImEwDw/edit?usp=sharing&ouid=113270702498980447997&rtpof=true&sd=true"
   },
 ];
 
@@ -51,8 +51,8 @@ export default function Rules() {
                     src={image}
                     alt={title}
                     loading="lazy"
-                    width={170}
-                    height={170}
+                    width={150}
+                    height={150}
                     className="object-cover"
                   />
                 }
